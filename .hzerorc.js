@@ -1,36 +1,12 @@
 const WebpackThemeColorReplacer = require('webpack-theme-color-replacer');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const child = require('child_process');
 
 const path = require("path");
 // const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 
-function getPublicUrl() {
-  const branchNameBuffer = child.execSync('git rev-parse --abbrev-ref HEAD');
-  const branchName = branchNameBuffer.toString().trim();
-  const CI_COMMIT_REF_NAME = ['develop', 'test'].includes(branchName) ? branchName : 'develop';
-  const commitHashBuffer = child.execSync(`git ls-remote https://gitlab-ci-token:4wEzv43XAjY4soTASxQN@open-gitlab.going-link.com/operation-srm/srm-front-core.git ${CI_COMMIT_REF_NAME}-micro | awk '{print $1}'`);
-  const commitHash = commitHashBuffer.toString().trim();
-  let PUBLIC_URL = '';
-  switch (branchName) {
-    case 'develop':
-      PUBLIC_URL = `${process.env.OBS_PUBLIC_URL}/805ce4b-${commitHash}/`;
-      break;
-    case 'test':
-      PUBLIC_URL = `${process.env.OBS_PUBLIC_URL}/gf57x79-${commitHash}/`;
-      break;
-    case 'release':
-      PUBLIC_URL = process.env.SRM_HOST;
-    default:
-      PUBLIC_URL = `${process.env.OBS_PUBLIC_URL}/805ce4b-${commitHash}/`;
-      break;
-  }
-  return PUBLIC_URL;
-}
-
-const A = require('mall-front/lib/config/theme')['primary-color'];
-const B = require('mall-front/lib/config/theme')['primary-hover-color'];
-const C = require('mall-front/lib/config/theme')['primary-bg-color'];
+const A = require('./src/config/theme')['primary-color'];
+const B = require('./src/config/theme')['primary-hover-color'];
+const C = require('./src/config/theme')['primary-bg-color'];
 
 const cssColorFileName = 'theme-colors.css';
 
@@ -54,7 +30,6 @@ module.exports = {
         return env;
       }, {
         NODE_ENV: process.env.NODE_ENV || 'development',
-        PUBLIC_URL: getPublicUrl(),
       });
       const envStr = `window.$$env = Object.freeze(${JSON.stringify(row)})`;
       config.plugins = [
@@ -75,10 +50,6 @@ module.exports = {
     }
     return config;
   },
-  // ...config.plugins,
-  // alias: {}, // webpack alias 配置, alias 的值可以是 string 表示指向配置文件
-  // theme: {}, // less 变量配置, theme 的值可以是 string 表示指向配置文件
-  // hzeroBoot: 'hzero-boot/lib/pathInfo', // hzero入口文件信息配置
   dllConfig: {
     // dllConfig 配置
     common: {
@@ -96,56 +67,11 @@ module.exports = {
         'react-intl-universal',
       ],
     },
-    // vendorsGraph: {
-    //   packages: ['echarts', 'bizcharts', '@antv/data-set'],
-    // },
-    // vendors: {
-    //   packages: [
-    //     'lodash',
-    //     'lodash-decorators',
-    //     'react-intl-universal',
-    //     'axios',
-    //     'uuid',
-    //     'numeral',
-    //     'react-cropper',
-    //     'cropperjs',
-    //   ],
-    // },
   },
 
   splitChunks: {
     chunks: 'all',
     cacheGroups: {
-      // commons: {
-      //   name: 'commons',
-      //   chunks: 'initial',
-      //   priority: 3,
-      //   minChunks: 2,
-      // },
-      // libs: {
-      //   // 基本框架
-      //   chunks: 'all',
-      //   test: new RegExp(
-      //     '(react-dom-router|codemirror|jsplumb|react-viewer|react-dnd|react-dnd-html5-backend)'
-      //   ),
-      //   priority: 100,
-      //   name: 'libs',
-      // },
-      // 'hzero-front-components': {
-      //   // 基本框架
-      //   chunks: 'all',
-      //   test: new RegExp('hzero-front/lib/components'),
-      //   priority: 100,
-      //   name: 'hzero-front-components',
-      // },
-      // 'srm-front-boot': {
-      //   // 基本框架
-      //   chunks: 'all',
-      //   test: new RegExp('srm-front-boot/lib'),
-      //   reuseExistingChunk: true,
-      //   priority: 90,
-      //   name: 'srm-front-boot',
-      // },
       'async-comons': {
         // 其余异步加载包
         chunks: 'async',
