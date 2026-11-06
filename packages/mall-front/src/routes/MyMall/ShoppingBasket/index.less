@@ -1,0 +1,344 @@
+.basket-container {
+  :global {
+    .shopping-basket-expand-box {
+      margin-left: 10px;
+      background-color: rgba(0, 0, 0, 0.05);
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      position: relative;
+      top: 3px;
+      border-radius: 2px;
+    }
+    .checked-box-all {
+      position: relative;
+      top: 2px;
+    }
+
+    .shopping-basket-expand-icon {
+      color: @color-text-3;
+      border: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-weight: 600;
+    }
+
+    .basket-header {
+      margin-bottom: 15px;
+      line-height: 24px;
+      display: flex;
+      justify-content: space-between;
+      background: #fff;
+
+      .basket {
+        font-size: 16px;
+        font-weight: bold;
+      }
+    }
+
+    .basket-top {
+      display: flex;
+      margin-bottom: 5px;
+      color: @primary-color;
+
+      :global {
+        .c7n-btn {
+          color: @primary-color;
+          i {
+            font-size: 14px;
+            margin-right: 5px;
+          }
+        }
+
+        .c7n-btn[disabled] {
+          color: @color-text-4;
+        }
+      }
+    }
+
+    .basket-content {
+      background: #fff;
+      // 覆盖原样式
+      .c7n-checkbox .c7n-checkbox-inner {
+        border: 0.015rem solid @color-text-4 !important;
+      }
+      .c7n-checkbox-checked .c7n-checkbox-inner {
+        border-color: @primary-color !important;
+      }
+
+      .basket-list-info {
+        border: 1px solid #f2f2f2;
+        border-radius: 2px;
+        margin-bottom: 10px;
+        .basket-title {
+          display: flex;
+          justify-content: space-between;
+          background: #fafafa;
+          padding: 10px 20px;
+          color: #999;
+          border-bottom: 1px solid #eee;
+          cursor: pointer;
+
+          .left {
+            max-width: 98%;
+            display: flex;
+            align-items: flex-start;
+            .basket-right {
+              overflow: hidden;
+            }
+            .basket-remark {
+              color: @color-text-2;
+              margin-top: 5px;
+              margin-left: 10px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+            }
+          }
+
+          .basket-user,
+          .basket-time {
+            display: inline-block;
+            line-height: 22px;
+          }
+
+          .basket-user {
+            font-size: 14px;
+            color: @color-text-1;
+            font-weight: 600;
+            padding: 0 10px;
+          }
+
+          .basket-time {
+            display: inline-block;
+            padding: 0 7px;
+            height: 18px;
+            line-height: 18px;
+
+            .update-icon {
+              margin-right: 7px;
+              font-size: 14px;
+              margin-top: -3px;
+            }
+          }
+
+          .count-down-green {
+            background: rgba(71, 184, 129, 0.1);
+            color: #47b881;
+          }
+
+          .count-down-yellow {
+            background: rgba(248, 141, 16, 0.1);
+            color: #f88d10;
+          }
+
+          .count-down-red {
+            background: @danger-bg-color;
+            color: @danger-color;
+          }
+
+          .ant-btn {
+            height: 24px;
+            width: 71px;
+            padding: 0;
+            background: #fafafa;
+            line-height: 24px;
+          }
+
+          .addcart {
+            cursor: pointer;
+            color: @primary-color;
+            border-color: @primary-color;
+          }
+
+          .no-addcart {
+            cursor: no-drop;
+            color: #999;
+            border-color: #999;
+          }
+        }
+
+        .basket-list.basket-expanded {
+          display: flex;
+        }
+
+        .basket-list {
+          display: none;
+          flex-wrap: wrap;
+          min-height: 72px;
+          overflow-y: auto;
+          .basket-item {
+            width: 50%;
+            display: flex;
+            padding: 15px 20px;
+            border-right: 1px solid #f2f2f2;
+            border-bottom: 1px solid #f2f2f2;
+
+            .checked-box {
+              line-height: 33px;
+            }
+          }
+
+          .product-link {
+            display: flex;
+            margin-left: 10px;
+            margin-right: 17px;
+
+            .product-name {
+              width: 228px;
+              color: @color-text-1;
+              margin-left: 10px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+            }
+
+            .product-price {
+              color: @price-color;
+            }
+          }
+
+          .basket-item-disabled {
+            background-color: #f9f9f9;
+
+            .product-name {
+              color: #999;
+            }
+          }
+
+          .add-cart {
+            flex: 1;
+            text-align: right;
+            line-height: 33px;
+            cursor: pointer;
+            color: @primary-color;
+          }
+        }
+
+        // .basket-list {
+        //   padding: 25px 25px 0;
+        //   flex-wrap: wrap;
+        //   display: flex;
+        //   .product-list {
+        //     margin: 0 10px 20px 0;
+        //     padding: 10px 22px;
+        //     text-align: center;
+        //     position: relative;
+        //     .checked-box {
+        //       position: absolute;
+        //       left: 4px;
+        //       top: 9px;
+        //     }
+        //     .image-container {
+        //       position: relative;
+        //       width: 100px;
+        //       height: 100px;
+        //     }
+        //     .invalid-status {
+        //       color: #fff;
+        //       padding: 0 5px;
+        //       height: 16px;
+        //       line-height: 16px;
+        //       position: absolute;
+        //       top: 53px;
+        //       left: 36px;
+        //       background-color: #ccc;
+        //     }
+        //     .product-name {
+        //       color: #666;
+        //       margin-top: 7px;
+        //       width: 100px;
+        //       overflow: hidden;
+        //       white-space: nowrap;
+        //       text-overflow: ellipsis;
+        //       &:hover {
+        //         color: @primary-hover-color;
+        //       }
+        //     }
+        //     .product-price {
+        //       color: @price-color;
+        //     }
+        //     &:hover {
+        //       box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+        //     }
+        //   }
+        //   .product-list:nth-of-type(6n) {
+        //     margin-right: 0;
+        //   }
+        //   .product-list.disable {
+        //     background: @color-fill-7;
+        //     border: 1px dashed #f2f2f2;
+        //   }
+        // }
+        .pagination {
+          height: 30px;
+          margin-top: 10px;
+          position: relative;
+
+          .pagination-btn {
+            width: 60px;
+            height: 20px;
+            display: flex;
+            border: 1px solid #f7e6cc;
+            position: absolute;
+            right: 20px;
+            line-height: 20px;
+
+            div {
+              width: 30px;
+              text-align: center;
+              cursor: pointer;
+            }
+
+            .next {
+              background: #f7e6cc;
+            }
+          }
+        }
+
+        .toggle-btn {
+          cursor: pointer;
+          line-height: 35px;
+          text-align: center;
+          color: @primary-color;
+
+          // border-top: 1px dashed #eee;
+          &:hover {
+            color: @primary-hover-color;
+          }
+        }
+      }
+    }
+
+    .empty-product {
+      background: url(../../../assets/images/illu_common_nodata_default.svg) no-repeat center;
+      background-size: 19%;
+      height: 300px;
+      text-align: center;
+
+      div {
+        color: #999;
+        position: relative;
+        top: 225px;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+:global {
+  .popover-basket-footer {
+    margin: 0 10px;
+
+    .basket-footer-add {
+      color: @primary-color;
+    }
+  }
+}
+
+:global {
+  .sub-cancel-button {
+    color: @primary-color;
+  }
+}

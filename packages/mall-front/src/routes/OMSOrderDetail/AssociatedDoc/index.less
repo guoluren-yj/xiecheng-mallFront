@@ -1,0 +1,35 @@
+.content {
+  :global {
+    .c7n-modal-body {
+      height: 100%;
+    }
+    .content-header,
+    .content-title {
+      font-size: 14px;
+      color: @color-text-1;
+      line-height: 22px;
+      margin-bottom: 20px;
+      font-weight: 500;
+    }
+    .content-header {
+      font-size: 16px;
+    }
+    .line-item {
+      margin-bottom: 15px;
+      line-height: 18px;
+      height: 18px;
+      color: @color-text-2;
+      display: flex;
+      .line-item-label {
+        display: inline-flex;
+        width: 140px;
+        overflow: hidden;
+      }
+      .line-item-info {
+        width: 250px;
+        position: relative;
+        padding-right: 30px;
+      }
+    }
+  }
+}

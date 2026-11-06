@@ -1,0 +1,185 @@
+.accept-modal {
+  :global {
+    .accept-content {
+      .accept-header {
+        width: 100%;
+        padding-left: 20px;
+        align-items: center;
+        height: 32px;
+        border-top: 1px solid #eee;
+        border-bottom: 1px solid #eee;
+        display: flex;
+        background-color: @color-fill-7;
+        color: @color-text-1;
+        font-weight: 500;
+      }
+
+      .accept-list-line {
+        display: flex;
+        padding: 12px 0 5px 20px;
+        border-bottom: 1px solid #eee;
+      }
+
+      .accept-info {
+        width: 335px;
+        display: flex;
+
+        .product-name {
+          display: inline-block;
+          margin-left: 10px;
+          padding-right: 10px;
+
+          .product-name-label {
+            width: 150px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            display: inline-block;
+          }
+
+          .product-name-po {
+            padding: 1px 5px;
+            background: #eee;
+            color: #333;
+            border-radius: 2px;
+          }
+        }
+
+        .product-name-one {
+          display: inline-block;
+          margin-left: 10px;
+          padding-right: 10px;
+          max-width: 250px;
+
+          .product-name-label {
+            display: -webkit-box;
+            line-height: 18px;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+        }
+      }
+
+      .accept-remark {
+        flex: 1;
+      }
+
+      .accept-ship-num,
+      .accept-can-num,
+      .accept-asnNum,
+      .accept-displayPoNum,
+      .accept-creationDate,
+      .accept-attachment {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .accept-supCompanyName {
+        display: -webkit-box;
+        line-height: 20px;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding-right: 20px;
+      }
+
+      .accept-checkbox {
+        width: 30px;
+      }
+
+      .accept-ship-num,
+      .accept-can-num {
+        width: 122px;
+      }
+
+      .accept-asnNum,
+      .accept-displayPoNum {
+        width: 145px;
+      }
+
+      .accept-creationDate,
+      .accept-supCompanyName {
+        width: 90px;
+      }
+
+      .accept-this-num {
+        width: 135px;
+        display: flex;
+
+        .accept-this-num-input {
+          width: 66px;
+          margin-top: -4px;
+
+          :global {
+            .c7n-pro-input-number {
+              width: 66px;
+              height: 28px;
+              border-radius: 2px;
+              text-align: left;
+            }
+          }
+        }
+      }
+
+      .accept-attachment {
+        width: 100px;
+        padding: 0 10px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+        button {
+          padding: 0;
+        }
+      }
+    }
+
+    .accept-batch-content {
+      .accept-info {
+        width: 220px;
+      }
+
+      .accept-ship-num,
+      .accept-can-num {
+        width: 72px;
+      }
+
+      .accept-this-num {
+        width: 85px;
+      }
+    }
+
+    .c7n-modal-footer {
+      position: fixed;
+      bottom: 24px;
+      width: 100%;
+    }
+  }
+}
+
+.accept-success {
+  width: 114px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0;
+
+  :global {
+    .icon {
+      line-height: 40px;
+      font-size: 14px;
+      margin-left: 20px;
+    }
+
+    .c7n-notification-notice-message {
+      padding-right: 0;
+    }
+
+    .c7n-notification-notice-close {
+      display: none;
+    }
+  }
+}

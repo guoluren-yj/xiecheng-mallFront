@@ -1,0 +1,37 @@
+.tag {
+  width: max-content;
+  margin: auto;
+  padding: 0 5px;
+  font-size: 10px;
+  line-height: 18px;
+  height: 18px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  border: none;
+}
+.tag-info {
+  // warning-color - 等待中
+  background: @warning-bg-color;
+  color: @warning-color;
+}
+.tag-cancel {
+  // 取消关闭
+  background: rgba(0, 0, 0, 0.06);
+  color: @color-text-2;
+}
+.tag-failed {
+  // 失败
+  background: @danger-bg-color;
+  color: @danger-color;
+}
+.tag-success {
+  // 通过，成功
+  background: @success-bg-color;
+  color: @success-color;
+}
+.tag-new {
+  // 新建
+  background: @notice-bg-color;
+  color: @notice-color;
+}

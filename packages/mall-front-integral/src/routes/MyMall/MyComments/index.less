@@ -1,0 +1,143 @@
+.my-comments-container {
+  background: #fff;
+  // padding: 20px;
+  :global {
+    .my-comments-header {
+      margin-bottom: 10px;
+      .my-comments-header-tip {
+        color: @danger-color;
+        padding: 0 6px;
+        position: relative;
+        top: -8px;
+      }
+      .c7n-pro-table-search-bar-operator-header-other {
+        width: auto;
+      }
+    }
+    .my-comments-table {
+      border: 1px solid #eaeaea;
+      border-radius: 2px;
+      margin-bottom: 16px;
+      .my-table-header {
+        display: flex;
+        font-size: 13px;
+        color: #252525;
+        font-weight: 600;
+        background-color: rgba(0, 0, 0, 0.03);
+        border-radius: 1px 1px 0 0;
+        padding: 10px 0 10px 25px;
+        li:nth-child(1) {
+          width: 260px;
+        }
+        li:nth-child(2) {
+          width: 360px;
+          margin: 0 15px 0 45px;
+        }
+        li:nth-child(3) {
+          width: 135px;
+          margin-right: 25px;
+        }
+      }
+      .my-table-line:last-child {
+        border-bottom: none;
+      }
+      .my-table-line {
+        display: flex;
+        padding: 16px 20px;
+        padding-right: 0;
+        border-bottom: 1px solid #eaeaea;
+        img {
+          margin-right: 16px;
+        }
+        .product-name {
+          width: 180px;
+          line-height: 18px;
+          vertical-align: middle;
+          display: -webkit-box !important;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          margin-right: 45px;
+          margin-bottom: 5px;
+        }
+        .source-from {
+          display: inline-block;
+          max-width: 78px;
+          height: 18px;
+          background: #eee;
+          color: #333;
+          padding: 0 5px;
+          margin-right: 5px;
+          vertical-align: top;
+          margin-bottom: 5px;
+        }
+        .po-num {
+          max-width: 130px;
+        }
+        .product-price {
+          line-height: 20px;
+          color: @price-color;
+        }
+        .comment-first,
+        .comment-add {
+          display: flex;
+        }
+        .comment-add {
+          margin-top: 10px;
+          border-top: 1px solid #f2f2f2;
+          padding-top: 10px;
+        }
+        .assess-time {
+          width: 360px;
+          color: #666;
+          margin-right: 20px;
+          .rate-list {
+            font-size: 16px;
+            line-height: 20px;
+            vertical-align: top;
+            color: @price-color;
+          }
+          .remark {
+            width: 352px;
+            color: @color-text-1;
+            line-height: 20px;
+            height: 40px;
+            vertical-align: middle;
+            display: -webkit-box !important;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+          }
+          .avgScore {
+            width: 352px;
+            color: @color-text-2;
+          }
+          .assessTime {
+            line-height: 20px;
+            float: right;
+          }
+        }
+        a {
+          line-height: 61px;
+        }
+      }
+    }
+    .order-list-page {
+      margin-top: 24px;
+    }
+    .empty-product {
+      background: url(../../../assets/images/illu_common_nodata_default.svg) no-repeat center;
+      background-size: 19%;
+      height: 300px;
+      text-align: center;
+      div {
+        color: #999;
+        position: relative;
+        top: 225px;
+        font-size: 16px;
+      }
+    }
+  }
+}

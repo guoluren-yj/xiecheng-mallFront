@@ -1,0 +1,309 @@
+.orderComment-container {
+  width: 100%;
+  :global {
+    .img-num-info {
+      margin-left: 6px;
+      margin-left: 71px;
+      b {
+        color: #e85050;
+      }
+    }
+    .orderComment {
+      width: 1224px;
+      margin: 0 auto;
+      padding: 20px;
+
+      .orderComment-top {
+        width: 1184px;
+        text-align: center;
+
+        h1 {
+          font-size: 22px;
+          color: #333;
+          line-height: 29px;
+          font-weight: bold;
+        }
+
+        span {
+          color: #999;
+          font-size: 14px;
+          line-height: 19px;
+          padding-left: 26px;
+        }
+      }
+
+      .orderComment-content {
+        width: 1184px;
+        margin-top: 25px;
+
+        .order-lists {
+          .order-list {
+            display: flex;
+            width: 1184px;
+            border: 1px solid #eaeaea;
+            // height: 364px;
+            margin-bottom: 24px;
+
+            .order-info {
+              display: flex;
+              // height: 364px;
+              width: 340px;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+
+              .info-img {
+                width: 130px;
+                height: 130px;
+
+                img {
+                  width: 100%;
+                  height: 100%;
+                }
+
+                .img-upload {
+                  margin-left: 24px;
+                  width: 720px;
+                  height: 67px;
+
+                  .ant-upload-select-picture-card {
+                    width: 67px;
+                    height: 67px;
+                    border: 1px solid #eee;
+                    background-color: #fff;
+                  }
+
+                  .ant-upload-list-item {
+                    width: 67px;
+                    height: 67px;
+                    padding: 0;
+                  }
+
+                  .ant-upload-list-item-picture-card {
+                    height: 67px;
+                    width: 67px;
+                  }
+
+                  .ant-upload-list-item-file-name {
+                    display: none;
+                  }
+
+                  .ant-upload-list-item-info {
+                    width: 67px;
+                    height: 67px;
+                  }
+
+                  // .ant-upload-list-item-action-remove{
+                  //   display: none;
+                  // }
+                  .anticon-download {
+                    display: none;
+                  }
+
+                  .ant-upload-list-item-actions {
+                    margin-top: 0;
+                    margin-left: 4px;
+                  }
+
+                  .ant-upload-list-item-picture-card:before {
+                    height: 67px;
+                  }
+
+                  .ant-upload-list-item-done {
+                    margin-right: 13px;
+                  }
+                }
+              }
+
+              .info-name {
+                margin-top: 24px;
+                line-height: 20px;
+                width: 240px;
+                font-size: 12px;
+                color: #333;
+              }
+
+              p {
+                margin-top: 15px;
+                font-size: 14px;
+                color: #e85050;
+                line-height: 16px;
+              }
+            }
+
+            .order-comment {
+              padding: 40px;
+              border-left: 1px solid #eee;
+              .goods-rate {
+                display: flex;
+                margin-bottom: 16px;
+                p {
+                  margin-right: 24px;
+                }
+                .rate-list {
+                  font-size: 16px;
+                  line-height: 16px;
+                  vertical-align: top;
+                  color: #f44336;
+                }
+                span {
+                  color: #f44336;
+                }
+              }
+              .comment-content {
+                display: flex;
+                border: none;
+                margin: 0;
+                p {
+                  margin-top: 5px;
+                  color: #666;
+                  line-height: 16px;
+                  font-size: 12px;
+                  margin-right: 24px;
+                  width: 48px;
+                  flex-shrink: 0;
+                }
+
+                textarea {
+                  padding-left: 12px;
+                  padding-top: 10px;
+                }
+              }
+              .text-number {
+                margin-top: 5px;
+                text-align: right;
+                color: #bbb;
+              }
+
+              .add-img {
+                .upload-img {
+                  display: flex;
+                }
+
+                margin-top: 16px;
+                display: flex;
+                flex-direction: column;
+
+                p {
+                  flex-shrink: 0;
+                  width: 48px;
+                  line-height: 16px;
+                  color: #666;
+                  margin-right: 24px;
+                }
+              }
+            }
+          }
+        }
+
+        .publish {
+          float: right;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+
+  //发表固定再最下面的样式，暂时不用
+  // .publish {
+  //   width: 100%;
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  //   .publish-fix{
+  //     height: 50px;
+  //     width: 1186px;
+  //     background-color: #f4f4f4;
+  //     position: fixed !important;
+  //     bottom: 0 !important;
+  //     button{
+  //       height: 50px;
+  //       width: 200px;
+  //       left: 50%;
+  //       margin-left: -100px;
+  //     }
+  //   }
+  //   .pubulish-unFix{
+  //     height: 50px;
+  //     width: 1186px;
+  //     background-color: #f4f4f4;
+  //     button{
+  //       height: 50px;
+  //       width: 200px;
+  //       left: 50%;
+  //       margin-left: -100px;
+  //     }
+  //   }
+  //   // .levitate-cartFooter {
+  //   //   // background-color: #F4F4F4;
+  //   //   // border: 1px solid #EAEAEA;
+  //   //   position: fixed !important;
+  //   //   bottom: 0 !important;
+
+  //   //   > ul {
+  //   //     .cartLeft2 {
+  //   //       margin-left: 20px;
+  //   //     }
+  //   //   }
+  //   // }
+  //   // .cartFooter {
+  //   //   height: 64px;
+  //   //   margin-top: 20px;
+  //   //   margin-left: auto;
+  //   //   margin-right: auto;
+  //   //   line-height: 72px;
+  //   //   position: absolute;
+  //   //   bottom: 30px;
+  //   //   width: 100%;
+  //   //   // transition: width 0.5s ease-in;
+  //   //   color: #333;
+
+  //   //   > ul {
+  //   //     height: 64px;
+  //   //     max-width: 1186px;
+  //   //     margin: 0 auto;
+  //   //     background: #f4f4f4;
+  //   //     transition: width 0.5s ease-in;
+  //   //     > li {
+  //   //       float: left;
+  //   //     }
+  //   //   }
+
+  //   //   .levitate-ul {
+  //   //     max-width: 1188px;
+  //   //     background-color: #f4f4f4;
+  //   //     border: 1px solid #eaeaea;
+  //   //     height: 72px;
+  //   //   }
+  //   //   .cartFooter2 {
+  //   //     margin-left: 30px;
+  //   //     float: right;
+  //   //     line-height: normal;
+  //   //     button{
+  //   //       position: relative;
+  //   //       top: -1px;
+  //   //     }
+  //   //     .all-product{
+  //   //       font-size: 16px;
+  //   //       background: @primary-color;
+  //   //       color: #fff;
+  //   //       &:hover{
+  //   //         background: @primary-hover-color;
+  //   //       }
+  //   //     }
+  //   //   }
+  //   // }
+  // }
+}
+
+.no-comment {
+  width: 500px;
+  height: 300px;
+  margin: 40px auto 20px auto;
+  :global {
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+}

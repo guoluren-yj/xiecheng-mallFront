@@ -1,0 +1,50 @@
+.content {
+  :global {
+    .c7n-modal-body {
+      height: 100%;
+    }
+    .goods-img {
+      display: inline-block;
+      vertical-align: top;
+    }
+    .goods-product-name {
+      margin-left: 10px;
+      vertical-align: middle;
+      width: 300px;
+      display: -webkit-box !important;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      line-height: 20px;
+      .goods-name,
+      .goods-remark {
+        line-height: 18px;
+      }
+      .goods-name {
+        color: @color-text-1;
+      }
+      .goods-remark {
+        display: flex;
+        margin-top: 5px;
+        color: @color-text-2;
+      }
+      .goods-remark-label {
+        width: max-content;
+      }
+      i {
+        line-height: 18px;
+      }
+    }
+    .product-line-warn {
+      color: @danger-color;
+    }
+    .columns-item {
+      height: 50px;
+      color: @color-text-1;
+    }
+    .product-price {
+      color: @price-color;
+    }
+  }
+}

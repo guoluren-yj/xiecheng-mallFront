@@ -1,0 +1,413 @@
+.sale-after-record {
+  :global {
+    // .c7n-pro-table-search-bar-expand {
+    //   width: 100%;
+    // }
+    .c7n-pro-table-search-bar {
+      width: 100%;
+    }
+    // 按钮
+    .c7n-radio-group {
+      margin-bottom: 20px;
+      height: 32px;
+    }
+    .c7n-radio-button-wrapper-checked {
+      border: none;
+      box-shadow: none;
+      background: @primary-bg-color;
+      color: @primary-color;
+      font-weight: 600;
+      &:hover {
+        box-shadow: none;
+      }
+    }
+    .c7n-radio-button-wrapper::before {
+      display: none;
+    }
+    .c7n-radio-button-wrapper {
+      height: 32px;
+      line-height: 32px;
+      font-size: 14px;
+      border: none;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      padding: 0 10px;
+      &:hover {
+        color: @primary-color;
+      }
+    }
+    .c7n-divider-vertical {
+      margin: 0 5px;
+      // top: -1.5em;
+    }
+    .todetail {
+      text-align: center;
+      color: #666;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+    .container-title {
+      display: inline-block;
+      line-height: 35px;
+      // color: @primary-color;
+      font-size: 16px;
+      font-weight: bold;
+      // padding: 0 15px;
+    }
+    .orderList {
+      .order-detail {
+        font-size: 12px;
+        border-bottom: 1px solid #eaeaea;
+        border-radius: @border-radius-base;
+        margin-bottom: 10px;
+        .order-number-header {
+          background-color: #f5f5f5;
+          // margin-bottom: 12px;
+          ul {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            display: flex;
+            padding: 0 24px;
+            li {
+              min-width: 160px;
+              height: 32px;
+              line-height: 32px;
+              margin-right: 25px;
+              color: @color-text-1;
+              &:last-child {
+                position: absolute;
+                right: 0;
+                margin-right: 24px;
+              }
+              span {
+                color: #333;
+              }
+              a {
+                color: #333;
+              }
+            }
+          }
+        }
+        .detail-info-col {
+          display: flex;
+          .detail-info-left {
+            padding: 20px 24px;
+            border-right: 1px solid #eee;
+            width: 465px;
+            .detail-info-content {
+              display: flex;
+              width: 100%;
+              .productname {
+                width: 280px;
+                margin-left: 20px;
+                a {
+                  width: 280px;
+                }
+              }
+              .detail-info-quantity {
+                padding-left: 24px;
+                line-height: 18px;
+              }
+            }
+            .detail-info-spec {
+              color: rgb(153, 153, 153);
+              font-size: 12px;
+              padding-left: 54px;
+            }
+          }
+          .detail-info-right {
+            flex: 1;
+            .detail-info-handle {
+              width: 120px;
+              text-align: center;
+              border-right: 1px solid #eaeaea;
+              padding-left: 10px;
+              padding-right: 10px;
+              button {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                background: #fff !important;
+                span {
+                  color: @primary-color;
+                }
+              }
+              .okbtn {
+                text-align: center;
+              }
+              .cancle {
+                height: 28px;
+                line-height: 28px;
+                background-color: #fafafa;
+                color: #333;
+                border: 1px solid #eaeaea;
+                &:hover {
+                  background-color: #eee;
+                }
+              }
+            }
+            .detail-info-operate {
+              flex: 1;
+              padding: 16px 0;
+              text-align: center;
+              .operation-btn-flat {
+                width: 100px;
+                height: 24px;
+                border-radius: 2px;
+                margin-left: 0;
+                font-weight: 600;
+                span {
+                  color: @primary-color;
+                }
+                &:hover {
+                  color: @primary-hover-color;
+                }
+              }
+              .operation-btn {
+                color: @primary-color;
+                margin-bottom: 4px;
+                cursor: pointer;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+              }
+              .operation-btn:last-child {
+                margin-bottom: 0;
+              }
+            }
+            display: flex;
+            li {
+              padding: 16px 24px;
+              text-align: center;
+            }
+            .detail-info-status {
+              width: 250px;
+              border-right: 1px solid #eaeaea;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              .success {
+                color: @success-color;
+                vertical-align: top;
+              }
+              .danger {
+                color: @danger-color;
+                vertical-align: top;
+              }
+              span {
+                color: #999;
+              }
+              p {
+                text-align: left;
+                color: @color-text-1;
+                margin-bottom: 4px;
+                width: 210px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+              }
+              .ant-divider-horizontal {
+                height: 1px;
+                margin: 8px 0;
+              }
+            }
+          }
+        }
+      }
+      .data-conten {
+        width: 105px;
+        display: inline-block;
+        margin-left: 345px;
+      }
+      .sale-click {
+        display: inline-block;
+        margin-left: 50px;
+        cursor: pointer;
+        color: @primary-color;
+        width: 80px;
+        height: 28px;
+        text-align: center;
+        line-height: 28px;
+      }
+      .sale-click-detail {
+        display: inline-block;
+        margin-left: 29px;
+        cursor: pointer;
+        color: @primary-color;
+        width: 80px;
+        height: 28px;
+        text-align: center;
+        line-height: 28px;
+        margin-top: 7px;
+      }
+      // button:not(.c7n-pro-btn) {
+      //   width: 80px;
+      //   height: 28px;
+      //   &:hover {
+      //     background-color: @primary-color !important;
+      //     color: #fff;
+      //   }
+      // }
+      .empty-order-list {
+        background: url(../../../../assets/images/illu_order_nodata_default.svg) no-repeat center;
+        background-size: 20%;
+        height: 300px;
+        text-align: center;
+        div {
+          color: #999;
+          position: relative;
+          top: 235px;
+          font-size: 16px;
+          // left: -235px;
+        }
+      }
+    }
+    .goodsname {
+      font-size: 12px;
+      width: 220px;
+    }
+    .money {
+      color: @price-color;
+    }
+    .ant-radio-button-wrapper-checked {
+      border: none;
+      font-weight: bold;
+      box-shadow: none;
+    }
+    .ant-radio-button-wrapper::before {
+      display: none;
+    }
+    .ant-radio-button-wrapper {
+      font-size: 14px;
+      border: none;
+    }
+  }
+}
+
+// 退款明细
+.resundDetail-modal {
+  :global {
+    ul {
+      list-style: none;
+    }
+    .resundDetail-header {
+      width: 100%;
+      height: 37px;
+      background: @modal-header-bgColor;
+      position: relative;
+      span {
+        display: inline-block;
+        font-size: 12px;
+        line-height: 35px;
+        color: @primary-color;
+        margin-left: 24px;
+        font-weight: bold;
+      }
+      .resundDetail-header-close {
+        width: 11.2px;
+        height: 11.2px;
+        background: url(../../../../assets/images/close-modal-icon.png);
+        background-size: 100% 100%;
+        background-position: center center;
+        position: absolute;
+        top: 11.4px;
+        right: 24px;
+        cursor: pointer;
+      }
+    }
+    .resundDetail-content {
+      .resundDetail-hint {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 90px;
+        text-align: center;
+        .image {
+          display: inline-block;
+          width: 40px;
+          height: 40px;
+          margin-right: 24px;
+          background: url(../../../../assets/images/refundsuccess.png);
+          background-size: 100% 100%;
+          background-position: center center;
+        }
+        span {
+          display: inline-block;
+          display: flex;
+          align-items: center;
+          text-align: left;
+          font-size: 14px;
+          color: @primary-color;
+        }
+      }
+      .resundDetail-list {
+        width: 100%;
+        .resundDetail-list-title {
+          display: flex;
+          // justify-content: space-between;
+          height: 32px;
+          line-height: 32px;
+          margin: 0;
+          padding: 0 24px;
+          border: 1px solid #eaeaea;
+          background-color: @color-fill-7;
+          li {
+            font-size: 12px;
+            color: #444;
+          }
+        }
+        .resundDetail-list-info {
+          display: flex;
+          // justify-content: space-between;
+          align-items: center;
+          height: 90px;
+          margin: 0;
+          padding: 0 24px;
+          border: 1px solid #eaeaea;
+          border-top: none;
+          li {
+            font-size: 14px;
+            color: #333;
+          }
+          .goodsname {
+            font-size: 12px;
+            width: 220px;
+          }
+          .money {
+            color: #e85050;
+          }
+        }
+        .resundDetail-list-title,
+        .resundDetail-list-info {
+          li:nth-child(1) {
+            width: 49px;
+            margin-right: 16px;
+          }
+          li:nth-child(3) {
+            width: 108px;
+            margin-left: 34px;
+          }
+          li:nth-child(4) {
+            width: 50px;
+            margin-left: 68px;
+          }
+          li:nth-child(5) {
+            width: 50px;
+            margin-left: 48px;
+          }
+          li:nth-child(6) {
+            width: 50px;
+            margin-left: 60px;
+          }
+          li:last-child {
+            width: 50px;
+            margin-left: 53px;
+          }
+        }
+      }
+    }
+  }
+}

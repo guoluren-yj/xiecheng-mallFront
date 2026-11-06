@@ -1,0 +1,29 @@
+.search-modal {
+  :global {
+    .c7n-modal-header {
+      margin-bottom: 0;
+    }
+    .search-modal-form {
+      .c7n-input,
+      input {
+        &:hover,
+        &:focus {
+          border: none;
+        }
+      }
+      .c7n-pro-calendar-picker {
+        height: 36px;
+        border-radius: 5px;
+        &:hover,
+        &:focus {
+          border-color: @color-text-1 !important;
+        }
+      }
+    }
+    .c7n-modal-footer {
+      position: fixed;
+      bottom: 24px;
+      width: 100%;
+    }
+  }
+}

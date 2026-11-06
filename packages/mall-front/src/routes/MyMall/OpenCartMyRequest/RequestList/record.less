@@ -1,0 +1,80 @@
+.approve-content {
+  padding-bottom: 8px;
+  :global {
+    .approve-header {
+      display: flex;
+      align-items: center;
+      .approve-node {
+        font-size: 12px;
+        color: @color-text-1;
+        line-height: 18px;
+        font-weight: 600;
+        margin-right: 10px;
+      }
+      .tag {
+        border-radius: 2px;
+        // padding: 0 2px;
+        font-size: 10px;
+        color: #fff;
+        line-height: 16px;
+        font-weight: 500;
+      }
+      .approve-tag {
+        .tag;
+        color: @color-text-2;
+        border: 1px solid @color-fill-2;
+      }
+      .approve-tag-content {
+        display: inline-block;
+        scale: 0.8;
+      }
+      .approve-tag-warning {
+        .tag;
+        background-color: @warning-color;
+      }
+      .approve-tag-success {
+        .tag;
+        background-color: @success-color;
+      }
+      .approve-tag-danger {
+        .tag;
+        background-color: @danger-color;
+      }
+    }
+    .approve-item {
+      margin-top: 5px;
+      font-size: 12px;
+      line-height: 18px;
+      font-weight: 400;
+      display: flex;
+      // align-items: center;
+      .approve-item-label {
+        width: 72px;
+        margin-right: 10px;
+        color: @color-text-3;
+      }
+      .approve-item-content {
+        flex: 1;
+        color: @color-text-1;
+      }
+    }
+  }
+}
+
+.no-data {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-top: 50%;
+  img {
+    width: 200px;
+    height: 172px;
+    margin-bottom: 24px;
+  }
+  p {
+    color: @color-text-2;
+    text-align: center;
+  }
+}

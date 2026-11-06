@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="10px" viewBox="0 0 10 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>Path 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-0.3%" y="-2.2%" width="100.7%" height="104.3%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <polygon id="path-2" points="5.02032218 8 0 2.8325116 0.80880229 2 5.02324604 6.33196723 9.19119771 2.04183582 10 2.87434742"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="企业购-查询" transform="translate(-1223.000000, -305.000000)">
+            <rect fill="#f5f5f5" x="0" y="0" width="1440" height="2431"></rect>
+            <g id="筛选" filter="url(#filter-1)" transform="translate(107.000000, 150.000000)">
+                <path d="M2,0 L1224,0 C1225.10457,-2.02906125e-16 1226,0.8954305 1226,2 L1226,183 C1226,184.104569 1225.10457,185 1224,185 L2,185 C0.8954305,185 1.3527075e-16,184.104569 0,183 L0,2 C-1.3527075e-16,0.8954305 0.8954305,2.02906125e-16 2,0 Z" id="矩形-copy-3" fill="#FFFFFF"></path>
+                <g id="分组-6-copy-3" transform="translate(1088.000000, 147.000000)">
+                    <g id="分组-8">
+                        <g id="btn-展开" transform="translate(28.000000, 8.000000)">
+                            <rect id="Rectangle" x="0" y="0" width="10" height="10"></rect>
+                            <mask id="mask-3" fill="white">
+                                <use xlink:href="#path-2"></use>
+                            </mask>
+                            <use id="Path-2" fill="#999999" fill-rule="nonzero" xlink:href="#path-2"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

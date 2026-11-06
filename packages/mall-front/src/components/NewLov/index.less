@@ -1,0 +1,23 @@
+.lov-suffix {
+  position: relative;
+  :global {
+    .delete-icon {
+      display: none;
+      margin-right: 4px;
+      cursor: pointer;
+    }
+    .search-icon {
+      margin-right: 8px;
+      cursor: pointer;
+    }
+  }
+}
+:global {
+  .c7n-input-wrapper {
+    &:hover {
+      .delete-icon.hover-delete-icon {
+        display: inline-block;
+      }
+    }
+  }
+}

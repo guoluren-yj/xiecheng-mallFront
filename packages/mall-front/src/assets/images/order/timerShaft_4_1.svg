@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="531px" height="16px" viewBox="0 0 531 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>提交订单</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="219" y="8" width="100" height="1"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="100" height="1" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <rect id="path-3" x="47" y="8" width="100" height="1"></rect>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="100" height="1" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+        <rect id="path-5" x="391" y="8" width="100" height="1"></rect>
+        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="100" height="1" fill="white">
+            <use xlink:href="#path-5"></use>
+        </mask>
+    </defs>
+    <g id="版本回收" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="提交订单" transform="translate(-27.000000, -2.000000)">
+            <g transform="translate(27.000000, 2.000000)">
+                <use id="Divider" stroke="#D9D9D9" mask="url(#mask-2)" stroke-width="2" stroke-dasharray="7" transform="translate(269.000000, 8.500000) scale(1, -1) translate(-269.000000, -8.500000) " xlink:href="#path-1"></use>
+                <use id="Divider-Copy-3" stroke="#D9D9D9" mask="url(#mask-4)" stroke-width="2" stroke-dasharray="7" transform="translate(97.000000, 8.500000) scale(1, -1) translate(-97.000000, -8.500000) " xlink:href="#path-3"></use>
+                <use id="Divider-Copy" stroke="#D9D9D9" mask="url(#mask-6)" stroke-width="2" stroke-dasharray="7" transform="translate(441.000000, 8.500000) scale(1, -1) translate(-441.000000, -8.500000) " xlink:href="#path-5"></use>
+                <circle id="Oval-2-Copy-30" stroke="#8C8C8C" stroke-width="2" fill="#FFFFFF" cx="527" cy="8" r="3"></circle>
+                <path d="M8,0.125 C12.3488281,0.125 15.875,3.65117188 15.875,8 C15.875,12.3488281 12.3488281,15.875 8,15.875 C3.65117188,15.875 0.125,12.3488281 0.125,8 C0.125,3.65117188 3.65117188,0.125 8,0.125 Z M11.2871094,5.20507813 L10.4626953,5.20507813 C10.2833984,5.20507813 10.1128906,5.29121094 10.0074219,5.43886719 L7.24414063,9.27089844 L5.99257813,7.53417969 C5.88710938,7.38828125 5.71835938,7.30039063 5.53730469,7.30039063 L4.71289063,7.30039063 C4.59863281,7.30039063 4.53183594,7.43046875 4.59863281,7.52363281 L6.78886719,10.5611328 C7.01210938,10.8722656 7.47441406,10.8722656 7.69765625,10.5611328 L11.3996094,5.42832031 C11.4681641,5.33515625 11.4013672,5.20507813 11.2871094,5.20507813 Z" id="合并形状" fill="#7BBD53" fill-rule="nonzero"></path>
+                <circle id="Oval-2-Copy-30" stroke="#8C8C8C" stroke-width="2" fill="#FFFFFF" cx="183" cy="8" r="3"></circle>
+                <circle id="Oval-2-Copy-30" stroke="#8C8C8C" stroke-width="2" fill="#FFFFFF" cx="355" cy="8" r="3"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

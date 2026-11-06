@@ -1,0 +1,21 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "transpile",
+			"path": "packages/mall-front/",
+			"problemMatcher": [],
+			"label": "npm: transpile - packages/mall-front",
+			"detail": "cross-env NODE_ENV=production BABEL_ENV=production npx babel src --out-dir lib --copy-files --delete-dir-on-start --ignore 'src/**/*.spec.js','src/**/*.test.js'"
+		},
+		{
+			"type": "npm",
+			"script": "start",
+			"path": "packages/mall-front/",
+			"problemMatcher": [],
+			"label": "npm: start - packages/mall-front",
+			"detail": "cross-env NODE_OPTIONS=--max_old_space_size=8192 NODE_PROFILE=development hzero-cli start"
+		}
+	]
+}

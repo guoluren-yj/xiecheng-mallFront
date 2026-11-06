@@ -1,0 +1,387 @@
+.block-product {
+  margin-right: 10px;
+  margin-bottom: 20px;
+  background: #fff;
+  :global {
+    .disable {
+      background: #eee;
+      cursor: not-allowed !important;
+      color: #666 !important;
+      border-color: #d9d9d9 !important;
+    }
+    .add-cart-btn {
+      flex: 1;
+      text-align: center;
+      cursor: pointer;
+      color: @primary-color;
+      height: 36px;
+      vertical-align: top;
+      line-height: 36px;
+    }
+    .subStock {
+      background: @primary-bg-color;
+    }
+  }
+}
+.block-product:nth-of-type(5n) {
+  margin-right: 0;
+}
+
+.block-product,
+.line-product {
+  :global {
+    .item-company {
+      > div {
+        display: inline-block;
+        height: 18px;
+        line-height: 18px;
+        background: #eee;
+        color: #333;
+        padding: 0 5px;
+      }
+      .product-item {
+        margin-left: 5px;
+        max-width: 108px;
+        border-radius: 2px;
+      }
+      .product-company {
+        border-radius: 2px;
+        padding-left: 2px;
+        max-width: 228px;
+      }
+      .product-platform {
+        display: inline-block;
+        background: @color-fill-3;
+        height: 18px;
+        line-height: 14px;
+        color: #fff;
+        border-radius: 2px;
+        margin-right: 5px;
+        padding: 2px;
+      }
+    }
+  }
+}
+
+.block-product {
+  :global {
+    .item-company {
+      > div {
+        margin-top: 10px;
+      }
+      .product-item {
+        max-width: 62px;
+      }
+      .product-company {
+        max-width: 108px;
+      }
+    }
+  }
+}
+
+.product-detail {
+  border: 1px solid #e8e8e8;
+  border-bottom: none;
+  padding-bottom: 18px;
+  height: 372px;
+  :global {
+    .center-content {
+      // margin: 0 auto;
+      display: flex;
+      align-items: center;
+      margin-left: 15px;
+      width: 200px;
+    }
+    // 图片区域
+    .product-img {
+      text-align: center;
+      padding: 15px 14px 10px;
+    }
+
+    // 价格
+    .product-price {
+      margin-bottom: 10px;
+      color: @price-color;
+      .price {
+        font-size: 16px;
+      }
+    }
+
+    // 商品名称
+    .product-name {
+      font-size: 12px;
+      color: @color-text-1;
+      height: 36px;
+      text-align: left;
+      display: -webkit-box !important;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      line-height: 18px;
+      margin-bottom: 10px;
+      padding: 0 20px;
+      width: 228px;
+      .product-supplierCompany {
+        background: #eee;
+        border-radius: 2px;
+        display: inline-block;
+        margin-right: 5px;
+        height: 18px;
+        vertical-align: middle;
+        .cata-icon {
+          color: @color-text-3;
+          margin-top: -14px;
+          cursor: pointer;
+        }
+        .product-supplierCompanyName {
+          padding: 0 5px;
+          display: inline-block;
+          max-width: 160px;
+        }
+      }
+      .stock-label {
+        display: inline-block;
+        font-size: 12px;
+        padding: 0 4px;
+        height: 18px;
+        text-align: center;
+        line-height: 18px;
+        border-radius: 2px;
+        margin-right: 8px;
+      }
+      .stock-in {
+        background: #eee;
+        color: #333;
+      }
+
+      .stock-no {
+        background: #eee;
+        color: #333;
+      }
+
+      .stock-subscribe {
+        background: rgba(200, 143, 8, 0.5);
+        border: 1px solid rgba(200, 143, 8, 0.5);
+        border-radius: 2px;
+        color: #fff;
+      }
+    }
+    .product-itemCode {
+      padding: 0 20px;
+      margin-bottom: 10px;
+      height: 18px;
+      color: @label-font-color;
+      > span {
+        display: inline-block;
+        width: 94px;
+      }
+      .buy-quality {
+        b {
+          color: @primary-color;
+        }
+      }
+      .buy-itemCode {
+        text-align: right;
+      }
+    }
+  }
+}
+
+// 底部样式
+.product-footer {
+  border: 1px solid #e8e8e8;
+  border-top: none;
+  border-left: none;
+  display: flex;
+  > div {
+    display: inline-block;
+  }
+}
+.compare-btn {
+  width: 65px;
+  text-align: center;
+  cursor: pointer;
+  height: 36px;
+  vertical-align: top;
+  line-height: 36px;
+  color: @content-font-color;
+}
+.compare-disable-btn {
+  cursor: not-allowed;
+  background: #eee;
+}
+.input-number-box {
+  position: relative;
+  width: 65px;
+  border-left: 1px solid #e8e8e8;
+  border-right: 1px solid #e8e8e8;
+  input {
+    text-align: center;
+    width: 45px;
+    font-size: 14px;
+    border: none !important;
+    height: 36px;
+  }
+  :global {
+    .btn-box {
+      position: absolute;
+      right: 0;
+      top: 0;
+      .count-btn {
+        width: 18px;
+        height: 18px;
+        border-left: 1px solid #e8e8e8;
+        text-align: center;
+        cursor: pointer;
+        visibility: hidden;
+      }
+    }
+    .btn-box.disable {
+      background: #eee;
+    }
+  }
+  &:hover {
+    :global {
+      .count-btn {
+        visibility: visible;
+      }
+    }
+  }
+}
+
+.line-product {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 22px 25px;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 2px;
+  > div {
+    display: inline-block;
+    vertical-align: top;
+  }
+  :global {
+    // .product-label {
+    //   margin-left: 5px;
+    // }
+    .line-product-name-box {
+      margin-left: 41px;
+      // margin-right: 85px;
+      // width: 401px;
+      // 商品名称
+      .line-product-name {
+        font-size: 12px;
+        color: @color-text-1;
+        height: 36px;
+        text-align: left;
+        display: -webkit-box !important;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        line-height: 18px;
+        margin-bottom: 5px;
+        width: 360px;
+        .product-supplierCompany {
+          background: #eee;
+          border-radius: 2px;
+          display: inline-block;
+          margin-right: 5px;
+          height: 18px;
+          vertical-align: middle;
+          .cata-icon {
+            color: @color-text-3;
+            margin-top: -14px;
+            cursor: pointer;
+          }
+          .product-supplierCompanyName {
+            padding: 0 5px;
+            display: inline-block;
+            max-width: 160px;
+          }
+        }
+        .stock-label {
+          display: inline-block;
+          font-size: 12px;
+          padding: 0 4px;
+          height: 18px;
+          text-align: center;
+          line-height: 18px;
+          border-radius: 2px;
+          margin-right: 8px;
+        }
+        .stock-in {
+          background: #eee;
+          color: #333;
+        }
+
+        .stock-no {
+          background: #eee;
+          color: #333;
+        }
+
+        .stock-subscribe {
+          background: rgba(200, 143, 8, 0.5);
+          border: 1px solid rgba(200, 143, 8, 0.5);
+          border-radius: 2px;
+          color: #fff;
+        }
+      }
+      .product-itemCode {
+        margin-bottom: 5px;
+        > span {
+          display: inline-block;
+        }
+        .buy-quality {
+          margin-right: 20px;
+          b {
+            color: @primary-color;
+          }
+        }
+        .buy-itemCode {
+          text-align: right;
+        }
+      }
+      .tags-box {
+        display: flex;
+      }
+    }
+    .line-product-price {
+      float: right;
+      text-align: right;
+      margin-right: 85px;
+      .price {
+        font-size: 16px;
+      }
+    }
+    .line-product-btnCon {
+      float: right;
+      width: 120px;
+      height: 60px;
+      .line-product-btns {
+        float: right;
+        .btns-item,
+        button {
+          width: 120px;
+          span {
+            width: 100%;
+            text-align: left;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+    .line-product-count {
+      float: right;
+      width: 82px;
+      margin-right: 108px;
+    }
+  }
+}
+.line-product-noStock {
+  background: #f2f2f2;
+  border: 1px dashed @color-fill-5;
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="361px" height="16px" viewBox="0 0 361 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>驳回-2@3x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="212" y="9" width="100" height="1"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="100" height="1" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <rect id="path-3" x="40" y="9" width="100" height="1"></rect>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="100" height="1" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+    </defs>
+    <g id="版本回收" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="驳回-2" transform="translate(-24.000000, -2.000000)">
+            <g transform="translate(24.000000, 1.000000)">
+                <use id="Divider" stroke="#6ABF36" mask="url(#mask-2)" stroke-width="2" stroke-dasharray="7" transform="translate(262.000000, 9.500000) scale(1, -1) translate(-262.000000, -9.500000) " xlink:href="#path-1"></use>
+                <use id="Divider-Copy-3" stroke="#6ABF36" mask="url(#mask-4)" stroke-width="2" stroke-dasharray="7" transform="translate(90.000000, 9.500000) scale(1, -1) translate(-90.000000, -9.500000) " xlink:href="#path-3"></use>
+                <circle id="Oval-2-Copy-29" stroke="#6ABF36" stroke-width="2" fill="#FFFFFF" cx="4" cy="9" r="3"></circle>
+                <circle id="Oval-2-Copy-30" stroke="#6ABF36" stroke-width="2" fill="#FFFFFF" cx="176" cy="9" r="3"></circle>
+                <g id="Group" transform="translate(344.000000, 0.000000)">
+                    <rect id="Rectangle" fill="#000000" opacity="0" x="0" y="0" width="18" height="18"></rect>
+                    <path d="M8.875,1 C4.52617188,1 1,4.52617188 1,8.875 C1,13.2238281 4.52617188,16.75 8.875,16.75 C13.2238281,16.75 16.75,13.2238281 16.75,8.875 C16.75,4.52617188 13.2238281,1 8.875,1 Z" id="Shape" fill="#8C8C8C"></path>
+                    <path d="M12,6.14268728 C12,6.06420927 11.9377163,6 11.8615917,6 L10.7197232,6.00535077 L9,8.11890606 L7.28200692,6.00713436 L6.1384083,6.00178359 C6.06228374,6.00178359 6,6.06420927 6,6.14447087 C6,6.1783591 6.01211073,6.21046373 6.03287197,6.2372176 L8.28373702,9.00178359 L6.03287197,11.764566 C6.01211073,11.7913199 6,11.8234245 6,11.8573127 C6,11.9357907 6.06228374,12 6.1384083,12 L7.28200692,11.9946492 L9,9.88109394 L10.7179931,11.9928656 L11.8598616,11.9982164 C11.9359862,11.9982164 11.9982699,11.9357907 11.9982699,11.8555291 C11.9982699,11.8216409 11.9861592,11.7895363 11.9653979,11.7627824 L9.71799308,9 L11.9688581,6.23543401 C11.9896194,6.21046373 12,6.17657551 12,6.14268728 Z" id="Path" fill="#FFFFFF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

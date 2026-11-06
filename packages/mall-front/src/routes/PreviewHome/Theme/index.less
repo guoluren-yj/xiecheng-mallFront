@@ -1,0 +1,86 @@
+.them {
+  background: #fff;
+  margin-top: -12px;
+  position: relative;
+  &:hover {
+    :global {
+      .jump-btn {
+        display: block;
+      }
+    }
+  }
+  .right-info {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 190px;
+    z-index: 500;
+  }
+  :global {
+    .swiper {
+      height: 400px;
+      position: relative;
+    }
+    .swiper-slide {
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      padding: 0 190px;
+      height: 400px;
+      visibility: hidden;
+      img {
+        position: relative;
+      }
+    }
+    .swiper-slide.swiper-slide-active {
+      visibility: visible;
+    }
+    .bannerImage {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+    }
+    .swiper-pagination-bullets {
+      text-align: center;
+      padding: 0 190px 8px 190px;
+    }
+    .swiper-pagination-bullet {
+      background: rgba(102, 102, 102, 0.5);
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      border-radius: 4px;
+      width: 8px;
+      height: 8px;
+      opacity: 1;
+    }
+    .swiper-pagination-bullet-active {
+      width: 30px;
+      height: 8px;
+      background: @primary-color;
+      border-radius: 4px;
+      border: none;
+    }
+    .jump-btn {
+      position: absolute;
+      top: 200px;
+      z-index: 1;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: @color-fill-2;
+      display: none;
+      cursor: pointer;
+      > i {
+        color: #fff;
+        text-align: center;
+        line-height: 40px;
+        display: block;
+      }
+    }
+    .jump-btn.left {
+      left: 215px;
+    }
+    .jump-btn.right {
+      right: 215px;
+    }
+  }
+}

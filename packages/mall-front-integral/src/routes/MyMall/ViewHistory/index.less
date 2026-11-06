@@ -1,0 +1,90 @@
+.history-container {
+  position: relative;
+  :global {
+    p.footer-info {
+      text-align: center;
+      margin-top: 24px;
+    }
+    .history-container-title {
+      overflow: hidden;
+      margin-bottom: 20px;
+      line-height: 32px;
+      .container-title {
+        font-size: 16px;
+        font-weight: 600;
+        color: @color-text-1;
+      }
+      .container-btn {
+        float: right;
+        color: @color-text-1;
+        text-align: center;
+        width: 86px;
+        height: 32px;
+        line-height: 30px;
+        font-size: 14px;
+        background-image: linear-gradient(180deg, #fff 0%, #f4f4f5 100%);
+        border: 1px solid #ccc;
+        border-radius: 2px;
+        font-weight: 600;
+        cursor: pointer;
+        &:hover {
+          background-color: #eee;
+        }
+      }
+    }
+    .history-content {
+      margin-bottom: 20px;
+      .history-header {
+        display: flex;
+        margin-bottom: 10px;
+        .history-header-time {
+          font-size: 16px;
+          color: @color-text-1;
+          // margin-left: 7px;
+          min-width: 200px;
+          font-weight: 600;
+          .history-header-time-today {
+            color: @color-text-1;
+            // margin-right: 10px;
+            font-weight: 600;
+          }
+          .history-header-time-delete {
+            margin-left: 8px;
+            font-size: 12px;
+            color: @primary-color;
+          }
+        }
+        .history-header-divider {
+          margin: auto;
+          height: 1px;
+          position: relative;
+          top: 7px;
+        }
+      }
+    }
+
+    .history-list-info {
+      display: flex;
+      flex-wrap: wrap;
+      .product-wrap {
+        margin-right: 8px;
+        margin-bottom: 8px;
+        &:nth-child(4n) {
+          margin-right: 0;
+        }
+      }
+    }
+    .empty-product {
+      background: url(../../../assets/images/illu_common_nodata_default.svg) no-repeat center;
+      background-size: 19%;
+      height: 300px;
+      text-align: center;
+      div {
+        color: #999;
+        position: relative;
+        top: 225px;
+        font-size: 16px;
+      }
+    }
+  }
+}

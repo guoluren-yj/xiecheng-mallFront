@@ -1,0 +1,145 @@
+.account-info {
+  :global {
+    border: 1px solid #eee;
+    .ant-btn {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    h2 {
+      height: 50px;
+      line-height: 50px;
+      font-weight: bold;
+      border-bottom: 1px solid #eee;
+      padding-left: 24px;
+      font-size: 16px;
+    }
+
+    .account-container {
+      padding: 0 24px;
+      display: flex;
+      min-height: 230px;
+      ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        li {
+          width: 100%;
+          height: 77px;
+          line-height: 77px;
+          font-size: 14px;
+          &:last-child {
+            border: none;
+          }
+
+          .list-container {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px dashed #eee;
+
+            .list-info {
+              display: flex;
+
+              .list-img {
+                height: 77px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 20px;
+
+                .icon {
+                  width: 30px;
+                  height: 30px;
+                  background-repeat: no-repeat;
+                  background-size: 100%;
+                }
+                .icon-pwd {
+                  background-image: url(../../../assets/images/myMall/update-pwd.png);
+                }
+              }
+
+              .list-p {
+                width: 100px;
+                color: #333;
+              }
+
+              .list-displayText {
+                width: 200px;
+                color: #999;
+              }
+            }
+
+            .list-button {
+              button {
+                width: 78px;
+                height: 28px;
+                padding: 0;
+                &:hover {
+                  background: @primary-color !important;
+                  color: #fff !important;
+                }
+              }
+            }
+          }
+        }
+        .list-contianer-detail {
+          padding-top: 20px;
+          width: 100%;
+          display: flex;
+          border-bottom: 1px dashed #eee;
+          font-size: 14px;
+          input {
+            color: #bcbcbc;
+            box-shadow: none;
+            &::placeholder {
+              color: #bcbcbc;
+            }
+          }
+          .phone-capcha {
+            display: flex;
+            border: 1px #eee solid;
+            border-radius: 2px;
+            input {
+              border: none;
+              &::placeholder {
+                color: #bcbcbc;
+              }
+            }
+            button {
+              width: 120px;
+              background: #fff;
+              color: #999;
+              border-left: 1px solid #eee;
+              border-radius: 0;
+              &:hover {
+                color: @primary-color;
+              }
+            }
+          }
+          .ant-btn-cancel {
+            color: #999;
+          }
+        }
+
+        .no-border {
+          border: none;
+        }
+      }
+    }
+  }
+}
+:global {
+  .ant-input-suffix {
+    border-radius: 0 1px 1px 0;
+    .ant-btn-primary {
+      color: #999;
+      background-color: #eee;
+      border: 1px solid #d9d9d9;
+      span {
+        padding: 0 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.menu-bar-wrapper {
+  height: 40px;
+  margin-top: 28px;
+  border-bottom: 2px solid @primary-color;
+  :global {
+    .menu-bar {
+      height: 40px;
+      display: flex;
+      .assort {
+        display: inline-block;
+        width: 190px;
+        background: @primary-color;
+      }
+      .quick-link {
+        margin: 0 15px;
+        font-size: 14px;
+        line-height: 40px;
+        position: relative;
+      }
+      :not(:last-child).quick-link {
+        &::before {
+          content: '';
+          position: absolute;
+          height: 12px;
+          width: 1px;
+          top: 14px;
+          right: -15px;
+          background-color: @color-fill-5;
+        }
+      }
+    }
+  }
+}
+.menu-fix {
+  display: none;
+}

@@ -1,0 +1,217 @@
+.product-wraper {
+  width: 230px;
+  padding: 14px;
+  padding-bottom: 4px;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  :global {
+    .width-half {
+      width: 95px;
+    }
+    .width-one-half {
+      width: 140px;
+    }
+    .width-half-half {
+      width: 55px;
+    }
+    .margin-5 {
+      margin-right: 5px;
+    }
+    .text-right {
+      text-align: right;
+    }
+    .width-max {
+      width: 200px;
+    }
+    .product-img {
+      position: relative;
+      margin-bottom: 10px;
+      .product-img-tag {
+        position: absolute;
+        display: flex;
+        .img-tag-desc {
+          padding-left: 10px;
+          font-weight: 600;
+          font-size: 12px;
+          height: 28px;
+          line-height: 28px;
+          color: #fff;
+          max-width: 152px;
+        }
+        .img-tag-left,
+        .img-tag-right {
+          height: 28px;
+          vertical-align: top;
+          img {
+            height: 100%;
+          }
+        }
+      }
+    }
+    // 居中
+    .tag-flag-1 {
+      .product-img-tag {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .img-tag-left {
+        margin-right: -1px;
+      }
+      .img-tag-right {
+        margin-left: -1px;
+      }
+    }
+    // 底部
+    .tag-flag-2 {
+      .product-img-tag {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        .img-tag-desc {
+          width: 100%;
+          max-width: none;
+          text-align: center;
+        }
+      }
+    }
+
+    .product-price {
+      font-size: 16px;
+      color: @price-color;
+      letter-spacing: 0;
+      line-height: 24px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      .product-uom {
+        font-size: 12px;
+        font-weight: normal;
+      }
+    }
+    .product-name {
+      font-size: 12px;
+      color: @color-text-1;
+      height: 36px;
+      text-align: left;
+      display: -webkit-box !important;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      line-height: 18px;
+      margin-bottom: 10px;
+      &-topname {
+        display: inline-block;
+      }
+      .topname-bg {
+        background: #eee;
+        padding: 0 5px;
+        margin-right: 5px;
+      }
+      .product-supplierCompany {
+        background: #eee;
+        border-radius: 2px;
+        display: inline-block;
+        margin-right: 5px;
+        height: 18px;
+        vertical-align: middle;
+        .cata-icon {
+          color: @color-text-3;
+          margin-top: -14px;
+          cursor: pointer;
+        }
+        .product-supplierCompanyName {
+          padding: 0 5px;
+          display: inline-block;
+          max-width: 160px;
+        }
+      }
+      .stock-label {
+        display: inline-block;
+        font-size: 12px;
+        padding: 0 4px;
+        height: 18px;
+        text-align: center;
+        line-height: 18px;
+        border-radius: 2px;
+        margin-right: 8px;
+      }
+      .stock-in {
+        background: #eee;
+        color: #333;
+      }
+
+      .stock-no {
+        background: #eee;
+        color: #333;
+      }
+
+      .stock-subscribe {
+        background: rgba(200, 143, 8, 0.5);
+        border: 1px solid rgba(200, 143, 8, 0.5);
+        border-radius: 2px;
+        color: #fff;
+      }
+    }
+    .product-other-info {
+      width: 200px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      &-item {
+        color: @color-text-2;
+        height: 20px;
+        margin-bottom: 10px;
+      }
+    }
+    .product-label {
+      height: 18px;
+      overflow: hidden;
+      vertical-align: middle;
+      width: auto;
+      display: inline-block;
+    }
+    .product-other-info.ishome {
+      height: 18px;
+      overflow: hidden;
+    }
+    .buy-quality {
+      b {
+        color: @primary-color;
+      }
+    }
+    .product-ad {
+      border: 1px solid @color-fill-6;
+      border-radius: 2px;
+      padding: 0 5px;
+      color: @color-text-3;
+    }
+  }
+}
+
+.pre-product-card {
+  width: 230px;
+  height: 338px;
+  padding: 15px;
+  border: 1px solid #e8e8e8;
+  :global {
+    .pre-product-img {
+      width: 200px;
+      height: 200px;
+      background: #f5f5f5;
+      margin-bottom: 48px;
+    }
+    .pre-product-name {
+      width: 200px;
+      height: 18px;
+      background: #f5f5f5;
+      margin-bottom: 15px;
+    }
+    .pre-product-supplier {
+      width: 200px;
+      height: 18px;
+      background: #f5f5f5;
+    }
+  }
+}

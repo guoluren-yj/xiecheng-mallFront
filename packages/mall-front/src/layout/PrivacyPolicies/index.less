@@ -1,0 +1,116 @@
+.privacyPolicies {
+  border-radius: 5px;
+  border-top: none;
+  :global {
+    a {
+      color: @primary-color;
+    }
+    .c7n-pro-modal-content {
+      border-radius: 5px;
+
+      .c7n-pro-modal-header {
+        padding: 0;
+        border-radius: 5px;
+        background-color: currentColor;
+      }
+
+      .c7n-pro-modal-body {
+        padding: 0 30px;
+        position: relative;
+        width: 100%;
+        top: -20px;
+        overflow: hidden;
+      }
+
+      .c7n-pro-modal-footer {
+        border: none;
+      }
+    }
+
+    .privacy-policies-title {
+      height: 220px;
+      padding-top: 32px;
+      background-image: url('../../assets/images/privacyPoliciesModal.png');
+      background-size: 100%;
+      .title {
+        text-align: center;
+        font-size: 26px;
+        color: #fff;
+      }
+      .content {
+        padding: 0 30px;
+        margin-top: 27px;
+        color: #fff;
+        > p {
+          margin-bottom: 12px;
+          line-height: 20px;
+        }
+      }
+    }
+
+    .privacy-policies-content {
+      height: calc(100vh - 4.6rem);
+      background-color: #f5f7fa;
+      border-radius: 5px;
+      padding: 20px;
+      overflow: auto;
+    }
+  }
+}
+.questionnaire-survey {
+  width: 600px;
+  :global {
+    .c7n-pro-modal-content {
+      background-image: url(../../assets/images/SurveyBgSvg.svg);
+    }
+    .c7n-pro-modal-body {
+      padding: 50px 30px 0;
+      display: flex; //获取内部高度
+      .svg-wrapper {
+        text-align: center;
+        margin-bottom: 25px;
+      }
+      .title-wrapper {
+        position: absolute;
+        width: 600px;
+        height: 114px;
+        top: 0;
+        left: 30px;
+        display: flex;
+        align-items: center;
+      }
+      h2 {
+        width: 100%;
+        font-size: 24px;
+        line-height: 36px;
+        font-weight: 600;
+        color: @primary-color;
+        margin-bottom: 25px;
+        // max-width: 400px;
+        text-align: center;
+      }
+      .content-text {
+        color: @color-text-1;
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: 400;
+        div {
+          height: 100%;
+          overflow: auto;
+        }
+      }
+      .footer-button {
+        position: absolute;
+        bottom: 30px;
+        right: 30px;
+        display: flex;
+        .c7n-pro-btn + .c7n-pro-btn:not(.c7n-pro-btn-block) {
+          margin-left: 0.1rem;
+        }
+      }
+    }
+    .c7n-pro-modal-footer {
+      padding: 25px 30px 30px;
+    }
+  }
+}

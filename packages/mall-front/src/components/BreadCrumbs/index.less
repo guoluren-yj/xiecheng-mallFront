@@ -1,0 +1,92 @@
+.more-breadcrumbs {
+  padding: 20px;
+}
+
+.breadcrumbs-wrapper,
+.more-breadcrumbs {
+  b {
+    color: @primary-color;
+  }
+
+  :global {
+    .c7n-breadcrumb-overlay-link {
+      padding: 0;
+      display: flex;
+      align-items: center;
+      .last-catalog {
+        color: @color-text-1;
+      }
+    }
+
+    .c7n-breadcrumb-overlay-border {
+      background: transparent;
+      box-shadow: none;
+      a {
+        color: @primary-color !important;
+      }
+    }
+
+    .c7n-breadcrumb-separator {
+      margin: 0 10px;
+    }
+
+    .c7n-breadcrumb-link {
+      display: inline-block;
+      line-height: 24px;
+      max-width: 196px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      font-size: 14px;
+      .icon-expand_more {
+        position: relative;
+        top: -0.5px;
+        font-size: 18px;
+        margin-left: 5px;
+      }
+      a {
+        display: inline-block;
+      }
+      &:hover {
+        color: @primary-color;
+        a {
+          color: @primary-color;
+        }
+      }
+    }
+
+    .c7n-breadcrumb {
+      display: flex;
+      > span {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    .h-breadcrumbs {
+      padding: 16px 0;
+      display: flex;
+      align-items: center;
+
+      .c7n-breadcrumb {
+        font-size: 14px;
+        flex: 1;
+      }
+
+      .breadCrumbs {
+        display: inline-block;
+        vertical-align: middle;
+        color: #999;
+      }
+
+      .breadCrumbs span:not(:last-child) {
+        &:hover {
+          color: @primary-color !important;
+        }
+      }
+    }
+  }
+}
+.breadcrumbs-wrapper {
+  position: relative;
+}

@@ -1,0 +1,91 @@
+.order-detail-info {
+  width: 100%;
+  border-bottom: 1px solid #eaeaea;
+  display: flex;
+  padding: 20px;
+  :global {
+    .detail-info-grid {
+      flex: 1;
+      &:last-child {
+        border: none;
+      }
+      .grid-title {
+        width: 240px;
+        font-size: 14px;
+        color: @color-text-1;
+        font-weight: 500;
+        margin-bottom: 15px;
+      }
+      .flex-end-item {
+        align-items: flex-end;
+        .icon-help {
+          margin: 2px 0 0 5px;
+        }
+      }
+      .grid-row {
+        min-width: 240px;
+        margin-bottom: 10px;
+        position: relative;
+        display: flex;
+        // span {
+        //   display: inline-block;
+        // }
+        .grid-tag {
+          width: 85px;
+          color: #999;
+          vertical-align: top;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          display: flex;
+          span {
+            max-width: 74px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+        }
+        .grid-tag.require {
+          &::after {
+            content: '*';
+            color: @danger-color;
+            position: absolute;
+            top: 0;
+            left: -10px;
+          }
+        }
+        .grid-content {
+          color: #151515;
+          width: 190px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          input {
+            height: 28px;
+          }
+          .c7n-pro-field-wrapper {
+            padding: 0;
+          }
+          .c7n-pro-attachment-wrapper {
+            height: 18px;
+            line-height: 18px;
+            .c7n-pro-btn-overflow-text {
+              height: 18px;
+            }
+          }
+        }
+        .address-content {
+          color: #151515;
+          width: 190px;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+          overflow: hidden;
+          word-wrap: break-word;
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

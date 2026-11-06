@@ -1,0 +1,46 @@
+.c7n-drop-select {
+  display: flex;
+  align-items: center;
+  :global {
+    .c7n-drop-text {
+      max-width: 160px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      color: #999;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 18px;
+      margin-right: 5px;
+    }
+    i {
+      font-size: 14px;
+      color: #999;
+    }
+  }
+}
+
+.c7n-drop-select-menu {
+  padding: 5px 0;
+  background-color: #fff;
+  overflow-y: auto;
+  max-height: 250px;
+  :global {
+    .c7n-drop-select-item {
+      min-width: 100px;
+      font-size: 12px;
+      color: #191919;
+      line-height: 32px;
+      font-weight: 400;
+      padding: 0 15px;
+      height: 32px;
+      cursor: pointer;
+      &:hover {
+        background-color: #f7f7f7;
+      }
+    }
+    .c7n-drop-select-item-active {
+      background-color: #f7f7f7;
+    }
+  }
+}

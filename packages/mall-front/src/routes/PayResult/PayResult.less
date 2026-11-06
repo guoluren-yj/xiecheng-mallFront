@@ -1,0 +1,104 @@
+:global {
+  .gb-wrapper,
+  .swal2-content {
+    .pay-result-container {
+      background: #fff;
+      .pay-result-list {
+        background-color: white;
+        max-width: 1226px;
+        margin: 0 auto;
+        font-size: 12px;
+        color: #333;
+        height: 100%;
+        padding: 4px 20px 20px 20px;
+        .result-list {
+          margin-top: 20px;
+          border: 1px solid #eaeaea;
+          border-radius: 2px;
+          padding: 30px 60px 30px 60px;
+          div {
+            display: inline-block;
+            p {
+              line-height: 16px;
+            }
+          }
+          .pay-result-icon {
+            width: 228px;
+            height: 165px;
+            background: url(../../assets/images/pay-result-success-icon.png);
+            background-size: 100% 100%;
+            background-position: center center;
+            margin-right: 60px;
+          }
+          .pay-result-info {
+            vertical-align: top;
+            position: relative;
+            top: 22px;
+            .result-info-desc {
+              font-size: 24px;
+              color: @primary-color;
+              font-weight: bold;
+            }
+            p {
+              font-size: 12px;
+              color: #999;
+              line-height: 20px;
+              margin-bottom: 10px;
+              span {
+                font-size: 12px;
+                color: #444;
+              }
+            }
+
+            .result-info-time {
+              margin-top: 20px;
+            }
+          }
+          // 金额部分
+          .pay-result-money {
+            float: right;
+            position: relative;
+            top: 23px;
+            p {
+              text-align: right;
+            }
+            .result-money-desc {
+              font-size: 20px;
+              color: #666;
+              margin-bottom: 20px;
+            }
+            .result-money-price {
+              font-size: 28px;
+              color: #fb3f49;
+              margin-bottom: 36px;
+              span {
+                font-weight: bold;
+              }
+            }
+            .result-money-operat {
+              a {
+                display: inline-block;
+                width: 100px;
+                height: 28px;
+                line-height: 28px;
+                border-radius: 2px;
+                text-align: center;
+                box-sizing: border-box;
+                border: 1px solid @primary-color;
+              }
+              a:nth-of-type(1) {
+                margin-right: 30px;
+                border-radius: 2px;
+                color: @primary-color;
+              }
+              a:nth-of-type(2) {
+                background: @primary-color;
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

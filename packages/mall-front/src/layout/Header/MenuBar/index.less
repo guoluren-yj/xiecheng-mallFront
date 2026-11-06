@@ -1,0 +1,51 @@
+.menu-bar-wrapper {
+  height: 40px;
+  margin-top: 28px;
+  border-bottom: 2px solid @primary-color;
+  :global {
+    .menu-bar.container {
+      height: 40px;
+      display: flex;
+      .assort {
+        display: inline-block;
+        width: 190px;
+        background: @primary-color;
+      }
+      .quick-link {
+        margin: 0 15px;
+        font-size: 14px;
+        line-height: 40px;
+        position: relative;
+      }
+      :not(:last-child).quick-link {
+        &::before {
+          content: '';
+          position: absolute;
+          height: 12px;
+          width: 1px;
+          top: 14px;
+          right: -15px;
+          background-color: @color-fill-5;
+        }
+      }
+      .activeLink {
+        position: relative;
+        &::after {
+          content: '';
+          position: absolute;
+          width: 0;
+          height: 0;
+          border-bottom: 5px solid @primary-color;
+          border-right: 6px solid transparent;
+          border-left: 6px solid transparent;
+          bottom: 2px;
+          left: 50%;
+          margin-left: -6px;
+        }
+      }
+    }
+  }
+}
+.menu-fix {
+  display: none;
+}

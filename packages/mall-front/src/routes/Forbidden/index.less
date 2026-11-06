@@ -1,0 +1,24 @@
+.container-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  :global {
+    .content {
+      > img {
+        display: block;
+        width: 1000px;
+        height: 450px;
+        margin-bottom: 60px;
+      }
+      > p {
+        text-align: center;
+        color: @color-text-1;
+        line-height: 24px;
+        font-weight: 400;
+        font-size: 24px;
+        width: 1000px;
+        word-break: break-word;
+      }
+    }
+  }
+}

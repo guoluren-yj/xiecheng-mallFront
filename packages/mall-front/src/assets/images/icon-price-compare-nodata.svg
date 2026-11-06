@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>暂无商品</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="60" height="60" rx="2"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="60" height="60" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <polygon id="path-3" points="12.0833333 7.08333334 7.08333334 7.08333334 7.08333334 12.0833333 5.41666666 12.0833333 5.41666666 7.08333334 0.41666666 7.08333334 0.41666666 5.41666666 5.41666666 5.41666666 5.41666666 0.41666666 7.08333334 0.41666666 7.08333334 5.41666666 12.0833333 5.41666666"></polygon>
+    </defs>
+    <g id="多语言样式优化" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="商城_搜索结果页_卡片式_比价栏" transform="translate(-918.000000, -1674.000000)">
+            <g id="编组-14" transform="translate(125.000000, 1588.000000)">
+                <g id="编组-13" transform="translate(0.000000, 42.000000)">
+                    <g id="暂无商品" transform="translate(793.000000, 44.000000)">
+                        <use id="Rectangle-3" stroke-opacity="0.26" stroke="#000000" mask="url(#mask-2)" stroke-width="2" fill="#F8F8F8" stroke-dasharray="3,3" xlink:href="#path-1"></use>
+                        <g id="add" transform="translate(20.000000, 20.000000)">
+                            <rect id="矩形" fill="#000000" fill-rule="nonzero" opacity="0" x="0" y="0" width="20" height="20"></rect>
+                            <g id="color" transform="translate(3.750000, 3.750000)">
+                                <mask id="mask-4" fill="white">
+                                    <use xlink:href="#path-3"></use>
+                                </mask>
+                                <g id="蒙版" fill-rule="nonzero"></g>
+                                <g id="编组" mask="url(#mask-4)" fill-opacity="0.25">
+                                    <g transform="translate(-3.750000, -3.750000)" id="color">
+                                        <rect id="矩形" fill="#000000" x="0" y="0" width="20" height="20"></rect>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

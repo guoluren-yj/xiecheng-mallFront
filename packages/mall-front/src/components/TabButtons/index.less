@@ -1,0 +1,44 @@
+.tab-buttons-warapper {
+  height: 32px;
+  :global {
+    .c7n-tabs-bar {
+      margin: 0;
+      border-bottom: none;
+      .c7n-tabs-ink-bar {
+        display: none;
+      }
+      .c7n-tabs-tab-arrow-show {
+        height: 32px;
+        line-height: 32px;
+        > span {
+          &::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+        }
+      }
+      .c7n-tabs-extra-content {
+        height: 32px;
+        line-height: 32px;
+      }
+
+      .c7n-tabs-nav-wrap {
+        padding: 0;
+        .c7n-tabs-tab {
+          height: 32px !important;
+          margin-right: 0;
+          &:hover {
+            .c7n-tabs-tab-count {
+              color: @primary-color;
+            }
+          }
+        }
+        .c7n-tabs-tab.c7n-tabs-tab-active {
+          background: @primary-bg-color;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

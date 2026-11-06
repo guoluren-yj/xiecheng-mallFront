@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="86px" height="86px" viewBox="0 0 86 86" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>ill_user-center_mail_normal</title>
+    <defs>
+        <path d="M52.056338,0 C54.2159624,0 56,1.78403756 56,3.94366197 L56,19.9812207 C56,22.1408451 54.2159624,24.0187793 52.056338,24.0187793 L7.98122066,24.0187793 L0,32 L0,3.94366197 C0,1.78403756 1.78403756,0 3.94366197,0 L52.056338,0 Z" id="path-1"></path>
+        <filter x="-9.8%" y="-10.9%" width="119.6%" height="134.4%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <circle id="path-3" cx="12" cy="12" r="12"></circle>
+        <filter x="-22.9%" y="-14.6%" width="145.8%" height="145.8%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="商城选买_个人中心_切换头像" transform="translate(-752.000000, -406.000000)">
+            <g id="编组-22" transform="translate(275.000000, 318.000000)">
+                <g id="编组-9" transform="translate(20.000000, 59.000000)">
+                    <g id="编组-5" transform="translate(340.000000, 0.000000)">
+                        <g id="ill_user-center_mail_normal" transform="translate(120.000000, 30.000000)">
+                            <rect id="矩形" x="0" y="0" width="80" height="80"></rect>
+                            <path d="M20.7356437,18.4 C18.1314281,18.4 16.0238613,21.0549793 16.0238613,24.3001383 L16,60.4998617 C16,63.7450207 18.1308732,66.4 20.7350888,66.4 L75.2649112,66.4 C77.8691268,66.4 80,63.7450207 80,60.4998617 L80,24.3001383 C80,21.0549793 77.8691268,18.4 75.2649112,18.4 L20.7356437,18.4 Z" id="路径" fill="#F5F5F5"></path>
+                            <path d="M20.7356437,18.4 C18.1314281,18.4 16.0238613,21.0549793 16.0238613,24.3001383 L16,60.4998617 C16,63.7450207 18.1308732,66.4 20.7350888,66.4 L75.2649112,66.4 C77.8691268,66.4 80,63.7450207 80,60.4998617 L80,24.3001383 C80,21.0549793 77.8691268,18.4 75.2649112,18.4 L20.7356437,18.4 Z M75.7465773,32.7302505 L48.0008324,44.5880517 L20.2550874,32.7302505 L20.2550874,27.0651886 L48.0008324,38.9229897 L75.7465773,27.0651886 L75.7465773,32.7302505 Z" id="形状" fill="#D9D9D9"></path>
+                            <g id="编组-19">
+                                <g id="路径" transform="translate(28.000000, 16.000000) scale(-1, 1) translate(-28.000000, -16.000000) ">
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                                </g>
+                                <path d="M33.6,15.2 C33.6,14.3163444 32.8836556,13.6 32,13.6 L9.6,13.6 C8.7163444,13.6 8,14.3163444 8,15.2 C8,16.0836556 8.7163444,16.8 9.6,16.8 L32,16.8 C32.8836556,16.8 33.6,16.0836556 33.6,15.2 Z" id="路径" fill="#FA6400" fill-rule="nonzero" transform="translate(20.800000, 15.200000) scale(-1, 1) translate(-20.800000, -15.200000) "></path>
+                                <path d="M8,8.8 C8,9.6836556 8.7163444,10.4 9.6,10.4 L46.4,10.4 C47.2836556,10.4 48,9.6836556 48,8.8 C48,7.9163444 47.2836556,7.2 46.4,7.2 L9.6,7.2 C8.7163444,7.2 8,7.9163444 8,8.8 Z" id="路径" fill="#FA6400" fill-rule="nonzero" transform="translate(28.000000, 8.800000) scale(-1, 1) translate(-28.000000, -8.800000) "></path>
+                            </g>
+                            <g id="编组-17" transform="translate(56.000000, 56.000000)">
+                                <g id="椭圆形">
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                                </g>
+                                <path d="M12,12 C13.768,12 15.2,10.568 15.2,8.8 C15.2,7.032 13.768,5.6 12,5.6 C10.232,5.6 8.8,7.032 8.8,8.8 C8.8,10.568 10.232,12 12,12 Z M12,13.6 C9.864,13.6 5.6,14.672 5.6,16.8 L5.6,18.4 L18.4,18.4 L18.4,16.8 C18.4,14.672 14.136,13.6 12,13.6 Z" id="形状" fill="#FA6400" fill-rule="nonzero"></path>
+                            </g>
+                            <path d="M9.2,31.2007324 L9.2,71.2 M19.2005599,73.6 L52.8,73.6" id="形状" stroke-opacity="0.5" stroke="#FA6400" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3.2,4.800000000000001"></path>
+                            <path d="M4.416,73.6 C4.416,72.5056 5.3056,71.616 6.4,71.616 L8.96,71.616 L8.96,70.4 L6.4,70.4 C4.6336,70.4 3.2,71.8336 3.2,73.6 C3.2,75.3664 4.6336,76.8 6.4,76.8 L8.96,76.8 L8.96,75.584 L6.4,75.584 C5.3056,75.584 4.416,74.6944 4.416,73.6 Z M7.04,74.24 L12.16,74.24 L12.16,72.96 L7.04,72.96 L7.04,74.24 Z M12.8,70.4 L10.24,70.4 L10.24,71.616 L12.8,71.616 C13.8944,71.616 14.784,72.5056 14.784,73.6 C14.784,74.6944 13.8944,75.584 12.8,75.584 L10.24,75.584 L10.24,76.8 L12.8,76.8 C14.5664,76.8 16,75.3664 16,73.6 C16,71.8336 14.5664,70.4 12.8,70.4 Z" id="形状" fill="#FA6400" fill-rule="nonzero"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

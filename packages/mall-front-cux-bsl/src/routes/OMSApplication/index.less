@@ -1,0 +1,84 @@
+.application-breadcrumb {
+  line-height: 22px;
+  padding: 10px 0;
+  font-size: 14px;
+  margin: 0 auto;
+}
+
+.detail-remark-content {
+  a {
+    color: @primary-color;
+  }
+}
+
+.application {
+  height: 100%;
+  position: relative;
+  :global {
+    .application-meun {
+      width: 190px;
+      padding: 20px 0;
+      margin-right: 10px;
+      background: #fff;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+
+      .meun-title {
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.54);
+        margin-bottom: 9px;
+        padding: 0 20px;
+      }
+      .meun-list {
+        li {
+          padding: 0 20px;
+          font-size: 14px;
+          color: rgba(0, 0, 0);
+          line-height: 40px;
+          cursor: pointer;
+        }
+        li.active {
+          color: @primary-color;
+          background: @primary-bg-color;
+        }
+      }
+    }
+    .application-content {
+      margin-left: 200px;
+      .application-content-warning {
+        padding: 9px 20px;
+        background: @warning-bg-color;
+        color: @warning-color;
+        font-size: 14px;
+        line-height: 22px;
+        .remark-btn {
+          float: right;
+          color: @primary-color;
+          cursor: pointer;
+        }
+      }
+      .application-content-info {
+        padding: 20px;
+        background-color: #fff;
+        .addPurchase-apply-title {
+          font-size: 14px;
+          color: rgba(0, 0, 0);
+          line-height: 22px;
+          margin-bottom: 10px;
+          font-weight: 500;
+        }
+        .addPurchase-apply-footer {
+          overflow: hidden;
+          button {
+            float: right;
+            margin-right: 15px;
+          }
+          button:first-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+}

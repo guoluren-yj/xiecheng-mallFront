@@ -1,0 +1,51 @@
+.content {
+  > div {
+    display: inline-block;
+  }
+  :global {
+    .image-btn {
+      position: relative;
+      top: -25px;
+      cursor: pointer;
+      > i {
+        font-size: 14px;
+        font-weight: 700;
+      }
+    }
+    .comment-content {
+      width: 144px;
+      margin-right: 19px;
+      .swiper-slide {
+        width: 64px !important;
+        position: relative;
+        .cover {
+          position: absolute;
+          width: 64px;
+          height: 100%;
+          background: @color-fill-3;
+          top: 0;
+          left: 0;
+          padding: 12px 0;
+          display: none;
+          p {
+            color: #fff;
+            text-align: center;
+          }
+          p:nth-of-type(2) {
+            cursor: pointer;
+          }
+        }
+        &:hover {
+          .cover {
+            display: block;
+          }
+        }
+      }
+    }
+    .swiper-button-disabled {
+      i {
+        color: #999;
+      }
+    }
+  }
+}

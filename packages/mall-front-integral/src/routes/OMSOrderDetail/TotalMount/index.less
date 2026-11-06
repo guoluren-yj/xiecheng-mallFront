@@ -1,0 +1,29 @@
+.mount-content {
+  padding-right: 15px;
+  display: flex;
+  flex-direction: row-reverse;
+  text-align: right;
+  color: @color-text-2;
+  margin-top: 15px;
+  :global {
+    .mount-price {
+      min-width: 140px;
+      color: @color-text-2;
+      margin-left: 5px;
+      .order-final-price {
+        font-size: 16px;
+        color: @primary-color;
+      }
+    }
+    .mount-price,
+    .mount-label {
+      > div {
+        line-height: 24px;
+      }
+    }
+    .order-price-toatl,
+    .order-freight-total {
+      margin-bottom: 5px;
+    }
+  }
+}

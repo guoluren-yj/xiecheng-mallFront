@@ -1,0 +1,142 @@
+module.exports = [
+  {
+    catalogId: 2,
+    catalogLevel: 1,
+    catalogName: '数字内容',
+    children: [
+      {
+        catalogId: 58,
+        catalogLevel: 2,
+        catalogName: '影视原著',
+        orderSeq: 1,
+        parentCatalogId: 2,
+      },
+      {
+        catalogId: 115,
+        catalogLevel: 2,
+        catalogName: '小说',
+        orderSeq: 1,
+        parentCatalogId: 2,
+      },
+      {
+        catalogId: 145,
+        catalogLevel: 2,
+        catalogName: '职场进阶',
+        orderSeq: 1,
+        parentCatalogId: 2,
+      },
+    ],
+  },
+  {
+    catalogId: 3,
+    catalogLevel: 1,
+    catalogName: '手机通讯',
+    children: [
+      {
+        catalogId: 58,
+        catalogLevel: 2,
+        catalogName: '手机',
+        orderSeq: 1,
+        parentCatalogId: 3,
+      },
+      {
+        catalogId: 115,
+        catalogLevel: 2,
+        catalogName: '运营商',
+        orderSeq: 1,
+        parentCatalogId: 3,
+      },
+      {
+        catalogId: 145,
+        catalogLevel: 2,
+        catalogName: '手机配件',
+        orderSeq: 1,
+        parentCatalogId: 3,
+      },
+    ],
+  },
+  {
+    catalogId: 4,
+    catalogLevel: 1,
+    catalogName: '邮币',
+    children: [
+      {
+        catalogId: 58,
+        catalogLevel: 2,
+        catalogName: '钱币',
+        orderSeq: 1,
+        parentCatalogId: 4,
+      },
+      {
+        catalogId: 115,
+        catalogLevel: 2,
+        catalogName: '邮票',
+        orderSeq: 1,
+        parentCatalogId: 4,
+      },
+      {
+        catalogId: 145,
+        catalogLevel: 2,
+        catalogName: '邮资封片',
+        orderSeq: 1,
+        parentCatalogId: 4,
+      },
+    ],
+  },
+  {
+    catalogId: 5,
+    catalogLevel: 1,
+    catalogName: 'IP',
+    children: [
+      {
+        catalogId: 58,
+        catalogLevel: 2,
+        catalogName: '名人明星',
+        orderSeq: 1,
+        parentCatalogId: 5,
+      },
+      {
+        catalogId: 115,
+        catalogLevel: 2,
+        catalogName: '社交媒体',
+        orderSeq: 1,
+        parentCatalogId: 5,
+      },
+      {
+        catalogId: 145,
+        catalogLevel: 2,
+        catalogName: '影音综艺',
+        orderSeq: 1,
+        parentCatalogId: 5,
+      },
+    ],
+  },
+  {
+    catalogId: 6,
+    catalogLevel: 1,
+    catalogName: '图书',
+    children: [
+      {
+        catalogId: 58,
+        catalogLevel: 2,
+        catalogName: '传记',
+        orderSeq: 1,
+        parentCatalogId: 6,
+      },
+      {
+        catalogId: 115,
+        catalogLevel: 2,
+        catalogName: '文学',
+        orderSeq: 1,
+        parentCatalogId: 6,
+      },
+      {
+        catalogId: 145,
+        catalogLevel: 2,
+        catalogName: '青春文学',
+        orderSeq: 1,
+        parentCatalogId: 6,
+      },
+    ],
+  },
+];

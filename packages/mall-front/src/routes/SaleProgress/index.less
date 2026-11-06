@@ -1,0 +1,564 @@
+.sale-status-container {
+  max-width: 1190px;
+  color: #333;
+  margin: 0 auto;
+  height: 100%;
+  :global {
+    .order-detail-breadcrumb {
+      line-height: 22px;
+      padding: 10px 0;
+      width: 1190px;
+      margin: 0 auto;
+      font-size: 14px;
+    }
+    .after-sale-body {
+      background-color: #fff;
+      border: 1px solid #eaeaea;
+      padding: 20px;
+      .after-sale-steps {
+        margin-bottom: 20px;
+        .c7n-steps-item-finish,
+        .c7n-steps-item-process {
+          .c7n-steps-item-icon {
+            background-color: #47b881;
+          }
+        }
+        .c7n-steps-item-finish {
+          .c7n-steps-item-title::after {
+            background-color: #47b881;
+          }
+        }
+      }
+      .goods-info-content {
+        width: 100%;
+        // height: 170px;
+        .goods-title {
+          width: 100%;
+          height: 38px;
+          line-height: 38px;
+          padding-left: 20px;
+          background: rgba(0, 0, 0, 0.03);
+          border-bottom: 1px solid #eaeaea;
+        }
+        .goods-info-box {
+          display: flex;
+          width: 100%;
+          // height: 200px;
+          padding: 20px;
+          align-items: center;
+          .goods-image {
+            display: inline-block;
+          }
+          .goods-details {
+            margin-left: 20px;
+            width: 600px;
+            height: 70px;
+            .goods-detail {
+              width: 500px;
+              display: -webkit-box;
+              -webkit-box-orient: vertical;
+              -webkit-line-clamp: 2;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              font-size: 14px;
+              color: @color-text-1;
+              line-height: 22px;
+              font-weight: 500;
+            }
+            .goods-code {
+              margin-top: 10px;
+              color: @color-text-2;
+              .after-sale-quantity {
+                padding: 0 20px;
+              }
+            }
+          }
+          .sale-after-handle {
+            text-align: right;
+            width: 250px;
+            flex: 1;
+            .sale-hint {
+              margin-top: 10px;
+              color: @color-text-2;
+            }
+            .logistics-info {
+              display: flex;
+              justify-content: flex-end;
+              button {
+                margin: 0 5px;
+              }
+            }
+          }
+        }
+      }
+      .goods-info-list {
+        background-color: white;
+        border: 1px solid #eaeaea;
+        border-bottom: none;
+        .after-num-title {
+          width: 100%;
+          height: 40px;
+          padding: 0 24px;
+          line-height: 40px;
+          border-bottom: 1px solid #eaeaea;
+          background-color: #f5f5f5;
+          p {
+            display: inline-block;
+          }
+          .after-num {
+            width: 260px;
+            margin-right: 24px;
+          }
+        }
+        .product-list {
+          display: flex;
+          justify-content: space-between;
+          height: 32px;
+          margin: 0 24px;
+          line-height: 32px;
+          border-bottom: 1px dashed #eaeaea;
+        }
+        .product-info {
+          display: flex;
+          padding: 24px;
+          justify-content: space-between;
+          li {
+            font-size: 14px;
+          }
+          .submit-btn {
+            color: @primary-color;
+            border-color: @primary-color;
+          }
+          .confirm-btn {
+            color: #6abf36;
+            border-color: #6abf36;
+          }
+        }
+        .product-list,
+        .product-info {
+          li {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+        }
+      }
+
+      .warmPrompt {
+        margin-top: 16px;
+        color: #999;
+        b {
+          color: @primary-color;
+        }
+      }
+      .sale-service-body {
+        border-right: 1px solid #eaeaea;
+        .sale-service {
+          width: 780px;
+          .contact-info-title {
+            font-size: 14px;
+            color: @color-text-1;
+            line-height: 22px;
+            font-weight: 500;
+            margin: 20px 0 10px 0;
+            &::before {
+              content: '';
+              display: inline-block;
+              width: 2px;
+              height: 12px;
+              background: #f53;
+              margin-right: 5px;
+            }
+          }
+        }
+      }
+      .sale-process {
+        flex: 1;
+        .sale-process-content {
+          display: flex;
+        }
+        .sale-process-steps-date {
+          flex: 1;
+          text-align: right;
+          padding-right: 10px;
+          color: @color-text-1;
+          margin-top: -6px;
+          .steps-date-item {
+            height: 56px;
+            div {
+              line-height: 18px;
+            }
+            .steps-date-title {
+              margin-bottom: 5px;
+            }
+          }
+          .step-reject {
+            height: 77px;
+          }
+          // .steps-date-item:first-child {
+          //   color: @color-text-1;
+          // }
+        }
+        .sale-process-steps {
+          width: 240px;
+          .sale-process-operatedRemark {
+            font-size: 12px;
+            line-height: 18px;
+            margin-bottom: 5px;
+          }
+          .sale-process-description {
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+          }
+          .c7n-timeline-item {
+            padding-bottom: 15px;
+          }
+          .c7n-steps-item-icon {
+            width: 10px;
+            height: 10px;
+            margin-right: 10px;
+            background-color: #fff;
+          }
+          .c7n-steps-item-title {
+            margin-bottom: 5px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+          }
+          .c7n-steps-item-description {
+            padding-bottom: 15px;
+          }
+          .c7n-steps-item-tail {
+            left: -0.08rem;
+          }
+          .c7n-steps-icon {
+            top: 0.01rem;
+          }
+          .c7n-steps-icon-dot {
+            border: 2px solid #bfbfbf;
+            background-color: #fff;
+          }
+          .c7n-steps-item:first-child {
+            .c7n-steps-icon-dot {
+              border: 2px solid #47b881;
+              background-color: #fff;
+            }
+          }
+        }
+        // 售后进度条
+        .progress-step {
+          width: 100%;
+          height: 100px;
+          padding: 30px 233px 16px 233px;
+          position: relative;
+          img {
+            vertical-align: baseline;
+          }
+          div {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 5px;
+            span {
+              display: inline-block;
+              width: 56px;
+              height: 19px;
+              line-height: 19px;
+              text-align: center;
+              font-size: 14px;
+              color: #6abf36;
+              position: relative;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+            }
+            span:last-child {
+              color: #8c8c8c;
+            }
+            .dismiss {
+              color: #666;
+            }
+          }
+        }
+        .one-light {
+          span:nth-of-type(2),
+          span:nth-of-type(3),
+          span:nth-of-type(4) {
+            color: #8c8c8c;
+          }
+        }
+        .two-light {
+          span:nth-of-type(3),
+          span:nth-of-type(4) {
+            color: #8c8c8c;
+          }
+        }
+        .three-light {
+          span:nth-of-type(4) {
+            color: #8c8c8c;
+          }
+        }
+
+        // 售后进度信息
+        .after-num-title {
+          width: 100%;
+          height: 40px;
+          padding: 0 24px;
+          line-height: 40px;
+          //border-bottom: 1px solid #EAEAEA;
+          background-color: #f5f5f5;
+          .after-num {
+            width: 260px;
+            margin-right: 24px;
+          }
+        }
+        .content-logistics-info {
+          padding: 16px 0 0 24px;
+          border-radius: @border-radius-base;
+          max-height: 215px;
+          overflow-y: auto;
+          .content-progress {
+            height: 50px;
+            background: @color-text-1;
+          }
+          .logistics-info-btn {
+            margin-left: 247px;
+            a {
+              display: inline-block;
+              width: 100px;
+              height: 28px;
+              text-align: center;
+              border: 1px solid @primary-color;
+              border-radius: @border-radius-base;
+              margin: 24px 0;
+              line-height: 28px;
+              color: @primary-color;
+              cursor: pointer;
+            }
+          }
+        }
+
+        // 运单
+        .sendInfo {
+          border: 1px solid #f1f8fa;
+          margin-top: 10px;
+          .sendInfo-row {
+            display: flex;
+            justify-content: space-between;
+            background-color: #f0f0f0;
+            font-size: 14px;
+            color: @primary-color;
+            padding: 10px 20px 10px 20px;
+            .sendInfo-title {
+              color: @primary-color;
+              font-size: 14px;
+            }
+            .add-bill {
+              color: @primary-color;
+              font-size: 14px;
+              cursor: pointer;
+            }
+          }
+          .sendInfo-table {
+            padding: 32px 24px 5px 24px;
+            .sale-table-line {
+              color: black;
+              width: 1130px;
+              height: 2px;
+              border: 1px solid #eee;
+              margin-bottom: 10px;
+            }
+            .sale-submit-title {
+              font-size: 14px;
+              margin-bottom: 26px;
+            }
+            .ant-calendar-picker-input {
+              height: 40px;
+            }
+            .sale-bill-btn {
+              display: flex;
+              justify-content: space-between;
+              padding-top: 16px;
+              .sale-bill-del {
+                width: 100px;
+                height: 24px;
+                font-size: @font-size-base;
+                border: 1px solid #e85050;
+                color: #e85050;
+                background: #fff;
+                cursor: pointer;
+                margin-left: 180px;
+              }
+            }
+            .sendInfo-col {
+              margin-bottom: 20px;
+              .label1 {
+                display: inline-block;
+                width: 80px;
+                text-align: right;
+              }
+              .inputName {
+                width: 260px;
+                height: 36px;
+                border: 1px solid rgb(233, 232, 232);
+              }
+            }
+          }
+        }
+        .sale-submit-bill {
+          height: 52px;
+          max-width: 1226px;
+          .sale-form-apply {
+            background-color: @primary-color;
+            display: inline-block;
+            margin: 0 auto;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            border-radius: @border-radius-base;
+            font-size: 16px;
+            .submit-bill {
+              display: inline-block;
+              text-align: center;
+              line-height: 52px;
+              color: white;
+              width: 100%;
+            }
+          }
+        }
+      }
+
+      .sale-submit-table {
+        padding: 20px;
+        position: relative;
+        .sale-table-header {
+          font-size: 16px;
+          font-weight: bold;
+          color: @color-text-1;
+          margin-bottom: 15px;
+        }
+        .change-color {
+          color: @primary-color;
+        }
+        .sale-table-row {
+          display: flex;
+          margin-bottom: 10px;
+          letter-spacing: 0;
+          font-size: 12px;
+          line-height: 18px;
+          .sale-table-label {
+            width: 100px;
+            color: @color-text-2;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+          .sale-table-text {
+            flex: 1;
+            margin-left: 10px;
+            color: @color-text-1;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+          .sale-table-info {
+            color: #999;
+          }
+          .sale-table-linkman {
+            margin-left: 35px;
+            color: #999;
+            display: flex;
+            .sale-table-name {
+              color: #333;
+              display: inline-block;
+              width: 90px;
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+            }
+          }
+          .sale-table-phone,
+          .sale-table-address {
+            margin-left: 30px;
+            color: #999;
+            display: flex;
+            > span {
+              display: inline-block;
+            }
+            .sale-table-content {
+              color: #333;
+            }
+          }
+
+          .sale-table-phone {
+            .sale-table-content {
+              width: 80px;
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+            }
+          }
+        }
+        .sale-image {
+          height: 58px;
+          img {
+            width: 58px;
+            height: 58px;
+            margin-right: 10px;
+          }
+        }
+        .sale-table-body {
+          padding: 30px 0 0 24px;
+          display: flex;
+          font-size: @font-size-base;
+          letter-spacing: 0;
+          line-height: 16px;
+          color: #999;
+          .sale-table-data {
+            margin-left: 35px;
+            color: #333;
+            .sale-data-bold {
+              font-weight: bold;
+            }
+            .sale-data-bold.change-color {
+              font-weight: bold;
+              color: @primary-color;
+            }
+          }
+          div.sale-table-rows {
+            color: #999;
+          }
+          .out-right {
+            margin-right: 234px;
+            width: 84px;
+          }
+          .sale-table-ec,
+          .sale-table-number {
+            display: inline-block;
+            width: 56px;
+            text-align: right;
+            color: #999;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            // margin-right: 4px;
+          }
+        }
+        .sale-table-body,
+        .sale-table-row {
+          .label {
+            display: inline-block;
+            width: 72px;
+            text-align: right;
+          }
+        }
+        .sale-table-waybill {
+          padding-left: 95px;
+        }
+        .out-bottom {
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+}

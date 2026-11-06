@@ -1,0 +1,134 @@
+.budget-batch {
+  float: left;
+  line-height: 54px;
+  margin-left: 20px;
+  width: max-content;
+}
+.budget-item {
+  margin-bottom: 8px;
+}
+.cart-budget-content {
+  display: flex;
+  p {
+    margin-bottom: 5px;
+  }
+}
+.cart-budget-title {
+  display: flex;
+  .cart-budget-edit {
+    text-align: right;
+    flex: 1;
+    a {
+      color: @primary-color;
+    }
+  }
+}
+.budget-modal {
+  :global {
+    .c7n-modal-header {
+      padding: 0 4px;
+    }
+    .c7n-modal-body {
+      padding: 20px 24px;
+      .c7n-form-item {
+        margin-bottom: 10px;
+        padding-top: 0;
+        .has-error {
+          height: 50px;
+        }
+        .c7n-input {
+          height: 32px;
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+      .batch-budget-warn {
+        color: @primary-color;
+        i {
+          color: @warning-color;
+          margin-top: -3px;
+        }
+        margin-bottom: 20px;
+      }
+      .budget-item {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+        padding: 0 20px 20px;
+        margin-bottom: 20px;
+        .budget-title {
+          display: flex;
+          margin-bottom: 15px;
+          color: rgba(0, 0, 0);
+          line-height: 22px;
+        }
+        .budget-productname {
+          width: 250px;
+          font-size: 14px;
+          font-weight: 500;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+        .budget-quantity {
+          flex: 1;
+          text-align: right;
+        }
+        &:last-child {
+          border-bottom: 0;
+          margin-bottom: 0;
+        }
+      }
+      .delete-budget,
+      .add-budget,
+      .batch-delete-budget {
+        color: @primary-color;
+      }
+      .add-budget,
+      .batch-delete-budget {
+        height: 18px;
+        line-height: 18px;
+        margin-bottom: 20px;
+        i {
+          font-size: 14px;
+        }
+      }
+    }
+    .c7n-modal-footer {
+      position: fixed;
+      bottom: 24px;
+      width: 100%;
+    }
+    .error-message,
+    .budget-remain {
+      display: inline-block;
+      width: 150px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      color: @danger-color;
+    }
+    .budget-remain {
+      text-align: right;
+      color: @primary-color;
+    }
+    .product-info {
+      display: flex;
+      .goods-img {
+        display: inline-block;
+        vertical-align: top;
+      }
+      .goods-product-name {
+        margin-left: 10px;
+        display: inline-block;
+        vertical-align: middle;
+        width: 300px;
+        .goods-name {
+          line-height: 18px;
+        }
+        .goods-name {
+          color: rgba(0, 0, 0);
+        }
+      }
+    }
+  }
+}

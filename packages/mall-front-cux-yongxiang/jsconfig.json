@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "baseUrl": ".",
+    "paths": {
+      "utils/*": ["mall-front/lib/utils/*"],
+      "components/*": ["mall-front/lib/components/*"],
+      "services/*": ["mall-front/lib/services/*"],
+      "@/*": ["./src/*"],
+      "cuxTools": ["mall-front/lib/src/cuxTools"],
+    }
+  },
+  "include": [
+    "src/**/*"
+  ]
+}

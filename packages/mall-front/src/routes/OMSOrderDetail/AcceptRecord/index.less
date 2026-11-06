@@ -1,0 +1,54 @@
+.content {
+  :global {
+    .c7n-pro-btn + .c7n-pro-btn:not(.c7n-pro-btn-block) {
+      margin-left: 16px;
+    }
+    .c7n-modal-body {
+      height: 100%;
+      padding: 20px;
+    }
+    .accept-file,
+    .accept-remark {
+      display: block;
+      width: 100px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .content-sku {
+      display: flex;
+      margin-bottom: 20px;
+      .content-sku-info {
+        margin-left: 10px;
+        .content-title {
+          font-size: 14px;
+          color: @color-text-1;
+          line-height: 20px;
+          font-weight: 600;
+          margin-bottom: 5px;
+        }
+        .content-sku-code {
+          font-size: 12px;
+          color: #999;
+          line-height: 18px;
+          font-weight: 400;
+        }
+        .content-sku-type {
+          margin-left: 20px;
+        }
+      }
+    }
+    .primary-link {
+      span {
+        color: @primary-color;
+      }
+
+      // width: 80px;
+      // height: 24px;
+      // margin-left: 0 !important;
+      // cursor: pointer;
+      // padding: 0 5px;
+      // text-align: center;
+    }
+  }
+}

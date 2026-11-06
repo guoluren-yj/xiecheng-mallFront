@@ -1,0 +1,235 @@
+.my-request {
+  :global {
+    .request-search {
+      display: flex;
+      margin: 15px 0 10px 0;
+
+      .request-search-button {
+        flex: 1;
+        text-align: right;
+      }
+    }
+
+    .request-list-container {
+      border: 1px solid #ebebeb;
+      margin-bottom: 10px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .list-header-container {
+        display: flex;
+        border-radius: 2px;
+        background: rgba(0, 0, 0, 0.03);
+        height: 38px;
+        line-height: 38px;
+        padding: 0 20px;
+
+        .header-request-approval {
+          margin-left: 20px;
+          span {
+            color: @color-text-1;
+          }
+          a {
+            color: @primary-color;
+          }
+        }
+
+        .header-request-status {
+          margin-left: 25px;
+          display: flex;
+          align-items: center;
+
+          .status-error {
+            margin-top: -3px;
+            margin-left: 3px;
+            font-weight: 400;
+          }
+        }
+
+        .header-right {
+          flex: 1;
+          text-align: right;
+          align-items: center;
+
+          .header-creationDate {
+            color: @color-text-2;
+            padding-right: 10px;
+          }
+
+          .right-btn {
+            vertical-align: baseline;
+            margin-left: 0;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            padding: 0;
+          }
+        }
+      }
+
+      .list-header-extra {
+        height: 38px;
+        line-height: 38px;
+        padding: 0 20px;
+        border-bottom: 1px solid #ebebeb;
+      }
+
+      .list-content-container {
+        display: flex;
+
+        .product-container {
+          width: 468px;
+          border-right: 1px solid #ebebeb;
+
+          .product-content {
+            display: flex;
+            height: fit-content;
+            padding: 15px 20px 10px;
+            border-bottom: 1px solid #ebebeb;
+
+            .product-wrapper {
+              width: 270px;
+              margin-right: 20px;
+              display: flex;
+              border-bottom: none;
+              padding-bottom: 0;
+
+              .image-wrapper {
+                margin-right: 10px;
+              }
+
+              .product-name-cotent {
+                width: 229px;
+
+                .gift-label {
+                  width: fit-content;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  white-space: nowrap;
+                  box-sizing: content-box;
+                  border: 1px solid @primary-color;
+                  border-radius: 2px;
+                  padding: 0 5px;
+                  text-align: center;
+                  color: @primary-color;
+                  height: 16px;
+                  line-height: 16px;
+                  font-weight: 400;
+                  cursor: pointer;
+                }
+              }
+
+              .product-name {
+                width: 219px;
+                margin-bottom: 5px;
+                color: @color-text-1;
+              }
+            }
+
+            .product-remark {
+              font-size: 12px;
+              color: #666;
+              line-height: 18px;
+              font-weight: 400;
+              margin-top: 5px;
+            }
+
+            .product-price,
+            .product-quantity {
+              flex: 1;
+              text-align: center;
+            }
+
+            .product-price {
+              margin-right: 10px;
+
+              .compare-button {
+                margin-top: 5px;
+              }
+            }
+
+            &:last-child {
+              border-bottom: none;
+            }
+          }
+        }
+
+        .request-createdByName,
+        .request-amount,
+        .request-status {
+          border-right: 1px solid #ebebeb;
+          text-align: center;
+        }
+
+        .request-status,
+        .request-operate {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .request-createdByName {
+          width: 110px;
+          padding-top: 15px;
+        }
+
+        .request-amount {
+          width: 160px;
+          padding: 15px 10px 0 10px;
+          color: @price-color;
+        }
+
+        .request-item-status,
+        .request-item-operate {
+          flex: 1;
+          border-bottom: 1px solid #ebebeb;
+
+          &:last-child {
+            border-bottom: none;
+          }
+        }
+
+        .request-status {
+          width: 108px;
+
+          .request-item-status {
+            padding-top: 15px;
+
+            .status-error {
+              margin-top: -3px;
+              margin-left: 3px;
+              font-weight: 400;
+            }
+          }
+        }
+
+        .request-operate {
+          flex: 1;
+          text-align: center;
+
+          .request-item-operate {
+            padding-top: 7px;
+            .right-btn {
+              max-width: 100px;
+            }
+          }
+        }
+      }
+    }
+
+    .empty-purchase-list {
+      background: url(../../../assets/images/order/illu_order_nodata_default.svg) no-repeat center;
+      background-size: 19%;
+      height: 300px;
+      text-align: center;
+
+      div {
+        color: #999;
+        position: relative;
+        top: 242px;
+        font-size: 16px;
+      }
+    }
+  }
+}

@@ -1,0 +1,114 @@
+.cost-allocation {
+  :global {
+    .cost-allocation-batch {
+      float: left;
+      line-height: 52px;
+      margin-left: 20px;
+      width: max-content;
+    }
+    .cost-allocation-item {
+      margin-bottom: 8px;
+    }
+    .cost-allocation-button {
+      font-weight: bold;
+      color: rgb(255, 0, 0);
+    }
+  }
+}
+.cost-allocation-modal {
+  :global {
+    .c7n-modal-header {
+      padding: 0 4px;
+    }
+    .c7n-modal-body {
+      height: 100%;
+    }
+    .c7n-modal-footer {
+      position: fixed;
+      bottom: 24px;
+      width: 100%;
+    }
+    .c7n-input-wrapper {
+      height: 34px;
+      &::before {
+        border-radius: 0;
+      }
+    }
+    .address-region {
+      padding: 8px;
+      .c7n-pro-table-cell-inner {
+        padding: 0;
+      }
+      .c7n-input-wrapper {
+        background-color: #feffe6;
+      }
+      .c7n-input-has-border.c7n-input-wrapper {
+        &:hover {
+          &::before {
+            border: 0.01rem solid rgba(0, 0, 0, 0.2);
+          }
+        }
+      }
+    }
+    .c7n-pro-table-fixed-left {
+      top: auto;
+      .c7n-pro-table-row {
+        .c7n-pro-table-cell {
+          display: none;
+        }
+      }
+    }
+    .c7n-pro-table-expanded-row {
+      .c7n-pro-table-cell-inner {
+        padding: 0;
+      }
+      .product-info-column {
+        padding-left: 60px;
+      }
+    }
+    .allocation-warn {
+      color: @primary-color;
+    }
+    .product-info {
+      display: flex;
+      .goods-img {
+        display: inline-block;
+        vertical-align: top;
+      }
+      .goods-product-name {
+        margin-left: 10px;
+        display: inline-block;
+        vertical-align: middle;
+        width: 300px;
+        .goods-name {
+          line-height: 18px;
+        }
+        .goods-name {
+          color: rgba(0, 0, 0);
+        }
+      }
+    }
+    .allocation-confirm {
+      color: @primary-color;
+      position: fixed;
+      bottom: 60px;
+      background: #fff;
+      z-index: 2;
+      .allocation-confirm-num {
+        color: @danger-color;
+      }
+      i {
+        color: @danger-color;
+      }
+    }
+  }
+}
+.c7n-pro-select-dropdown-menu {
+  :golbal {
+    .view-more {
+      margin-left: -20px;
+      margin-right: -12px;
+      padding-left: 20px;
+    }
+  }
+}

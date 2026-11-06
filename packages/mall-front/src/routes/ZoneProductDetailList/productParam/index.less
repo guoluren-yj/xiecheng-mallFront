@@ -1,0 +1,51 @@
+.container {
+  margin-left: 30px;
+  width: 190px;
+  :global {
+    .content {
+      padding: 15px;
+      padding-bottom: 0;
+      height: 100%;
+      border: 1px solid @color-fill-6;
+      .header {
+        color: @color-text-1;
+        font-size: 14px;
+        height: 22px;
+        line-height: 22px;
+        font-weight: 600;
+        vertical-align: middle;
+        margin-bottom: 15px;
+        .product-ad {
+          float: right;
+          height: 18px;
+          line-height: 18px;
+          border: 1px solid @color-fill-6;
+          border-radius: 2px;
+          padding: 0 5px;
+          font-size: 12px;
+          font-weight: 400;
+          color: @color-text-3;
+          vertical-align: middle;
+        }
+      }
+      .info {
+        .product-wrapper {
+          margin-bottom: 15px;
+          .product-price {
+            height: 18px;
+            line-height: 18px;
+            color: @price-color;
+            font-weight: 600;
+          }
+          .product-name {
+            height: 18px;
+            font-size: 12px;
+            color: @color-text-1;
+            line-height: 18px;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}

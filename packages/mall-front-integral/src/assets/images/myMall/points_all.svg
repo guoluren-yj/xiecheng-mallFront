@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>points_all</title>
+    <g id="我的商城" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="商城_我的积分_收支明细" transform="translate(-365.000000, -213.000000)">
+            <g id="编组-9" transform="translate(345.000000, 193.000000)">
+                <g id="points_all" transform="translate(20.000000, 20.000000)">
+                    <circle id="椭圆形" fill="#E6F2FD" cx="30" cy="30" r="30"></circle>
+                    <g id="fullscreen" transform="translate(30.000000, 30.000000) rotate(-270.000000) translate(-30.000000, -30.000000) translate(10.000000, 10.000000)">
+                        <rect id="矩形" fill="#191919" fill-rule="nonzero" opacity="0" x="0" y="0" width="40" height="40"></rect>
+                        <g id="color" transform="translate(3.375000, 3.356250)" fill="#3095F2">
+                            <path d="M18.28125,21.40625 C19.921875,20.9375 20.859375,19.6875 21.40625,18.28125 L33.28125,18.28125 C32.5,26.171875 26.640625,32.5 18.28125,33.28125 L18.28125,21.40625 Z M21.40625,15 C20.859375,13.59375 19.921875,12.34375 18.28125,11.875 L18.28125,0 C26.640625,0.78125 32.5,7.109375 33.28125,15 L21.40625,15 Z M15,11.875 C13.359375,12.578125 11.640625,14.453125 11.640625,16.640625 C11.640625,18.828125 13.359375,20.703125 15,21.40625 L15,33.28125 C6.640625,32.421875 4.54747351e-12,25.3125 4.54747351e-12,16.640625 C4.54747351e-12,7.96875 6.640625,0.859375 15,0 L15,11.875 Z" id="蒙版" transform="translate(16.640625, 16.640625) rotate(-90.000000) translate(-16.640625, -16.640625) "></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

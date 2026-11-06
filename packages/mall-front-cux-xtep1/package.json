@@ -1,0 +1,119 @@
+{
+  "name": "mall-front-cux-xtep1",
+  "version": "0.0.1",
+  "dependencies": {
+    "mall-front": "^1.17.6"
+  },
+  "description": "mall-front-cux-xtep1",
+  "author": "",
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "publishConfig": {
+    "registry": "https://nexus.going-link.com/repository/zhenyun-npm-source/"
+  },
+  "scripts": {
+    "start": "cross-env NODE_PROFILE=development NODE_OPTIONS=--max_old_space_size=32384 hzero-cli start",
+    "build": "cross-env NODE_OPTIONS=--max_old_space_size=5120 hzero-cli build",
+    "build:dll": "hzero-cli build --build-dll",
+    "build:dll-dev": "hzero-cli build --build-dll --build-dll-dev",
+    "transpile": "cross-env NODE_ENV=production BABEL_ENV=production npx babel src --out-dir lib --copy-files --delete-dir-on-start --ignore 'src/**/*.spec.js','src/**/*.test.js' && tsc",
+    "codeScan": "hzero codeScan",
+    "lint-style:src": "stylelint src/**/*.less --syntax less",
+    "lint-fix:src": "eslint --quiet --fix src/**/*.js && eslint --config .eslintrc.js --quiet --fix src/**/*.ts",
+    "lint:src": "eslint --ext .js src",
+    "lint-style:packages": "stylelint packages/*/src/**/*.less --syntax less",
+    "lint-fix:packages": "eslint --quiet --fix packages/*/src/**/*.js && eslint --config .eslintrc.js --quiet --fix packages/*/src/**/*.ts packages/*/src/**/*.tsx",
+    "lint:packages": "eslint packages/*/src/**/*.js",
+    "lint": "npm run lint:src",
+    "lint:fix": "npm run lint-fix:src",
+    "lint:style": "npm run lint-style:src && npm run lint-style:packages",
+    "lint-staged": "lint-staged",
+    "prettier": "prettier --write ./src/**/**/**/* ./packages/*/src/**/*",
+    "tree": "tree -I node_modules -L 3",
+    "release": "standard-version",
+    "icon": "node utils/icon.js",
+    "commit": "git-cz"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
+  },
+  "files": [
+    "lib",
+    "package.json",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint-staged",
+      "post-merge": "git submodule update",
+      "post-checkout": "git submodule update",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "optionalDependencies": {
+    "puppeteer": "^1.1.1"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 10",
+    "not op_mini all"
+  ],
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!src/**/*.d.ts"
+    ],
+    "resolver": "jest-pnp-resolver",
+    "setupFiles": [
+      "react-app-polyfill/jsdom"
+    ],
+    "testMatch": [
+      "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
+      "<rootDir>/src/**/?(*.)(spec|test).{js,jsx,ts,tsx}"
+    ],
+    "testEnvironment": "jsdom",
+    "testURL": "http://localhost",
+    "transform": {
+      "^.+\\.(js|jsx|ts|tsx)$": "<rootDir>/node_modules/babel-jest",
+      "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
+      "^(?!.*\\.(js|jsx|ts|tsx|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
+    },
+    "transformIgnorePatterns": [
+      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$",
+      "^.+\\.module\\.(css|sass|scss)$"
+    ],
+    "moduleNameMapper": {
+      "^react-native$": "react-native-web",
+      "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
+    },
+    "moduleFileExtensions": [
+      "web.js",
+      "js",
+      "web.ts",
+      "ts",
+      "web.tsx",
+      "tsx",
+      "json",
+      "web.jsx",
+      "jsx",
+      "node"
+    ],
+    "watchPlugins": [
+      "<rootDir>/node_modules/jest-watch-typeahead/filename.js",
+      "<rootDir>/node_modules/jest-watch-typeahead/testname.js"
+    ]
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx}": "eslint --quiet --fix --ext .js",
+    "src/**/*.less": "stylelint --syntax less",
+    "src/**/*.{js,jsx,less}": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}

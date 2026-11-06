@@ -1,0 +1,278 @@
+.h-lov {
+  display: inline-block;
+  vertical-align: top;
+  // padding-top: 3px;
+  &:hover {
+    :global {
+      .lov-clear-hover {
+        display: inline-block;
+      }
+    }
+  }
+  :global {
+    .h-lov-inputBox {
+      border: 1px solid #fff;
+      box-sizing: border-box;
+      .ant-input-affix-wrapper {
+        padding-right: 0 !important;
+      }
+    }
+
+    // 清除icon
+    .lov-clear {
+      display: none;
+      position: relative;
+      top: -1px;
+      margin-right: 8px;
+      cursor: pointer;
+    }
+
+    .lov-value {
+      margin-right: 20px;
+      display: inline-block;
+      width: 200px;
+    }
+    .lov-value-wrong {
+      display: inline-block;
+      margin-right: 20px;
+      color: red;
+      font-size: 12px;
+      width: 200px;
+    }
+    .lov-value-choose {
+      margin-right: 16px;
+      color: #666;
+    }
+    .lov-link {
+      cursor: pointer;
+      margin-right: 4px;
+      font-size: 12px;
+      display: inline-block;
+      vertical-align: top;
+    }
+    .lov-link.lov-link-change {
+      color: @primary-color;
+    }
+    .value-input {
+      font-size: 12px;
+      float: left;
+      box-sizing: border-box;
+      padding: 0;
+      padding-left: 5px;
+      border: 1px solid #dadada;
+      border-right-width: 0;
+      height: 28px;
+    }
+    .value-input[disabled] {
+      background: #f5f5f5;
+    }
+    .query-btn-wrap {
+      display: inline-block;
+      position: relative;
+
+      &:hover {
+        cursor: pointer;
+        .query-btn {
+          border-color: #dadada;
+        }
+      }
+    }
+  }
+}
+
+.lov-content-wrapper {
+  position: fixed;
+  overflow: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  outline: 0;
+  background: rgba(0, 0, 0, 0.5);
+  :global {
+    .lov-content {
+      position: relative;
+      top: 80px;
+      margin: 0 auto;
+      margin-bottom: 20px;
+      font-weight: normal;
+      color: #1b1b1b;
+      text-align: left;
+      font-size: 14px;
+      width: 400px;
+      min-height: 300px;
+      border-radius: 2px;
+      z-index: 100;
+      background: #fff;
+
+      .lov-title {
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        padding: 0 24px 0;
+        background-color: @sweelater-header;
+        position: relative;
+        span {
+          font-size: 12px;
+          color: #333;
+        }
+        .close-button {
+          display: inline-block;
+          width: 16px;
+          position: absolute;
+          height: 16px;
+          top: 13px;
+          right: 24px;
+          &::after {
+            content: '';
+            display: block;
+            height: 2px;
+            width: 16px;
+            background: #666;
+            border-radius: 2px;
+            position: absolute;
+            right: 0;
+            top: 6px;
+            transform: rotate(45deg);
+            // transition: all 0.3s;
+          }
+
+          &::before {
+            content: '';
+            display: block;
+            height: 2px;
+            width: 16px;
+            background: #666;
+            border-radius: 2px;
+            position: absolute;
+            right: 0;
+            top: 6px;
+            transform: rotate(-45deg);
+            // transition: all 0.3s;
+          }
+        }
+      }
+      .lov-table {
+        padding: 0 24px 0;
+      }
+      .lov-query-form {
+        padding: 12px 24px;
+        &::after {
+          content: '';
+          display: table;
+          clear: both;
+        }
+        .lov-query-input {
+          font-size: 12px;
+          color: #666;
+          float: left;
+          > span {
+            display: inline-block;
+            width: 80px;
+            text-align: right;
+            padding-right: 10px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+          }
+          input {
+            height: 30px;
+            width: 170px;
+            margin-right: 24px;
+            border: 1px solid #d9d9d9;
+            border-radius: 2px;
+            padding-left: 5px;
+          }
+          .lov-query-select {
+            height: 30px;
+            width: 170px;
+          }
+        }
+        .lov-query-btn {
+          float: right;
+          button {
+            line-height: normal;
+            margin-left: 10px;
+            height: 30px;
+            width: 60px;
+            background: none;
+            border-radius: 2px;
+            border: 1px solid #ccc;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            &:focus {
+              outline: none;
+            }
+            &:active {
+              border: 1px solid #eee;
+            }
+          }
+          .small-button {
+            width: 60px;
+            height: 30px;
+            line-height: 30px;
+          }
+          .primary-button {
+            background: @primary-color;
+            color: #fff;
+            border-radius: 2px;
+            border: 1px solid @primary-color;
+            cursor: pointer;
+          }
+          .query-btn {
+            background: @font-color;
+            color: #fff;
+            border: 0;
+          }
+        }
+      }
+      .lov-action {
+        &::after {
+          content: '';
+          display: table;
+          clear: both;
+        }
+        padding: 24px;
+        button {
+          width: 60px;
+          height: 30px;
+          line-height: 30px;
+          margin-left: 10px;
+          float: right;
+          background: none;
+          border: 1px solid #ccc;
+          border-radius: 2px;
+          border-color: #ccc;
+          outline: none;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+        .primary-btn {
+          background: @primary-color;
+          color: #fff;
+          border: 0;
+        }
+      }
+    }
+  }
+}
+
+:global {
+  .c7n-input-content {
+    .lov-clear {
+      display: none;
+    }
+    &:hover {
+      :global {
+        .lov-clear-hover {
+          display: inline-block;
+        }
+      }
+    }
+  }
+}

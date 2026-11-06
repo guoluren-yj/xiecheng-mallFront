@@ -1,0 +1,72 @@
+.myMallSearch {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  :global {
+    .data-input {
+      width: 260px;
+      margin-bottom: 5px;
+    }
+    .c7n-pro-input-wrapper {
+      width: 250px;
+    }
+    .popover-field {
+      position: relative;
+      display: inline-block;
+      line-height: 32px;
+      padding: 0 10px;
+      border-radius: 3px;
+      font-size: 12px;
+      margin: 0 10px 5px 0;
+      cursor: pointer;
+      .icon {
+        color: #666;
+      }
+    }
+    .popover-field:hover {
+      background-color: rgba(0, 0, 0, 0.05);
+      border-radius: 2px;
+      .popover-field-icon-hover {
+        display: none;
+      }
+      .popover-field-value-clear {
+        display: inline-block;
+      }
+    }
+    .popover-field-label {
+      display: inline-block;
+      font-weight: 400;
+      margin-right: 5px;
+      vertical-align: middle;
+      cursor: pointer;
+      color: #666;
+    }
+    .popover-field-value-render {
+      display: inline-block;
+      line-height: 32px;
+      height: 32px;
+      vertical-align: middle;
+      color: #191919;
+    }
+    .popover-field-value-clear {
+      display: none;
+    }
+    .popover-field-value-expand {
+      display: inline-block;
+    }
+  }
+}
+
+.mymall-search-popover-content {
+  :global {
+    .c7n-popover-inner-content {
+      padding: 0 0.08rem;
+      .c7n-pro-input {
+        border-style: none;
+      }
+    }
+    .c7n-popover-arrow {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,79 @@
+.order-center-record {
+  :global {
+    .c7n-select-selection__rendered {
+      padding: 0 !important;
+    }
+    .order-centent-operation-btns {
+      display: flex;
+      flex-flow: row-reverse;
+      .batch-receive-btn {
+        button {
+          max-width: 118px;
+        }
+      }
+      .order-centent-operation-button {
+        display: flex;
+        align-items: center;
+        padding: 0 11px;
+        // margin-left: 10px;
+        cursor: pointer;
+        i {
+          color: @primary-color;
+          margin-right: 4px;
+          font-size: 16px;
+        }
+        span {
+          color: @primary-color;
+        }
+      }
+      .order-centent-operation-button.accept {
+        i,
+        span {
+          cursor: pointer;
+        }
+      }
+      .order-centent-operation-button.disable {
+        cursor: not-allowed;
+        i,
+        span {
+          color: #999;
+          cursor: not-allowed;
+        }
+      }
+    }
+  }
+}
+
+.order-centent-operation-Menu {
+  :global {
+    .order-centent-operation-button {
+      display: flex;
+      align-items: center;
+      padding: 0 11px;
+      // margin-left: 10px;
+      cursor: pointer;
+      i {
+        color: @primary-color;
+        margin-right: 4px;
+        font-size: 16px;
+      }
+      span {
+        color: @primary-color;
+      }
+    }
+    .order-centent-operation-button.accept {
+      i,
+      span {
+        cursor: pointer;
+      }
+    }
+    .order-centent-operation-button.disable {
+      cursor: not-allowed;
+      i,
+      span {
+        color: #999;
+        cursor: not-allowed;
+      }
+    }
+  }
+}

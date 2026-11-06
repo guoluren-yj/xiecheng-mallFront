@@ -1,0 +1,152 @@
+.priceCompare-content {
+  position: fixed;
+  bottom: 0;
+  right: 50%;
+  z-index: 200;
+  transform: translateX(50%);
+  width: 1190px;
+  box-shadow: 0 0 15px rgb(221, 221, 221);
+  background-color: #fff;
+  // animation: a 0.32s;
+  :global {
+    .ant-tabs:not(.ant-tabs-vertical) > .ant-tabs-content-animated {
+      transition: none;
+      -webkit-transition: none;
+    }
+    .ant-tabs-bar {
+      margin-bottom: 0;
+      background: #f5f5f5;
+      .ant-tabs-tab {
+        border: none;
+      }
+    }
+
+    .priceCompare-warning {
+      height: 27px;
+      margin-top: -27px;
+      line-height: 27px;
+      border: 1px solid #db9a9a;
+      color: #c00;
+      text-align: center;
+      background: #ffe8e8;
+    }
+    .priceCompare-title {
+      height: 40px;
+      padding: 12px 20px;
+      border: 1px solid #eee;
+      border-radius: 2px;
+      font-size: 12px;
+      line-height: 16px;
+      background: #f5f5f5;
+    }
+    .priceCompare-items {
+      // div:first-child {
+      //   border-left: 0;
+      // }
+      display: flex;
+      .product-content {
+        position: relative;
+        // width: 1060px;
+        overflow: hidden;
+        .product-change {
+          position: absolute;
+          line-height: 32px;
+          color: #fff;
+          width: 16px;
+          height: 32px;
+          top: 48px;
+        }
+        .change-btn:hover {
+          color: @primary-color;
+          cursor: pointer;
+        }
+        .product-prev {
+          left: 0;
+          background: #efefef;
+          border-radius: 0 2px 2px 0;
+        }
+        .product-next {
+          right: 0;
+          background: #e0e0e0;
+          border-radius: 0 2px 2px 0;
+        }
+      }
+      .priceCompare-item {
+        position: relative;
+        vertical-align: top;
+        padding: 24px 24px;
+        height: 136px;
+        width: 265px;
+        display: inline-block;
+        padding-left: 18px;
+        border-right: solid 1px #eee;
+        .priceCompare-image {
+          height: 80px;
+          width: 80px;
+          display: inline-block;
+          text-align: center;
+          font-size: 48px;
+          color: #ccc;
+          background: #f5f5f5;
+          border-radius: 2px;
+          margin-right: 16px;
+        }
+        .priceCompare-detail {
+          font-size: 12px;
+          display: inline-block;
+          width: 128px;
+          text-align: left;
+          vertical-align: top;
+        }
+        .priceCompare-name {
+          height: 56px;
+          overflow: hidden;
+          word-wrap: break-word;
+          white-space: normal;
+          text-overflow: ellipsis;
+          -webkit-line-clamp: 3;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          font-size: 12px;
+          color: #ccc;
+          letter-spacing: 0;
+          line-height: 18px;
+        }
+        .priceCompare-price {
+          display: block;
+          line-height: 21px;
+          margin-top: 4px;
+          height: 21px;
+          font-size: 16px;
+          color: #d0521e;
+          letter-spacing: 0;
+        }
+        .ant-checkbox-wrapper {
+          position: absolute;
+          left: 17px;
+          bottom: 6px;
+        }
+      }
+      .priceCompare-item-btns {
+        display: inline-block;
+        padding: 34px 30px;
+        text-align: center;
+        .ant-btn {
+          width: 66px;
+          height: 26px;
+          line-height: 26px;
+          margin-bottom: 15px;
+        }
+        .to-compare {
+          background: @primary-color;
+          color: #fff;
+          border-color: @primary-color;
+        }
+        div {
+          color: #666;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

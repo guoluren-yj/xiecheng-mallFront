@@ -1,0 +1,60 @@
+.accept-content {
+  :global {
+    .c7n-pro-table-thead {
+      .c7n-pro-table-cell {
+        .c7n-pro-table-cell-inner {
+          height: 28px !important;
+          line-height: 28px !important;
+        }
+      }
+    }
+    .accept-table-title-info {
+      height: 18px;
+      line-height: 18px;
+      color: @color-text-1;
+      margin-bottom: 15px;
+
+      .c7n-pro-checkbox-wrapper {
+        position: relative;
+        top: -1px;
+        margin-right: 10px;
+      }
+    }
+
+    .accept-info {
+      display: flex;
+      height: 40;
+      .product-name {
+        margin-left: 10px;
+        padding-right: 10px;
+        .product-name-label {
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          max-width: 230px;
+          display: block;
+          height: 18px;
+          line-height: 18px;
+        }
+
+        .product-name-po {
+          padding: 1px 5px;
+          background: #eee;
+          color: #333;
+          border-radius: 2px;
+          display: block;
+          height: 18px;
+          line-height: 18px;
+          width: 165px;
+        }
+      }
+    }
+    .accept-info-batch {
+      .product-name {
+        .product-name-label {
+          max-width: 105px;
+        }
+      }
+    }
+  }
+}

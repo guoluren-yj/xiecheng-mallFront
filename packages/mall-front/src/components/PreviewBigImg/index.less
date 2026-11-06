@@ -1,0 +1,87 @@
+:global {
+  .preview-container {
+    // 内容区
+    .preview-modal-content {
+      padding: 0 24px 20px;
+      position: relative;
+      .content-img {
+        display: inline-block;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        img {
+          max-width: 860px;
+          height: 380px;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          user-select: none;
+          -ms-user-select: none;
+        }
+      }
+      .content-btn {
+        user-select: none;
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        top: 50%;
+        margin-top: -30px;
+        background: #eee;
+        cursor: pointer;
+        border-radius: 50%;
+        &:hover {
+          background: @primary-color;
+          opacity: 0.7;
+        }
+      }
+      .content-prev {
+        left: 40px;
+        &::before {
+          content: '';
+          position: absolute;
+          display: block;
+          width: 1px;
+          height: 20px;
+          border: 1px solid #fff;
+          left: 28px;
+          top: 12px;
+          transform: rotate(36deg);
+        }
+        &::after {
+          content: '';
+          position: absolute;
+          display: block;
+          width: 1px;
+          height: 20px;
+          border: 1px solid #fff;
+          left: 28px;
+          bottom: 12px;
+          transform: rotate(-36deg);
+        }
+      }
+      .content-next {
+        right: 40px;
+        &::before {
+          content: '';
+          position: absolute;
+          display: block;
+          width: 1px;
+          height: 20px;
+          border: 1px solid #fff;
+          right: 28px;
+          top: 12px;
+          transform: rotate(-36deg);
+        }
+        &::after {
+          content: '';
+          position: absolute;
+          display: block;
+          width: 1px;
+          height: 20px;
+          border: 1px solid #fff;
+          right: 28px;
+          bottom: 12px;
+          transform: rotate(36deg);
+        }
+      }
+    }
+  }
+}

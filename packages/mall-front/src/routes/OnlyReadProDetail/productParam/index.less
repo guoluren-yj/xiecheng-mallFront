@@ -1,0 +1,102 @@
+.container {
+  padding-left: 27px;
+  height: 100%;
+  :global {
+    .content {
+      height: 100%;
+      border: 1px solid @color-fill-6;
+      .header {
+        color: #333;
+        background: @color-fill-8;
+        border-bottom: 1px solid @color-fill-6;
+        height: 32px;
+        padding-left: 20px;
+        font-size: 14px;
+        line-height: 32px;
+      }
+      .info {
+        .price-btns {
+          color: #333;
+          padding: 15px 0 0 20px;
+          .btn {
+            display: inline-block;
+            position: relative;
+            > span {
+              display: inline-block;
+              height: 28px;
+              width: 75px;
+              text-align: center;
+              background-image: linear-gradient(180deg, #fff 0%, #f4f4f5 100%);
+              border: 1px solid #d9d9d9;
+              line-height: 28px;
+              cursor: pointer;
+            }
+            .item {
+              display: none;
+              position: absolute;
+              background: #fff;
+              border: 1px solid #d9d9d9;
+              top: 27px;
+            }
+            .item.item-history {
+              left: -192px;
+            }
+            .item.item-dealHistory {
+              left: -267px;
+            }
+          }
+          .btn.active {
+            color: @primary-color;
+            .item {
+              display: block;
+            }
+          }
+          .btn:nth-of-type(2) {
+            > span {
+              border-left: none;
+            }
+          }
+        }
+        .product-info {
+          margin: 0 20px;
+          padding: 15px 0;
+          border-bottom: 1px dashed @color-fill-6;
+          > p {
+            margin-bottom: 5px;
+            color: #333;
+          }
+        }
+        .product-info.bottom {
+          border-bottom: none;
+        }
+        .special-afs {
+          padding: 0 20px;
+          display: flex;
+          align-items: center;
+          .afs-content {
+            display: inline-block;
+            max-width: 88px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+          }
+        }
+        .sale-after {
+          padding: 0 20px;
+          .return {
+            display: inline-block;
+            height: 20px;
+            padding: 0 10px;
+            background: rgba(76, 175, 80, 0.15);
+            color: #4caf50;
+            line-height: 20px;
+          }
+          .return-7 {
+            margin-right: 5px;
+            margin-bottom: 5px;
+          }
+        }
+      }
+    }
+  }
+}

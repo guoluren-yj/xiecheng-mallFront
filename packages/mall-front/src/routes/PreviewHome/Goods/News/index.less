@@ -1,0 +1,164 @@
+.bar-wrapper {
+  width: 100%;
+  :global {
+    .bar-header {
+      padding-left: 12px;
+      position: relative;
+      margin: 50px 0 20px;
+      &::before {
+        content: '';
+        width: 4px;
+        height: 24px;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+      .bar-title {
+        font-size: 24px;
+        color: @font-color;
+        letter-spacing: 0;
+        line-height: 32px;
+        position: relative;
+      }
+      .bar-title.text-left {
+        &::before {
+          content: '';
+          position: absolute;
+          width: 4px;
+          height: 24px;
+          top: 4px;
+          left: -12px;
+          background: @primary-color;
+        }
+        .title-left-icon,
+        .title-right-icon {
+          display: none;
+        }
+      }
+      .bar-title.text-center {
+        text-align: center;
+        font-weight: 600;
+        .title-left-icon,
+        .title-right-icon {
+          width: 18px;
+          height: 18px;
+          display: inline-block;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .title-left-icon {
+          margin-right: 10px;
+        }
+        .title-right-icon {
+          margin-left: 10px;
+        }
+      }
+      .bar-title-more {
+        position: absolute;
+        top: 0;
+        right: 0;
+        line-height: 25px;
+        padding-right: 12px;
+        cursor: pointer;
+        font-size: 14px;
+        color: #333;
+        font-weight: bold;
+        &::after {
+          content: '';
+          display: block;
+          width: 6px;
+          height: 6px;
+          transform: rotate(45deg) translate(0, -50%);
+          border: 2px solid #666;
+          position: absolute;
+          top: 45%;
+          right: 5px;
+          border-width: 1px 1px 0 0;
+        }
+      }
+    }
+
+    // 横图
+    .bar-top-img {
+      width: 1190px;
+      height: 338px;
+      margin-bottom: 10px;
+      position: relative;
+    }
+    // 商品内容区
+    .bar-content {
+      width: 1190px;
+      display: flex;
+      .bar-left-img {
+        width: 230px;
+        height: 686px;
+        margin-right: 10px;
+        position: relative;
+      }
+      .bar-right-products {
+        flex: 1;
+        display: flex;
+        // justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        // 频道
+        .five-custom-item {
+          width: 230px;
+          height: 115px;
+          border: 1px solid #e8e8e8;
+          margin-right: 10px;
+          position: relative;
+          > img {
+            width: 100%;
+            height: 100%;
+          }
+          .five-custom-item-cover {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            display: none;
+            background: rgba(0, 0, 0, 0.6);
+            font-weight: 600;
+            line-height: 115px;
+            text-align: center;
+            color: #fff;
+            font-size: 24px;
+            cursor: pointer;
+          }
+          &:hover {
+            .five-custom-item-cover {
+              display: block;
+            }
+          }
+        }
+        .five-custom-item:nth-child(5n) {
+          margin-right: 0;
+        }
+
+        // 商品
+        .product-item {
+          margin-right: 10px;
+          margin-bottom: 10px;
+        }
+      }
+
+      .no-bar-img,
+      .has-bar-img-x {
+        .product-item:nth-child(5n) {
+          margin-right: 0;
+        }
+      }
+
+      .has-bar-img-y {
+        .product-item:nth-child(4n) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

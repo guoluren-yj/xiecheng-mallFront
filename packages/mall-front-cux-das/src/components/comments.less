@@ -1,0 +1,29 @@
+.comments-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  :global {
+    .comment-scroll {
+      padding: 20px;
+      height: 100%;
+      overflow: scroll;
+    }
+    .comment-content .comment-item {
+      border-bottom: 1px solid #f2f2f2;
+      &:nth-last-child(1) {
+        border-bottom: none;
+      }
+      .comment-sku {
+        margin-top: 0;
+        justify-content: center;
+      }
+    }
+    .comment-rate-output {
+      padding: 0;
+      color: unset;
+      background-color: unset;
+      border: none;
+      border-radius: unset;
+    }
+  }
+}

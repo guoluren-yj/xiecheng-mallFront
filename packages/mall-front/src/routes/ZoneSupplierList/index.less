@@ -1,0 +1,60 @@
+.zone-supplier {
+  :global {
+    .zone-supplier-body {
+      width: 1190px;
+      margin: 0 auto;
+    }
+    .zone-supplier-content {
+      float: left;
+      display: flex;
+      width: 590px;
+      height: 189px;
+      background: #fff;
+      border: 1px solid rgba(232, 232, 232, 1);
+      margin-right: 10px;
+      margin-bottom: 10px;
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+      .zone-supplier-card {
+        width: 189px;
+        height: 187px;
+        padding: 24px 15px;
+        background: url('../../assets/images/zone-supplier.png') no-repeat;
+        background-size: 100%;
+        .zone-supplier-name {
+          height: 22px;
+          font-size: 14px;
+          color: @color-text-1;
+          text-align: center;
+          line-height: 22px;
+          font-weight: 600;
+          margin: 10px 0 15px;
+        }
+        .zone-go-supplier {
+          width: 68px;
+          height: 24px;
+          border: 1px solid rgba(0, 0, 0, 0.2);
+          margin: 0 auto;
+          text-align: center;
+          border-radius: 2px;
+          line-height: 21px;
+          font-weight: 600;
+          cursor: pointer;
+        }
+      }
+      .zone-supplier-product {
+        flex: 1;
+        display: flex;
+        .product-item {
+          width: 133px;
+          text-align: center;
+          .product-name {
+            width: 117px;
+            margin: 0 auto 5px;
+          }
+        }
+      }
+    }
+  }
+}

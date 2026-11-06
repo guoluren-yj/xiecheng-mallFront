@@ -1,0 +1,105 @@
+.comment-wrapper {
+  :global {
+    .comment-container {
+      width: 100%;
+      border: 1px solid #f2f2f2;
+      .comment-header {
+        display: flex;
+        height: 40px;
+        line-height: 40px;
+        background: rgba(0, 0, 0, 0.03);
+        border-bottom: 1px solid #f2f2f2;
+        .comment-po-num {
+          width: 300px;
+          margin-left: 20px;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+        .comment-supplier {
+          max-width: 500px;
+          margin-left: 30px;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+        .comment-time {
+          flex: 1;
+          margin-right: 20px;
+          color: @color-text-2;
+          span {
+            float: right;
+          }
+        }
+      }
+    }
+    .comment-content {
+      width: 100%;
+      .comment-item {
+        display: flex;
+        .comment-sku {
+          display: flex;
+          width: 250px;
+          margin-top: 20px;
+          align-items: center;
+          flex-direction: column;
+          .comment-sku-img {
+            width: 100px;
+            height: 100px;
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+          .comment-sku-name {
+            margin-top: 20px;
+            line-height: 20px;
+            width: 250px;
+            font-size: 12px;
+            padding: 0 20px;
+            text-align: center;
+          }
+          > p {
+            max-width: 230px;
+            margin-top: 10px;
+            font-size: 14px;
+            line-height: 16px;
+            color: #e85050;
+          }
+        }
+        .comment-detail {
+          flex: 1;
+          border-left: 1px solid #f2f2f2;
+          .comment-detail-area {
+            padding: 0 20px;
+            border-bottom: 1px solid #eee;
+            .c7n-pro-field-label {
+              padding-top: 0;
+              padding-bottom: 0;
+            }
+            .comment-file-read .c7n-pro-attachment-header-label {
+              display: none;
+            }
+            .comment-rate {
+              position: relative;
+              top: -3px;
+              .comment-rate-field .c7n-pro-rate {
+                font-size: 16px;
+                line-height: 16px;
+                color: @primary-color;
+              }
+              > span {
+                top: 2px;
+                position: relative;
+                color: @primary-color;
+              }
+            }
+            &:last-of-type {
+              border: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

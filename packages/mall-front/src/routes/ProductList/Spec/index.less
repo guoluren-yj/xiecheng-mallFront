@@ -1,0 +1,125 @@
+.product-spec {
+  padding: 5px;
+  display: block;
+  :global {
+    .product-spec-content {
+      width: 380px;
+      max-height: 260px;
+      margin-right: -20px;
+      overflow: hidden;
+      overflow-y: auto;
+    }
+    .spec-row {
+      // align-items: center;
+      margin-bottom: 15px;
+    }
+    .spec-row.active {
+      background: #fdecec;
+    }
+
+    .spec-title {
+      font-size: 12px;
+      color: @color-text-2;
+      vertical-align: top;
+      word-break: break-all;
+      white-space: nowrap;
+      text-overflow: clip;
+      overflow: hidden;
+      margin-bottom: 6px;
+      font-weight: 400;
+    }
+
+    .spec-products {
+      width: 380px;
+      vertical-align: middle;
+      max-height: 380px;
+      overflow: hidden;
+      // padding-right: 30px;
+      &:hover {
+        overflow: auto;
+      }
+      .product {
+        float: left;
+        border: 1px solid #ddd;
+        margin-right: 10px;
+        line-height: normal;
+        max-width: 240px;
+        background: #fff;
+        a {
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          &:hover {
+            color: @color-text-1;
+          }
+        }
+        &:hover {
+          border-color: @primary-color;
+        }
+      }
+
+      .product-active {
+        border-color: @primary-color;
+
+        span {
+          color: @primary-color;
+        }
+      }
+
+      .product-disable {
+        background: #eee;
+        border: 1px dashed #d9d9d9;
+        color: @color-text-3;
+      }
+
+      .product-link {
+        display: block;
+        cursor: pointer;
+        line-height: 30px;
+
+        span {
+          vertical-align: middle;
+          padding: 0 14px;
+        }
+      }
+
+      .spec-img {
+        width: 40px;
+        height: 40px;
+        vertical-align: middle;
+        display: inline-block;
+      }
+
+      // .product-link-disabled {
+      //   cursor: not-allowed;
+      // }
+    }
+    .spec-footer {
+      margin: 0 -20px;
+      clear: both;
+      display: block;
+      padding-top: 20px;
+      border-top: 1px solid rgba(0, 0, 0, 0.12);
+      .spec-footer-button {
+        width: 100px;
+        height: 32px;
+        background: @primary-color;
+        color: rgb(255, 255, 255);
+        margin-left: 20px;
+      }
+    }
+
+    .spec-img-products {
+      line-height: 50px;
+    }
+  }
+}
+:global {
+  .c7n-popover-title {
+    padding: 15px 20px;
+    font-size: 16px;
+    color: @color-text-1;
+    line-height: 24px;
+    font-weight: 600;
+  }
+}

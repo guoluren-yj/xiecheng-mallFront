@@ -1,0 +1,207 @@
+.sale-after-application-body {
+  width: 1190px;
+  margin: auto;
+  :global {
+    // .c7n-input,
+    // input {
+    //   &:hover,
+    //   &:focus {
+    //     border: none;
+    //   }
+    // }
+    .c7n-pro-calendar-picker {
+      height: 36px;
+      border-radius: 5px;
+      &:hover,
+      &:focus {
+        border-color: @color-text-1 !important;
+      }
+    }
+    .c7n-form-item {
+      padding-top: 0;
+      width: 512px;
+    }
+    .sale-after-application-title {
+      line-height: 22px;
+      padding: 10px 0;
+      font-size: 14px;
+    }
+    .sale-after-application-content {
+      background: #fff;
+      border: 1px solid #f2f2f2;
+      .application-header {
+        line-height: 38px;
+        background: rgba(0, 0, 0, 0.03);
+        padding-left: 20px;
+      }
+      .application-content {
+        display: flex;
+        .application-content-left {
+          width: 765px;
+          border-right: 1px solid #f2f2f2;
+          .c7n-radio-group-label {
+            font-size: 12px;
+            color: @color-text-1;
+            line-height: 18px;
+            transform: none;
+            &::after {
+              display: inline-block;
+              width: 0.08rem;
+              margin-left: 0.04rem;
+              color: #d50000;
+              font-size: 12px;
+              font-family: SimSun, sans-serif;
+              line-height: 1;
+              content: '*';
+            }
+          }
+          .c7n-checkbox-group-label {
+            font-size: 12px;
+            color: @color-text-1;
+            line-height: 18px;
+            transform: none;
+          }
+          .c7n-checkbox-group {
+            margin-top: 5px;
+          }
+          .c7n-radio-button-wrapper-checked {
+            > span {
+              font-weight: 500;
+            }
+          }
+          .c7n-radio-group {
+            margin-top: 5px;
+            .c7n-radio-wrapper {
+              margin-right: 60px;
+            }
+          }
+          .c7n-input-label {
+            font-size: 12px;
+            color: @color-text-2;
+          }
+          .c7n-pro-input-number-wrapper {
+            input {
+              border-radius: 5px;
+              height: 36px;
+              line-height: 36px;
+            }
+          }
+          .c7n-pro-calendar-picker {
+            height: 36px;
+            border-radius: 5px;
+            input {
+              &:hover,
+              &:focus {
+                border: none;
+              }
+            }
+            &:hover,
+            &:focus {
+              border-color: @color-text-1 !important;
+            }
+          }
+          .after-service {
+            padding: 20px;
+            border-bottom: 1px solid #f2f2f2;
+            .after-service-title {
+              font-size: 16px;
+              font-weight: 500;
+              line-height: 22px;
+              margin-bottom: 16px;
+            }
+            .after-service-content {
+              .add-img {
+                margin-bottom: 25px;
+                .upload-img-title {
+                  margin-bottom: 5px;
+                  font-size: 12px;
+                  color: @color-text-1;
+                  line-height: 18px;
+                }
+              }
+            }
+          }
+          .after-confirm-info {
+            padding: 20px;
+            .after-confirm-info-title {
+              font-size: 16px;
+              font-weight: 500;
+              line-height: 22px;
+              margin-bottom: 16px;
+            }
+            .contact-info-title {
+              font-size: 14px;
+              color: @color-text-1;
+              line-height: 22px;
+              font-weight: 500;
+              margin-bottom: 24px;
+              &::before {
+                content: '';
+                display: inline-block;
+                width: 2px;
+                height: 12px;
+                background: #f53;
+                margin-right: 5px;
+              }
+            }
+          }
+          .after-service-info {
+            font-size: 12px;
+            color: @color-text-2;
+            line-height: 16px;
+          }
+        }
+        .application-content-right {
+          padding: 20px;
+          flex: 1;
+          .goods-info-title {
+            color: @color-text-1;
+            font-size: 16px;
+            font-weight: 500;
+          }
+          .goods-info-box {
+            display: flex;
+            width: 100%;
+            // height: 200px;
+            padding-top: 15px;
+            align-items: center;
+            .goods-image {
+              display: inline-block;
+              width: 70px;
+            }
+            .goods-details {
+              flex: 1;
+              margin-left: 20px;
+              height: 70px;
+              .goods-detail {
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                font-size: 14px;
+                color: @color-text-1;
+                line-height: 22px;
+                font-weight: 500;
+              }
+              .goods-code {
+                margin-top: 10px;
+                color: @color-text-2;
+              }
+            }
+          }
+        }
+      }
+    }
+    .sale-after-footer {
+      padding: 20px 25px;
+      background-color: #fff;
+      border: 1px solid #f2f2f2;
+      border-top: none;
+      .sale-after-sub-botton {
+        background-color: @primary-color;
+        color: #fff;
+      }
+    }
+  }
+}

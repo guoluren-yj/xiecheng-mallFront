@@ -1,0 +1,531 @@
+.beforehead-order-page {
+  width: 100%;
+  :global {
+    .beforehead-address-info {
+      height: 95px;
+      background-color: #fff;
+      margin-bottom: 10px;
+      .beforehead-address-info-title {
+        padding: 20px 20px 15px;
+        font-size: 14px;
+        color: @color-text-1;
+        font-weight: 600;
+      }
+      .beforehead-address-info-body {
+        padding: 0 20px;
+        i {
+          font-size: 14px;
+          margin-right: 5px;
+          margin-top: -2px;
+        }
+        .default-address-icon {
+          display: inline-block;
+          padding: 0 2px;
+          height: 18px;
+          background: @primary-bg-color;
+          border-radius: 2px;
+          text-align: center;
+          color: @primary-color;
+        }
+      }
+    }
+    .beforehead-order {
+      background-color: #fff;
+      margin-bottom: 20px;
+      .product-info-title {
+        font-size: 14px;
+        color: @color-text-1;
+        line-height: 22px;
+        font-weight: 600;
+        margin-bottom: 15px;
+      }
+      .product-info-body {
+        border: 1px solid @color-fill-6;
+        .order-title {
+          padding: 10px 15px;
+          border-bottom: 1px solid @color-fill-6;
+          font-size: 12px;
+          color: @color-text-1;
+          line-height: 18px;
+          font-weight: 600;
+        }
+        .order-body {
+          display: flex;
+          .order-product-price {
+            width: 300px;
+            border-right: 1px solid @color-fill-6;
+            .price-item {
+              padding: 0 15px 10px 15px;
+              display: flex;
+            }
+            .price-item:last-child {
+              padding-bottom: 15px;
+            }
+            .product-total {
+              padding-top: 15px;
+              font-size: 12px;
+              color: @color-text-1;
+              line-height: 18px;
+              font-weight: 600;
+            }
+            .order-label {
+              display: inline-block;
+              width: 98px;
+              margin-right: 10px;
+              color: @color-text-2;
+              font-weight: 400;
+            }
+            .price-integral {
+              width: 120px;
+              display: inline-block;
+              line-height: 18px;
+              vertical-align: bottom;
+            }
+          }
+          .order-product-list {
+            width: 848px;
+            .product-company {
+              font-size: 12px;
+              color: @color-text-1;
+              line-height: 18px;
+              font-weight: 600;
+              padding: 15px 15px 0 15px;
+            }
+            .product-table {
+              padding: 10px 15px;
+            }
+          }
+        }
+      }
+    }
+    .beforehead-order-bar {
+      margin-bottom: 60px;
+      .total-count {
+        padding-right: 15px;
+        float: right;
+        b {
+          color: #fca000;
+        }
+        .total-num {
+          line-height: 60px;
+          font-size: 14px;
+          margin-right: 10px;
+          display: inline-block;
+          span:first-child {
+            font-size: 14px;
+            color: #e85050;
+          }
+          span:last-child {
+            margin-left: 5px;
+          }
+        }
+        .total-price {
+          line-height: 60px;
+          font-size: 32px;
+          display: inline-block;
+          span:first-child {
+            font-size: 14px;
+          }
+          span:last-child {
+            color: #e85050;
+          }
+          .price-sign {
+            font-size: 32px;
+            color: #e85050;
+            margin-left: 5px;
+          }
+        }
+        .order-price-toatl,
+        .order-freight-total,
+        .order-price-toatl {
+          margin-bottom: 5px;
+        }
+        .order-price-toatl,
+        .order-freight-total,
+        .order-final-price {
+          text-align: right;
+          color: @color-text-2;
+          .total-count-label {
+            width: 150px;
+            font-weight: 500;
+          }
+          .total-count-content {
+            width: 125px;
+          }
+          span {
+            display: inline-block;
+          }
+        }
+        .order-price-toatl {
+          line-height: 18px;
+        }
+        .order-freight-total {
+          line-height: 18px;
+        }
+        .order-final-price {
+          line-height: 22px;
+          margin-bottom: 20px;
+          margin-top: 10px;
+          .total-count-content {
+            color: #fa6400;
+            font-size: 16px;
+          }
+        }
+      }
+      .beforehead-action {
+        clear: both;
+        height: 80px;
+        .create-true-order {
+          float: right;
+          a {
+            display: block;
+            height: 100%;
+            line-height: 60px;
+            font-size: 16px;
+            padding: 0 38px;
+            background-color: @primary-color;
+            border-radius: 2px;
+            color: #fff;
+          }
+          a:hover {
+            background-color: @primary-color;
+            cursor: pointer;
+            color: #fff;
+          }
+        }
+        .beforehead-action-disabled {
+          a {
+            background-color: #dadada !important;
+          }
+        }
+        .back-cart-btn {
+          float: right;
+          line-height: 60px;
+          margin: 0 30px;
+          font-size: 14px;
+          color: @primary-color;
+        }
+      }
+    }
+    .goods-img {
+      display: inline-block;
+      vertical-align: top;
+    }
+    .goods-product-name {
+      margin-left: 10px;
+      display: inline-block;
+      vertical-align: middle;
+      width: 245px;
+      .goods-name,
+      .goods-remark {
+        line-height: 18px;
+      }
+      .goods-name {
+        color: @color-text-1;
+      }
+      .goods-remark {
+        display: flex;
+        margin-top: 5px;
+        color: @color-text-2;
+        input {
+          height: 28px;
+        }
+        .detail-info-update {
+          font-size: 12px;
+          margin-left: 4px;
+          color: @primary-color;
+        }
+      }
+      .goods-remark-label {
+        width: max-content;
+      }
+      .goods-remark-required {
+        position: relative;
+        &::before {
+          content: '*';
+          color: @danger-color;
+          position: absolute;
+        }
+      }
+      i {
+        line-height: 18px;
+      }
+    }
+    .columns-item {
+      height: 50px;
+      color: @color-text-1;
+      :global {
+        .is-required {
+          .c7n-calendar-picker {
+            input {
+              background-color: #fffbef;
+              border: 1px solid #fca000;
+            }
+          }
+        }
+      }
+    }
+    .product-price {
+      color: @price-color;
+    }
+    .other-info {
+      border: 1px solid @color-fill-6;
+      border-top: none;
+      padding: 15px;
+      .other-info-title {
+        font-size: 14px;
+        color: @color-text-1;
+        line-height: 22px;
+        margin-bottom: 15px;
+        font-weight: 500;
+      }
+      .inner-title {
+        margin-bottom: 15px;
+        font-size: 12px;
+        color: @color-text-1;
+        line-height: 18px;
+        font-weight: 600;
+      }
+      .inner-info-null {
+        color: @danger-color;
+      }
+      > div {
+        margin-bottom: 20px;
+        font-size: 12px;
+        &:last-child {
+          margin: 0;
+        }
+        .info-label {
+          font-size: 12px;
+          font-weight: 500;
+          display: inline-block;
+          line-height: 36px;
+          color: #333;
+          margin-right: 24px;
+          .info-label-pay {
+            display: inline-block;
+          }
+        }
+        .label-required {
+          position: relative;
+          font-size: 12px;
+          font-weight: 500;
+          line-height: 18px;
+          margin-bottom: 10px;
+          &::before {
+            content: '*';
+            color: red;
+            position: absolute;
+            right: -10px;
+            top: 2px;
+          }
+        }
+        .ant-input-affix-wrapper {
+          top: -3px;
+        }
+        .ant-form-item {
+          position: relative;
+          top: 20px;
+          left: 13px;
+        }
+        .pay-way-wrapper {
+          display: flex;
+          .default,
+          .common {
+            font-size: 12px;
+            font-weight: 400;
+            width: 170px;
+            height: 38px;
+            margin-right: 20px;
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            background: #fff;
+            color: #333;
+            line-height: 36px;
+            text-align: center;
+            cursor: pointer;
+            border-radius: 4px;
+          }
+          // .common:hover {
+          //   background: #eee;
+          // }
+          .default {
+            line-height: 34px;
+            position: relative;
+            border: 2px solid @primary-color;
+            background: #fff;
+            font-weight: 500;
+            color: @primary-color;
+            .default-icon {
+              position: absolute;
+              font-size: 12px;
+              width: 14px;
+              height: 14px;
+              border-radius: 2px 0 2px 0;
+              background-color: @primary-color;
+              color: #fff;
+              line-height: 12px;
+              right: 0;
+              bottom: 0;
+              i {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+        .invoice-title {
+          line-height: 18px;
+          margin-bottom: 10px;
+        }
+        .invoice-info {
+          font-size: 12px;
+          .invoice-info-line {
+            margin-bottom: 10px;
+            line-height: 18px;
+          }
+          .invoice-info-line:last-child {
+            margin-bottom: 0;
+          }
+          .invoice-info-label {
+            width: 100px;
+            line-height: 18px;
+            display: inline-flex;
+            color: @color-text-2;
+          }
+          .invoice-info-content {
+            line-height: 18px;
+          }
+        }
+        .invoice-info-check {
+          margin-top: 10px;
+        }
+      }
+      .up-down {
+        display: block;
+      }
+
+      .invoice-details {
+        margin-top: 0;
+        margin-left: 80px;
+        display: block;
+        a {
+          color: @primary-color;
+        }
+        .invoice-row {
+          width: 600px;
+          display: flex;
+          justify-items: flex-start;
+          .invoice-col {
+            color: #666;
+            line-height: 24px;
+            &:nth-of-type(2n) {
+              margin-right: 0;
+            }
+            > p {
+              width: 25%;
+              text-align: right;
+              margin-right: 7%;
+              display: inline-block;
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+            }
+            > span {
+              width: 68%;
+              text-align: left;
+              display: inline-block;
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+:global {
+  .invoice-edit-modal {
+    .invoice-wrapper {
+      width: 100%;
+      .invoice-line {
+        min-height: 36px;
+        line-height: 36px;
+        margin-bottom: 20px;
+        position: relative;
+        .validate-msg {
+          position: absolute;
+          left: 45px;
+          bottom: -30px;
+          color: red;
+        }
+        .invoice-label {
+          position: relative;
+          font-weight: 500;
+          line-height: 18px;
+          margin-bottom: 10px;
+          width: max-content;
+          &::before {
+            content: '*';
+            color: red;
+            position: absolute;
+            right: -10px;
+            top: 2px;
+          }
+        }
+        .invoice-sel {
+          display: flex;
+          max-width: 440px;
+          > span {
+            font-size: 12px;
+            font-weight: 400;
+            width: 170px;
+            height: 38px;
+            margin-right: 20px;
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            background: #fff;
+            color: #333;
+            line-height: 36px;
+            text-align: center;
+            cursor: pointer;
+            border-radius: 4px;
+          }
+          .active {
+            line-height: 34px;
+            position: relative;
+            border: 2px solid @primary-color;
+            background: #fff;
+            font-weight: 500;
+            color: @primary-color;
+            .default-icon {
+              position: absolute;
+              font-size: 12px;
+              width: 14px;
+              height: 14px;
+              border-radius: 2px 0 2px 0;
+              background-color: @primary-color;
+              color: #fff;
+              line-height: 10px;
+              right: 0;
+              bottom: 0;
+              i {
+                font-size: 12px;
+              }
+            }
+          }
+          .disable-select {
+            font-size: 12px;
+            border-color: #eee;
+            cursor: not-allowed;
+            color: #eee;
+          }
+        }
+      }
+    }
+    .c7n-modal-footer {
+      position: fixed;
+      bottom: 24px;
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.order-detail-info {
+  width: 100%;
+  border-bottom: 1px solid #eaeaea;
+  display: flex;
+  padding: 20px;
+  :global {
+    .detail-info-grid {
+      flex: 1;
+      &:last-child {
+        border: none;
+      }
+      .grid-title {
+        width: 240px;
+        font-size: 14px;
+        color: rgba(0, 0, 0);
+        font-weight: 500;
+        margin-bottom: 15px;
+      }
+      .grid-row {
+        min-width: 240px;
+        margin-bottom: 10px;
+        span {
+          display: inline-block;
+        }
+        .grid-tag {
+          width: 120px;
+          color: #999;
+          vertical-align: top;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+        }
+        .grid-content {
+          color: #151515;
+          display: inline-block;
+          width: 250px;
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

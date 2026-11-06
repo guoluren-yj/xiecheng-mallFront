@@ -1,0 +1,123 @@
+:global {
+  .body-bg-color:has(.compare-title) {
+    background-color: #fff !important;
+  }
+}
+
+.price-compare-container {
+  max-width: 1190px;
+  margin: 0 auto;
+  :global {
+    .compare-title {
+      font-size: 14px;
+      color: #191919;
+      line-height: 22px;
+      font-weight: 600;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+    }
+    .price-compare-table {
+      width: 100%;
+      margin-bottom: 20px;
+      .price-compare-header,
+      .price-compare-line {
+        padding: 0 20px;
+        display: flex;
+      }
+      .price-compare-header {
+        height: 30px;
+        line-height: 30px;
+        font-size: 14px;
+        font-weight: 500;
+        background-color: #f2f2f2;
+        color: @color-text-1;
+      }
+      .price-compare-list {
+        border: 1px solid #e8e8e8;
+        border-radius: 2px;
+      }
+      .price-compare-line {
+        padding: 16px 20px;
+        border-bottom: 1px solid #e8e8e8;
+        &:last-of-type {
+          border: none;
+        }
+        .unit-price {
+          color: @price-color;
+        }
+      }
+      .product-info {
+        width: 440px;
+        display: flex;
+        margin-right: 42px;
+        position: relative;
+        .product-name {
+          margin-left: 20px;
+          width: 380px;
+          height: 36px;
+          line-height: 18px;
+          font-size: 12px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          // color: @color-text-1;
+        }
+        .master-flag {
+          position: absolute;
+          width: 40px;
+          height: 14px;
+          background: #fca000;
+          line-height: 14px;
+          color: #fff;
+          font-size: 10px;
+          text-align: center;
+        }
+      }
+      .supplier {
+        width: 180px;
+        margin-right: 58px;
+      }
+      .unit-price {
+        text-align: right;
+        width: 180px;
+        margin-right: 40px;
+      }
+      .source-from {
+        width: 80px;
+        margin-right: 70px;
+      }
+      .option {
+        text-align: center;
+      }
+    }
+    .static-list {
+      .supplier {
+        margin-right: 98px;
+      }
+      .source-from {
+        min-width: 80px;
+        margin-right: 0;
+      }
+    }
+    .price-compare-line {
+      width: calc(100% - 16px);
+      height: 284px;
+      outline: 8px solid #f7f7f7;
+      margin: 0 auto;
+    }
+    .price-compare-footer {
+      height: 40px;
+      align-items: center;
+      margin-top: 20px;
+      line-height: 40px;
+      .tips {
+        display: flex;
+        align-items: center;
+        color: @color-text-1;
+      }
+    }
+  }
+}

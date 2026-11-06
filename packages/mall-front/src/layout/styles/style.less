@@ -1,0 +1,199 @@
+:global {
+  @font-family: 'PingFang SC', 'Microsoft YaHei', 'Chinese Quote', '-apple-system',
+    'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Hiragino Sans GB', 'Helvetica Neue', Arial,
+    sans-serif !important;
+  @font-size: 12px;
+
+  * {
+    box-sizing: border-box;
+  }
+
+  ::-webkit-scrollbar {
+    background-color: transparent;
+
+    &:vertical {
+      width: 0.06rem;
+    }
+
+    &:horizontal {
+      height: 0.08rem;
+    }
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-clip: content-box;
+
+    &:vertical {
+      border-radius: 0.03rem;
+      background-color: transparent;
+    }
+
+    &:horizontal {
+      border-radius: 0.04rem;
+      background-color: rgba(29, 33, 41, 0.15);
+    }
+  }
+
+  :hover::-webkit-scrollbar-thumb {
+    &:vertical {
+      background-color: rgba(29, 33, 41, 0.15);
+    }
+
+    &:hover {
+      background-color: rgba(29, 33, 41, 0.25);
+    }
+  }
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  html,
+  body,
+  #root {
+    overflow-y: auto !important;
+    overflow-x: hidden;
+    min-height: 100vh;
+    position: absolute;
+    width: 100vw !important; //解决突然出现滚动条的抖动
+  }
+  body {
+    font-size: @font-size;
+    font-family: @font-family;
+    padding-right: 0 !important;
+    color: @content-font-color;
+    ::selection {
+      background: #3385ff;
+    }
+    .gb-wrapper {
+      position: relative;
+      min-height: 100%;
+      overflow: auto;
+      min-width: 1226px;
+    }
+    a {
+      color: @color-text-1;
+    }
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    p {
+      margin: 0;
+      padding: 0;
+    }
+    menu {
+      margin: 0;
+      padding: 0;
+    }
+    ol,
+    ul {
+      list-style: none;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+      &:hover {
+        color: @primary-color;
+      }
+      &:link {
+        text-decoration: none;
+      }
+    }
+    img {
+      border: none;
+    }
+
+    button {
+      padding: 0;
+      border-radius: 2px;
+      line-height: 26px;
+      border: 1px solid @color-fill-4;
+      outline: none;
+      cursor: pointer;
+      background-color: #fff;
+      color: #666;
+    }
+
+    input {
+      font-size: 12px;
+      outline: none;
+      // &:hover {
+      //   border: 1px solid @primary-color;
+      //   border-radius: 1px;
+      // }
+      // &:focus {
+      //   border: 1px solid @primary-color;
+      //   border-radius: 1px;
+      // }
+    }
+    input[type='checkbox'] {
+      margin-left: 0;
+      margin-right: 0;
+    }
+    input::-webkit-input-placeholder {
+      color: #999 !important;
+      font-family: @font-family;
+    }
+    input:-moz-placeholder {
+      color: #999 !important;
+      font-family: @font-family;
+    }
+    input::-moz-placeholder {
+      color: #999 !important;
+      font-family: @font-family;
+    }
+    input:-ms-input-placeholder {
+      color: #999 !important;
+      font-family: @font-family;
+    }
+    .h-disabled {
+      pointer-events: none;
+    }
+    .h-clearfix {
+      zoom: 1;
+      display: table;
+      width: 100%;
+      &:after {
+        content: ' ';
+        display: block;
+        clear: both;
+        height: 0;
+      }
+    }
+    td {
+      &.left {
+        text-align: left;
+      }
+      &.center {
+        text-align: center;
+      }
+      &.right {
+        text-align: center;
+      }
+      &.top {
+        vertical-align: top;
+      }
+      &.middle {
+        vertical-align: middle;
+      }
+      &.bottom {
+        vertical-align: bottom;
+      }
+    }
+  }
+  .Hmall-container {
+    max-width: 1190px;
+    margin: 0 auto;
+    background-color: #fff;
+  }
+
+  @media screen and (max-width: 1226px) {
+    body {
+      overflow-x: auto;
+    }
+  }
+}

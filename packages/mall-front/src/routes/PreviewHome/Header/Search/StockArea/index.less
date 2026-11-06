@@ -1,0 +1,87 @@
+.area-wrapper {
+  width: 480px;
+  background-color: white;
+  box-shadow: 0 0 4px #969696;
+  padding-top: 16px;
+  padding-left: 16px;
+  display: block;
+  &::before {
+    content: '';
+    position: absolute;
+    display: block;
+    background: #fff;
+    width: 8px;
+    height: 8px;
+    transform: rotate(-45deg);
+    left: 20px;
+    top: -4px;
+  }
+  :global {
+    .default-address {
+      font-weight: bold;
+    }
+    .address-value {
+      margin: 8px 0;
+      color: #999;
+      cursor: pointer;
+      &:hover {
+        color: @primary-color;
+      }
+    }
+    .stock-search {
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+    .all-city {
+      .select-city {
+        display: flex;
+        border-bottom: 2px solid @primary-color;
+        margin-bottom: 12px;
+        height: 26px;
+        span {
+          height: 30px;
+          padding: 2px 8px 0;
+          line-height: 22px;
+          cursor: pointer;
+        }
+        .current {
+          border: 2px solid @primary-color;
+          border-bottom: 0;
+        }
+        .sheng-name,
+        .shi-name,
+        .xian-name,
+        .xiangzhen-name {
+          height: 26px;
+          border: 2px solid @primary-color;
+          border-bottom: 0;
+          background-color: #fff;
+          padding-top: 0;
+        }
+      }
+      .ul-container {
+        max-width: 480px;
+        overflow: hidden;
+        padding-bottom: 16px;
+        .li-container {
+          .select-option {
+            color: #666;
+            width: 90px;
+            cursor: pointer;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            &:hover {
+              color: @primary-color;
+            }
+          }
+        }
+      }
+    }
+    ul li {
+      float: left;
+      cursor: pointer;
+      border: 1px solid #fff;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{{- if .Values.service.enabled }}
+apiVersion: apps/v1beta2
+kind: Service
+metadata:
+  name: {{ .Values.service.name }}
+  labels:
+{{ include "service.match.labels" . | indent 4 }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: http
+      protocol: TCP
+      name: client
+  selector:
+{{ include "service.match.labels" . | indent 4 }}
+{{- end }}

@@ -1,0 +1,134 @@
+.oms-apply-record {
+  :global {
+    .header-btn-search {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      flex-direction: row-reverse;
+      margin-top: 15px;
+      .c7n-input-rendered-wrapper {
+        height: 32px;
+      }
+      .c7n-input-rendered {
+        height: 32px;
+        > input {
+          height: 32px;
+        }
+      }
+      .c7n-input-label {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+    }
+
+    .apply-list {
+      margin: 10px 0;
+      .empty-purchase-list {
+        background: url(../../../../assets/images/order/illu_order_nodata_default.svg) no-repeat
+          center;
+        background-size: 19%;
+        height: 300px;
+        text-align: center;
+        div {
+          color: #999;
+          position: relative;
+          top: 242px;
+          font-size: 16px;
+        }
+      }
+      .receiver {
+        text-align: center;
+      }
+      button {
+        height: 26px;
+      }
+      .apply-list-line {
+        border: 1px solid @color-fill-6;
+        margin-bottom: 10px;
+        .apply-header {
+          display: flex;
+          border-radius: 2px;
+          background: rgba(0, 0, 0, 0.03);
+          height: 38px;
+          line-height: 38px;
+          padding: 0 20px;
+          li {
+            margin-right: 16px;
+            font-size: 12px;
+            color: @color-text-1;
+            vertical-align: top;
+          }
+          li:last-child {
+            margin: 0;
+            color: @color-text-2;
+            flex: 0;
+          }
+        }
+
+        .apply-content {
+          height: 100%;
+          .content-item {
+            height: 68px;
+            padding: 15px 15px;
+            .right-btn {
+              width: 80px;
+              color: @primary-color;
+              margin-top: 5px;
+              text-align: center;
+              cursor: pointer;
+              margin-left: 0;
+            }
+          }
+          .item-product,
+          .item-user,
+          .item-price,
+          .item-status,
+          .item-oparte {
+            border-top: 1px solid #f2f2f2;
+          }
+          .item-oparte {
+            padding: 10px 15px;
+            button:first-child {
+              margin-top: 0;
+            }
+          }
+          .item-status {
+            text-align: center;
+            i {
+              font-size: 14px;
+              margin-left: 6px;
+              margin-top: -3px;
+            }
+          }
+          .c7n-col-3,
+          .c7n-col-5,
+          .c7n-col-10 {
+            border-right: 1px solid #f2f2f2;
+          }
+          .item-product {
+            display: flex;
+            .product-name {
+              > p {
+                width: 230px;
+              }
+            }
+            .product-price {
+              width: 90px;
+              padding: 0 8px;
+              flex: 1;
+              text-align: left;
+            }
+            .product-qualite {
+              width: 40px;
+            }
+          }
+          .item-price {
+            height: 100%;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+.common-import {
+  width: 1186px;
+  margin: 0 auto;
+  :global {
+    .import-header {
+      width: 100%;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      .option-btns {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        .btn-margin {
+          margin-right: 12px;
+        }
+        button {
+          width: 102px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+      }
+      .option-forms {
+        display: flex;
+        align-items: center;
+        .ant-btn {
+          margin-left: 12px;
+        }
+        .select-plus {
+          border: 1px solid #ddd;
+          border-radius: 2px;
+          display: flex;
+          align-items: center;
+          .ant-select {
+            .ant-select-selection {
+              border: none;
+            }
+          }
+          .ant-select-focused,
+          .ant-select-open {
+            .ant-select-selection {
+              box-shadow: none;
+            }
+          }
+
+          > span {
+            display: inline-block;
+            width: 50px;
+            padding: 0 8px;
+            color: #999;
+            font-size: 12px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            text-align: center;
+            position: relative;
+            &::after {
+              content: '';
+              position: absolute;
+              width: 1px;
+              height: 18px;
+              background: #eee;
+              right: 0;
+            }
+          }
+        }
+        .disable-select-plus {
+          background: #f5f5f5;
+        }
+      }
+    }
+    .import-table-container {
+      width: 100%;
+      margin-top: 16px;
+    }
+  }
+}

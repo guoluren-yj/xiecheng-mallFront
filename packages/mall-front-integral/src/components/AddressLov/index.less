@@ -1,0 +1,52 @@
+:global {
+  .add-adrees-modal {
+    .ant-input-group-compact .ant-form-explain {
+      position: relative;
+      left: -182px;
+    }
+    .ant-form-explain {
+      padding-left: 72px;
+    }
+    .address-tag {
+      display: inline-block;
+      width: 72px;
+      text-align: right;
+      color: #2a2a2a;
+      > span {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      .label-required {
+        position: relative;
+        right: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        &::before {
+          content: '*';
+          display: block;
+          height: 20px;
+          line-height: 20px;
+          position: absolute;
+          top: 50%;
+          margin-top: -8px;
+          left: -8px;
+          color: #e85454;
+        }
+      }
+    }
+    .address-remark {
+      vertical-align: top;
+      line-height: 30px;
+    }
+    .ant-modal-footer {
+      padding: 16px 24px 24px;
+    }
+    .ant-modal-header {
+      .ant-modal-title {
+        font-weight: 500 !important;
+      }
+    }
+  }
+}

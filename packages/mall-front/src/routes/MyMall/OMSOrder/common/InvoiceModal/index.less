@@ -1,0 +1,72 @@
+.content {
+  :global {
+    .c7n-modal-body {
+      height: 100%;
+    }
+    .content-title {
+      font-size: 14px;
+      color: @color-text-1;
+      line-height: 22px;
+      margin-bottom: 20px;
+      font-weight: 500;
+    }
+    .line-item {
+      color: @color-text-2;
+      line-height: 18px;
+      .c7n-col-12 {
+        display: flex;
+        margin-bottom: 15px;
+      }
+      .line-item-label {
+        width: 100px;
+        margin-right: 10px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+    .logis-table {
+      margin-top: 14px;
+      border: 1px solid #f2f2f2;
+      .logis-table-header {
+        padding: 10px 15px;
+        color: @color-text-1;
+        line-height: 18px;
+        background: rgba(0, 0, 0, 0.03);
+        border-bottom: 1px solid #f2f2f2;
+      }
+      .logis-table-content {
+        min-height: 50px;
+        padding-top: 15px;
+        .time-line {
+          .logistics-time {
+            display: inline-block;
+            position: relative;
+            top: -5px;
+            margin-right: 10px;
+            width: 120px;
+            text-align: right;
+            color: @color-text-2;
+            vertical-align: top;
+          }
+          .logistics-desc {
+            display: inline-block;
+          }
+          .c7n-timeline-item-head-blue {
+            color: #47b881 !important;
+            border-color: #47b881 !important;
+          }
+          .c7n-timeline-item-content {
+            width: 500px;
+          }
+          .c7n-timeline-item-last .c7n-timeline-item-content {
+            min-height: 24px;
+          }
+          .c7n-timeline-item-last {
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}

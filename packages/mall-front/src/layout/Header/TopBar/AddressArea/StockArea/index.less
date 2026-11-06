@@ -1,0 +1,95 @@
+.area-wrapper {
+  width: 480px;
+  background-color: white;
+  box-shadow: 0 0 4px #969696;
+  padding-top: 16px;
+  padding-left: 16px;
+  display: block;
+  &::before {
+    content: '';
+    position: absolute;
+    display: block;
+    background: #fff;
+    width: 8px;
+    height: 8px;
+    transform: rotate(-45deg);
+    left: 20px;
+    top: -4px;
+  }
+  :global {
+    .address-title {
+      line-height: 18px;
+      margin-bottom: 5px;
+      color: @color-text-2;
+    }
+    .address-value {
+      color: @color-text-1;
+      font-weight: 600;
+      line-height: 18px;
+      margin-bottom: 20px;
+      cursor: pointer;
+      &:hover {
+        color: @primary-color;
+      }
+    }
+    .all-city {
+      .select-city {
+        display: flex;
+        border-bottom: 2px solid @primary-color;
+        margin-bottom: 10px;
+        height: 26px;
+        span {
+          height: 30px;
+          padding: 2px 8px 0;
+          line-height: 22px;
+          cursor: pointer;
+          color: @color-text-1;
+          max-width: 115px;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+        .current {
+          border: 2px solid @primary-color;
+          border-bottom: 0;
+        }
+        .country-name,
+        .sheng-name,
+        .shi-name,
+        .xian-name,
+        .xiangzhen-name {
+          height: 26px;
+          border: 2px solid @primary-color;
+          border-bottom: none !important;
+          background-color: #fff;
+          padding-top: 0;
+          color: @primary-color;
+        }
+      }
+      .ul-container {
+        max-width: 480px;
+        overflow: hidden;
+        padding-bottom: 16px;
+        .li-container {
+          .select-option {
+            color: @color-text-1;
+            width: 90px;
+            cursor: pointer;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            line-height: 20px;
+            &:hover {
+              color: @primary-color;
+            }
+          }
+        }
+      }
+    }
+    ul li {
+      float: left;
+      cursor: pointer;
+      border: 1px solid #fff;
+    }
+  }
+}

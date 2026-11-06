@@ -1,0 +1,61 @@
+// .avatar-uploader {
+// }
+.yulan-box {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 90px;
+  > p {
+    width: 80px;
+    font-size: 12px;
+    text-align: center;
+  }
+  > p:first-child {
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
+.cropper-box {
+  margin: 20px 0 0 20px;
+}
+
+:global {
+  .avatar-uploader-Modal {
+    .ant-modal-header {
+      border-bottom: none;
+    }
+    .ant-modal-footer {
+      border-top: none;
+      padding: 0 0.25rem 0.25rem 0;
+    }
+    .ant-modal-title {
+      font-size: 16px;
+    }
+    .ant-modal-body {
+      height: 280px;
+      padding-top: 0 !important;
+    }
+  }
+
+  .img-preview {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-top: 20px;
+  }
+}
+
+// 上传头像模块
+.uploadHeadshotModal {
+  :global {
+    .ant-modal-title {
+      padding: 0.17rem 0 0.17rem 0.01rem;
+    }
+    .ant-modal-body {
+      padding: 0 0.25rem;
+      // div{
+      //   margin-top: 30px !important;
+      // }
+    }
+  }
+}

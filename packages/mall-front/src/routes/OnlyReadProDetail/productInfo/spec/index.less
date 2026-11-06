@@ -1,0 +1,102 @@
+.product-spec {
+  display: block;
+  :global {
+    .spec-row {
+      line-height: 32px;
+      display: flex;
+      // align-items: center;
+      margin-bottom: 5px;
+    }
+    .spec-row.active {
+      background: #fdecec;
+    }
+
+    .spec-title {
+      display: inline-block;
+      font-size: 12px;
+      color: #999;
+      width: 80px;
+      vertical-align: top;
+      word-break: break-all;
+      white-space: nowrap;
+      text-overflow: clip;
+      overflow: hidden;
+      text-align-last: justify;
+    }
+
+    .spec-products {
+      width: 420px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 40px;
+      max-height: 380px;
+      overflow: hidden;
+      // padding-right: 30px;
+      &:hover {
+        overflow: auto;
+      }
+      .product {
+        box-sizing: border-box;
+        // display: inline-block;
+        float: left;
+        border: 1px solid #ddd;
+        margin-right: 8px;
+        margin-bottom: 4px;
+        line-height: normal;
+        max-width: 240px;
+        background: #fff;
+        a {
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          &:hover {
+            color: @color-text-1;
+          }
+        }
+        &:hover {
+          border-color: @primary-color;
+        }
+      }
+
+      .product-active {
+        border-color: @primary-color;
+
+        span {
+          color: @primary-color;
+        }
+      }
+
+      .product-disable {
+        border-style: dashed;
+        background: #fff;
+        color: #999;
+      }
+
+      .product-link {
+        display: block;
+        cursor: pointer;
+        line-height: 30px;
+
+        span {
+          vertical-align: middle;
+          padding: 0 14px;
+        }
+      }
+
+      .spec-img {
+        width: 40px;
+        height: 40px;
+        vertical-align: middle;
+        display: inline-block;
+      }
+
+      // .product-link-disabled {
+      //   cursor: not-allowed;
+      // }
+    }
+
+    .spec-img-products {
+      line-height: 50px;
+    }
+  }
+}

@@ -1,0 +1,199 @@
+.top-box {
+  height: 107px;
+  background: #fff;
+  padding: 15px;
+  padding-bottom: 0;
+  margin-bottom: 10px;
+  border-left: 1px solid @primary-bg-color;
+}
+:global {
+  .select-class {
+    .c7n-select-dropdown-menu {
+      li:hover {
+        background-color: @primary-bg-color;
+      }
+    }
+  }
+}
+.top-user {
+  margin-bottom: 15px;
+}
+
+.top-user-touxiang {
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.07);
+  overflow: hidden;
+  margin-right: 12px;
+}
+
+.top-user-userName {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 12px;
+  color: @content-font-color;
+  letter-spacing: 0;
+  font-weight: 600;
+  cursor: pointer;
+  height: 40px;
+  p {
+    > span {
+      vertical-align: top;
+      display: inline-block;
+      width: 70px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+  :global {
+    .currentRoleName {
+      max-width: 100px;
+      background: @primary-bg-color;
+      height: 18px;
+      padding: 0 5px;
+      margin-top: 4px;
+      font-size: 10px;
+      color: @primary-color;
+      display: inline-block;
+    }
+  }
+}
+
+.top-company {
+  margin-top: 16px;
+  height: 28px;
+  background-image: linear-gradient(180deg, #fff 0%, #f4f4f5 100%);
+  border: 1px solid #d9d9d9;
+  border-radius: 2px;
+  line-height: 28px;
+  padding: 0 10px;
+  // cursor: pointer;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@keyframes shake-new {
+  0% {
+    translate: 0;
+  }
+  50% {
+    translate: -3px;
+  }
+  100% {
+    translate: 0;
+  }
+}
+.notice {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 3px solid transparent;
+    border-right: 4px solid @primary-color;
+    border-bottom: 4px solid transparent;
+    left: 5px;
+    top: 4px;
+    animation: shake-new 1s ease-in-out infinite;
+  }
+  &::after {
+    content: 'NEW';
+    display: inline-block;
+    width: 35px;
+    height: 20px;
+    background-color: @primary-color;
+    color: #fff;
+    font-size: 12px;
+    transform: scale(0.8);
+    text-align: center;
+    animation: shake-new 1s ease-in-out infinite;
+    margin-left: 5px;
+    font-weight: 600;
+  }
+}
+.bottom-box {
+  height: 270px;
+  background: #fff;
+  padding: 14px 15px;
+  border-left: 1px solid @primary-bg-color;
+  :global {
+    .order-info {
+      border-bottom: 1px dashed #e3dede;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      height: 68px;
+      padding: 15px 0;
+      .order-num {
+        display: inline-block;
+        text-align: center;
+        width: 52px;
+        .num {
+          font-size: 14px;
+          color: @primary-color;
+          letter-spacing: 0;
+          line-height: 20px;
+        }
+        .desc {
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+        }
+      }
+    }
+    .gonghgao-info {
+      border-bottom: 1px dashed #e3dede;
+      padding: 10px 0;
+      .gonghgao-info-title {
+        line-height: 20px;
+      }
+      .gonghgao-info-content {
+        height: 48px;
+        overflow: hidden;
+        i {
+          font-size: 12px;
+          margin-right: 4px;
+        }
+
+        .scroll-notice,
+        .scroll-notice-second {
+          transition: translate 0.5s ease-in-out;
+        }
+        .gonghgao-info-item {
+          color: @color-text-2;
+          line-height: 18px;
+          height: 18px;
+          display: block;
+          width: 160px;
+          margin: 6px 0;
+          &:nth-child(2n) {
+            margin: 0;
+          }
+          i {
+            color: @primary-color;
+            vertical-align: initial;
+          }
+        }
+      }
+    }
+    .link-info {
+      li {
+        text-align: center;
+        display: inline-block;
+        width: 48px;
+        padding: 15px 0;
+        cursor: pointer;
+        margin-right: 7px;
+        &:nth-child(3n) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,409 @@
+.order-detail-container {
+  :global {
+    .primary-btn {
+      width: 68px;
+      height: 24px;
+      line-height: 24px;
+      color: #fff;
+      border-radius: 2px;
+      background: @primary-color;
+      &:hover {
+        background: @primary-hover-color;
+        color: #fff;
+      }
+    }
+    .order-detail-breadcrumb {
+      line-height: 22px;
+      padding: 10px 0;
+      width: 1190px;
+      margin: 0 auto;
+      font-size: 14px;
+    }
+    .order-detail-list {
+      position: relative;
+      background-color: white;
+      font-size: 12px;
+      color: #333;
+      height: 100%;
+      padding: 20px 20px 0;
+      .order-detail-steps {
+        margin-bottom: 23px;
+        .c7n-steps-item-title {
+          font-size: 14px;
+        }
+        .c7n-steps-item-finish,
+        .c7n-steps-item-process {
+          .c7n-steps-item-icon {
+            background-color: #47b881;
+          }
+        }
+        .c7n-steps-item-finish {
+          .c7n-steps-item-title::after {
+            background-color: #47b881;
+          }
+        }
+      }
+      // 确认收货按钮
+      .confirmBtn {
+        position: absolute;
+        right: 57px;
+        top: 25px;
+      }
+      // 订单信息
+      .order-info {
+        border: 1px solid #eaeaea;
+        border-radius: 2px;
+        margin-bottom: 16px;
+        // 信息头
+        .order-info-header {
+          background: #f5f5f5;
+          border-bottom: 1px solid #eaeaea;
+          border-radius: 2px 2px 0 0;
+          height: 32px;
+          line-height: 32px;
+          padding-left: 24px;
+        }
+        // 文本区
+        .order-info-content {
+          .content-progress {
+            height: 50px;
+            background: @color-text-1;
+          }
+          // 物流信息区
+          .content-LogisticsInfo {
+            // border-top: 1px solid #eaeaea;
+            padding: 24px 0 8px 0;
+            margin: 0 24px;
+            display: flex;
+            .no-track {
+              width: 100%;
+              text-align: center;
+              padding-bottom: 16px;
+            }
+            .desc-LogisticsInfo {
+              width: 300px;
+              padding: 24px;
+              border-right: 1px solid #eaeaea;
+              > li {
+                height: 40px;
+                line-height: 40px;
+                > span:nth-of-type(1) {
+                  color: #999;
+                  display: inline-block;
+                  width: 80px;
+                  text-align: left;
+                }
+                > span:nth-of-type(2) {
+                  color: #666;
+                }
+              }
+            }
+            .logistics-info-btn {
+              margin-left: 206px;
+              color: #333;
+              &:hover {
+                color: @primary-color;
+              }
+              a {
+                display: inline-block;
+                width: 100px;
+                height: 28px;
+                text-align: center;
+                border: 1px solid @primary-color;
+                border-radius: 2px;
+                margin: 24px 0;
+                line-height: 28px;
+                color: @primary-color;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+      // 服务单
+      .service-list {
+        border: 1px solid #eaeaea;
+        border-radius: 2px;
+        .service-list-header {
+          background: #f5f5f5;
+          border-bottom: 1px solid #eaeaea;
+          border-radius: 2px 2px 0 0;
+          height: 32px;
+          line-height: 32px;
+          padding-left: 20px;
+        }
+        .service-list-content {
+          padding: 20px;
+          .list-title {
+            color: @color-text-1;
+            font-weight: 500;
+            margin-bottom: 10px;
+          }
+          .label {
+            color: #666;
+            display: inline-block;
+            width: 95px;
+            margin-right: 10px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+          .label-content {
+            width: 162px;
+            display: inline-block;
+            vertical-align: top;
+            color: #333;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+          .order-remark {
+            white-space: nowrap;
+          }
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+      // 商品详情
+
+      .product-wrapper {
+        border: 1px solid #eee;
+        border-top: none;
+        padding: 20px;
+        .product-detail-info-title {
+          margin-bottom: 15px;
+          color: @color-text-1;
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 22px;
+        }
+        .product-header {
+          width: 100%;
+          padding-left: 20px;
+          align-items: center;
+          height: 32px;
+          border-top: 1px solid #eee;
+          border-bottom: 1px solid #eee;
+          display: flex;
+          background-color: @color-fill-7;
+          color: @color-text-1;
+          font-weight: 500;
+          .product-header-left {
+            flex: 1;
+            display: flex;
+            align-items: center;
+          }
+          .operate {
+            width: 220px;
+            text-align: left;
+            padding-right: 30px;
+          }
+        }
+        .product-po-num {
+          padding: 10px 30px 10px 20px;
+          line-height: 18px;
+          color: @color-text-1;
+          border-bottom: 1px solid @color-fill-6;
+          border-left: 1px solid @color-fill-6;
+          border-right: 1px solid @color-fill-6;
+          i {
+            color: @primary-color;
+            margin-left: 5px;
+          }
+          .c7n-badge-count {
+            min-width: 16px;
+            height: 16px;
+            line-height: 16px;
+            padding: 0;
+            top: -0.7em;
+          }
+        }
+        .product-list {
+          display: flex;
+          .product-list-left {
+            flex: 1;
+            border-left: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+            .product-list-line {
+              padding: 10px 0 10px 20px;
+            }
+          }
+          .product-list-right {
+            width: 220px;
+            padding-top: 5px;
+            border-bottom: 1px solid #eee;
+            border-right: 1px solid @color-fill-6;
+            display: flex;
+            > div {
+              display: inline-block;
+              width: 100px;
+              vertical-align: top;
+              margin-right: 9px;
+              &:last-child {
+                margin-right: 0;
+              }
+            }
+            .right-btn {
+              cursor: pointer;
+              color: @primary-color;
+              line-height: 18px;
+              margin-bottom: 6px;
+              text-align: left;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+            }
+            .right-btn.disabled {
+              color: @color-text-3;
+            }
+          }
+        }
+        .product-header-left,
+        .product-list-line {
+          display: flex;
+          // align-items: center;
+          > span {
+            display: inline-block;
+          }
+          .product-info {
+            width: 265px;
+            display: flex;
+            .product-name {
+              display: inline-block;
+              // flex: 1;
+              width: 270px;
+              text-align: left;
+              line-height: 18px;
+              min-height: 36px;
+              // vertical-align: top;
+              position: relative;
+              margin-left: 10px;
+              // top: 45px;
+              .product-name-label {
+                // display: flex;
+                // flex-direction: column;
+                // align-items: center;
+                display: -webkit-box;
+                line-height: 18px;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                .product-label {
+                  display: inline-block;
+                  width: 40px;
+                  height: 18px;
+                  font-size: 12px;
+                  text-align: center;
+                  line-height: 18px;
+                  border-radius: 2px;
+                  color: #5cae2a;
+                  border: 1px solid #5cae2a;
+                  margin-right: 8px;
+                  position: relative;
+                  top: 1px;
+                  // top: -1px;
+                }
+              }
+              .product-remark {
+                color: @color-text-2;
+                line-height: 18px;
+                margin-top: 5px;
+              }
+              .product-service {
+                color: #999;
+                position: relative;
+                left: -6px;
+                margin-top: 4px;
+                > p {
+                  display: flex;
+                  align-items: center;
+                  > span {
+                    display: block;
+                  }
+                  .service-name {
+                    width: 120px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    margin-right: 8px;
+                  }
+                  .service-quantity {
+                    width: 40px;
+                    margin-right: 8px;
+                  }
+                  .service-price {
+                    width: 48px;
+                    text-align: right;
+                  }
+                }
+              }
+            }
+          }
+          .card-info {
+            width: 100px;
+          }
+          .product-num {
+            width: 156px;
+          }
+          // .product-currency {
+          //   width: 110px;
+          // }
+          .product-price {
+            width: 80px;
+            text-align: right;
+            padding-right: 20px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+          .product-quantity {
+            width: 76px;
+          }
+          .product-total {
+            width: 105px;
+            text-align: right;
+            padding-right: 20px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+          .product-status {
+            width: 100px;
+          }
+        }
+      }
+      .product-footer {
+        padding: 20px 0;
+        text-align: right;
+        .product-footer-num {
+          margin-bottom: 5px;
+        }
+        .footer-num-label {
+          margin-right: 10px;
+        }
+        .footer-num-price {
+          display: inline-block;
+          width: 120px;
+        }
+        strong {
+          font-size: 14px;
+          color: @color-text-1;
+          text-align: right;
+          line-height: 22px;
+        }
+        b {
+          color: @primary-color;
+        }
+      }
+    }
+    .oprate-btns {
+      margin-right: 8px;
+      .c7n-pro-attachment-wrapper {
+        position: relative;
+        top: -8px;
+        span {
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}

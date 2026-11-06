@@ -1,0 +1,33 @@
+.other-mall-list {
+  background-color: @primary-color;
+  color: #fff;
+  margin-left: 25px;
+  padding: 0 15px;
+  font-size: 14px;
+  line-height: 38px;
+  height: 38px;
+  width: 90px;
+  cursor: pointer;
+  z-index: 100;
+  :global {
+    .other-mall-list-item {
+      width: 90px;
+      height: 40px;
+      background-color: #fff;
+      margin-left: -15px;
+      display: none;
+      > img {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  &:hover {
+    :global {
+      .other-mall-list-item {
+        display: block;
+      }
+    }
+  }
+}

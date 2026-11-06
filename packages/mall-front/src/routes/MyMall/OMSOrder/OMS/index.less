@@ -1,0 +1,86 @@
+.order-center-record {
+  :global {
+    .c7n-select-tags .c7n-select-selection--multiple .c7n-select-selection__rendered,
+    .c7n-select-multiple .c7n-select-selection--multiple .c7n-select-selection__rendered {
+      padding: 0;
+    }
+    .order-centent-operation {
+      margin-top: 15px;
+    }
+    .order-centent-operation-btns {
+      display: flex;
+      flex-flow: row-reverse;
+      .c7n-pro-btn-icon-only {
+        border-radius: 3px;
+      }
+      .batch-receive-btn {
+        button {
+          max-width: 118px;
+        }
+      }
+    }
+    .order-centent-operation-button {
+      display: flex;
+      align-items: center;
+      padding: 0 11px;
+      // margin-left: 10px;
+      cursor: pointer;
+      i {
+        color: @primary-color;
+        margin-right: 4px;
+        font-size: 16px;
+      }
+      span {
+        color: @primary-color;
+      }
+    }
+    .order-centent-operation-button.accept {
+      i,
+      span {
+        cursor: pointer;
+      }
+    }
+    .order-centent-operation-button.disable {
+      cursor: not-allowed;
+      i,
+      span {
+        color: #999;
+        cursor: not-allowed;
+      }
+    }
+  }
+}
+
+.order-centent-operation-Menu {
+  :global {
+    .order-centent-operation-button {
+      display: flex;
+      align-items: center;
+      padding: 0 11px;
+      // margin-left: 10px;
+      cursor: pointer;
+      i {
+        color: @primary-color;
+        margin-right: 4px;
+        font-size: 16px;
+      }
+      span {
+        color: @primary-color;
+      }
+    }
+    .order-centent-operation-button.accept {
+      i,
+      span {
+        cursor: pointer;
+      }
+    }
+    .order-centent-operation-button.disable {
+      cursor: not-allowed;
+      i,
+      span {
+        color: #999;
+        cursor: not-allowed;
+      }
+    }
+  }
+}

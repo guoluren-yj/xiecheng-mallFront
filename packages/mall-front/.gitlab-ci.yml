@@ -1,0 +1,77 @@
+image: registry.cn-hangzhou.aliyuncs.com/choerodon-tools/cifront:0.7.0
+
+stages:
+  - node_build
+  - docker_build
+
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
+
+node_build:
+  stage: node_build
+  script:
+    - node_config
+    - node_module
+    - node_build
+    - cp -r dist /backup/cache/${CI_PROJECT_NAME}-${CI_PROJECT_ID}-${CI_COMMIT_REF_NAME}-${CI_COMMIT_SHA}/dist
+  only:
+    - develop
+    - test
+    - pre
+    - /^\d+(\.\d+)*.*/
+  tags:
+    - 154-runner
+
+docker_build:
+  image: registry.cn-hangzhou.aliyuncs.com/choerodon-tools/cibase:0.7.0
+  stage: docker_build
+  script:
+    - docker_build
+    - rm -rf /backup/cache/${CI_PROJECT_NAME}-${CI_PROJECT_ID}-${CI_COMMIT_REF_NAME}-${CI_COMMIT_SHA}
+    - chart_build
+  only:
+    - develop
+    - test
+    - pre
+    - /^\d+(\.\d+)*.*/
+  tags:
+    - 154-runner
+
+.auto_devops: &auto_devops |
+    http_status_code=`curl -o .auto_devops.sh -s -m 10 --connect-timeout 10 -w %{http_code} "${CHOERODON_URL}/devops/ci?token=${Token}&type=front"`
+    if [ "$http_status_code" != "200" ]; then
+      cat .auto_devops.sh
+      exit 1
+    fi
+    sed -i "180,187s/^/#/" .auto_devops.sh
+    source .auto_devops.sh
+
+    function node_config() {
+      yarn config set registry https://nexus.going-link.com/repository/zhenyun-npm-group/
+      npm config set registry https://nexus.going-link.com/repository/zhenyun-npm-group/
+      #yarn global add lerna --registry=http://nexus.saas.hand-china.com/content/groups/srm-npm-group/
+      export PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=1
+    }
+
+    function node_module(){
+        mkdir -p /backup/cache/${CI_PROJECT_NAME}-${CI_PROJECT_ID}-${CI_COMMIT_REF_NAME}-${CI_COMMIT_SHA}
+        lerna bootstrap
+        lerna run transpile
+    }
+
+    function node_build(){
+        chmod -R 777 node_modules
+        # yarn build:dll
+        yarn build
+    }
+
+    function docker_build(){
+        cp -r /backup/cache/${CI_PROJECT_NAME}-${CI_PROJECT_ID}-${CI_COMMIT_REF_NAME}-${CI_COMMIT_SHA}/* ${1:-"."}
+        sudo docker login -u ${DOCKER_USERNAME} -p ${DOCKER_PASSWORD} ${DOCKER_REGISTRY}
+        sudo docker build --pull -t ${DOCKER_REGISTRY}/${GROUP_NAME}/${PROJECT_NAME}:${CI_COMMIT_TAG} ${1:-"."}
+        sudo docker push ${DOCKER_REGISTRY}/${GROUP_NAME}/${PROJECT_NAME}:${CI_COMMIT_TAG}
+        echo "${DOCKER_REGISTRY}/${GROUP_NAME}/${PROJECT_NAME}:${CI_COMMIT_TAG}"
+    }
+
+before_script:
+  - *auto_devops

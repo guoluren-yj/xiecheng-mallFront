@@ -1,0 +1,29 @@
+@keyframes hot-flicker {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.hot-point {
+  box-sizing: content-box;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-clip: content-box;
+  pointer-events: none;
+  animation: hot-flicker cubic-bezier(0.51, 0.02, 0.48, 0.97) 1.4s infinite;
+  &:hover {
+    opacity: 1;
+    animation: none;
+  }
+}
+.hot-point-small {
+  width: 8px;
+  height: 8px;
+}

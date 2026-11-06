@@ -1,0 +1,139 @@
+.goods-comments {
+  :global {
+    .comments-rate {
+      display: flex;
+      border-bottom: 1px solid #eee;
+      margin-bottom: 15px;
+      .comments-rate-info {
+        position: relative;
+        width: 144px;
+        text-align: center;
+        .comments-rate-total {
+          color: #aba9a9;
+          margin-bottom: 10px;
+        }
+        .comments-rate-num {
+          font-size: 36px;
+          color: #f44336;
+          line-height: 36px;
+          margin-bottom: 10px;
+        }
+        &::after {
+          position: absolute;
+          content: '';
+          top: -10px;
+          right: 0;
+          width: 1px;
+          height: 115px;
+          background-color: #eee;
+        }
+      }
+      .comments-rate-goods {
+        display: flex;
+        margin-left: 25px;
+        .comments-goods-photo {
+          margin-right: 20px;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+      .rate-list {
+        font-size: 18px;
+        line-height: 18px;
+        color: #f44336;
+        margin-bottom: 20px;
+        :global {
+          .ant-rate-star {
+            margin-right: 2px;
+          }
+        }
+      }
+    }
+    .comments-content {
+      // margin: 0 20px;
+      li:last-child {
+        border-bottom: none;
+      }
+      .comments-detail {
+        display: flex;
+        border-bottom: 1px dashed #eee;
+        margin-bottom: 15px;
+        .comments-left {
+          margin-right: 35px;
+          .comments-user-photo {
+            border-radius: 50%;
+            margin: 0;
+          }
+          .comments-user-name {
+            font-size: 12px;
+            letter-spacing: 0;
+            width: 44px;
+            text-align: center;
+            margin-top: 10px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+        }
+        .comments-right {
+          width: 1000px;
+          .rate-list {
+            font-size: 16px;
+            line-height: 16px;
+            vertical-align: top;
+            color: #f44336;
+            margin-bottom: 10px;
+            :global {
+              .ant-rate-star {
+                margin-right: 2px;
+              }
+            }
+          }
+          .comments-describe {
+            font-size: 14px;
+            word-wrap: break-word;
+          }
+          ul {
+            display: flex;
+            .comments-picture {
+              position: relative;
+              margin-right: 20px;
+              margin-top: 15px;
+              &:hover .img-modal {
+                display: inline-block;
+              }
+              .img-modal {
+                display: none;
+                background: rgba(0, 0, 0, 0.3);
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                .modal-icon {
+                  position: absolute;
+                  top: 50%;
+                  transform: translateY(-50%);
+                  cursor: pointer;
+                }
+                .preview-btn {
+                  width: 13px;
+                  height: 11px;
+                  background: url(../../../../assets/images/preview-img-icon.png);
+                  background-size: 100% 100%;
+                  background-position: center center;
+                  left: 20px;
+                }
+              }
+            }
+          }
+          .comments-time {
+            color: #999;
+            margin: 15px 0;
+          }
+        }
+      }
+    }
+  }
+}

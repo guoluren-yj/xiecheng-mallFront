@@ -1,0 +1,39 @@
+.content {
+  :global {
+    // 按钮
+    .c7n-radio-group {
+      margin-bottom: 15px;
+      height: 32px;
+    }
+    .c7n-radio-button-wrapper-checked {
+      border: none;
+      box-shadow: none;
+      background: @primary-bg-color;
+      color: @primary-color;
+      font-weight: 600;
+      &:hover {
+        box-shadow: none;
+      }
+    }
+    .c7n-radio-button-wrapper::before {
+      display: none;
+    }
+    .c7n-radio-button-wrapper {
+      height: 32px;
+      line-height: 32px;
+      font-size: 14px;
+      border: none;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      padding: 0 15px;
+      &:hover {
+        color: @primary-color;
+      }
+    }
+    .c7n-divider-vertical {
+      margin: 0 5px;
+      top: -1.5em;
+    }
+  }
+}

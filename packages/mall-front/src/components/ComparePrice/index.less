@@ -1,0 +1,227 @@
+@keyframes show-hide {
+  from {
+    bottom: -168px;
+  }
+  to {
+    bottom: 0;
+  }
+}
+.compare-price-wrapper {
+  width: 100%;
+  height: 140px;
+  position: fixed;
+  bottom: 0;
+  z-index: 99;
+  // border: 1px solid #e8e8e8;
+  animation: show-hide 0.32s;
+  :global {
+    .compare-price-container {
+      width: 1190px;
+      margin: 0 auto;
+      box-shadow: 0 -8px 8px -5px rgba(0, 0, 0, 0.15);
+      background: @color-fill-7;
+    }
+    .compare-price-header {
+      width: 100%;
+      height: 40px;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #e8e8e8;
+      > p {
+        font-size: 14px;
+        color: @color-text-1;
+        font-weight: 600;
+      }
+      > a {
+        font-size: 12px;
+        color: @color-text-2;
+      }
+    }
+    .compare-price-content {
+      width: 100%;
+      height: 100px;
+      display: flex;
+      background-color: #fff;
+      .swiper-container {
+        // flex: 1;
+        position: relative;
+        max-width: 1040px;
+        // height: 140px;
+        overflow: hidden;
+        z-index: 1;
+        display: flex;
+        .swiper-wrapper {
+          height: 100%;
+          display: flex;
+          .swiper-slide {
+            width: 260px;
+            border-right: 1px solid #e8e8e8;
+          }
+          .white-block {
+            display: flex;
+            padding-left: 30px;
+            padding-top: 48px;
+            .white-block-plus {
+              width: 60px;
+              height: 60px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border: 1px dashed rgba(0, 0, 0, 0.26);
+              border-radius: 2px;
+              background-color: @color-fill-8;
+              margin-right: 10px;
+            }
+            > p {
+              line-height: 60px;
+            }
+          }
+          .product-block {
+            padding: 20px;
+            position: relative;
+            .compare-delete-icon {
+              position: absolute;
+              cursor: pointer;
+              top: 10px;
+              right: 20px;
+              color: @color-fill-2;
+            }
+            .product-top-opts {
+              margin-bottom: 12px;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              > a {
+                color: @color-text-4;
+                &:hover {
+                  color: @primary-color;
+                }
+              }
+            }
+            .product-info {
+              display: flex;
+              .product-param {
+                margin-left: 10px;
+                .product-price {
+                  width: 140px;
+                  color: @price-color;
+                  font-size: 16px;
+                  line-height: 24px;
+                }
+                .product-name {
+                  width: 150px;
+                  height: 36px;
+                  display: -webkit-box !important;
+                  text-overflow: ellipsis;
+                  overflow: hidden;
+                  -webkit-line-clamp: 2;
+                  -webkit-box-orient: vertical;
+                  line-height: 18px;
+                  font-size: 12px;
+                  color: @color-text-1;
+                  word-break: break-all;
+                  &:hover {
+                    color: @primary-color;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .compare-product-prev,
+        .compare-product-next {
+          position: absolute;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          width: 20px;
+          height: 40px;
+          background: @color-fill-7;
+          top: 50%;
+          margin-top: -20px;
+          z-index: 100;
+        }
+        .compare-product-prev {
+          left: 0;
+        }
+        .compare-product-next {
+          right: 0;
+        }
+        .swiper-button-disabled {
+          cursor: not-allowed;
+          i {
+            color: @color-fill-4;
+          }
+        }
+      }
+      .compare-product-empty {
+        flex: 1;
+        border-right: 1px solid #e8e8e8;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .compare-product-empty-container {
+          height: 60px;
+          display: flex;
+          align-items: center;
+          p {
+            color: @color-text-3;
+            margin-left: 5px;
+          }
+        }
+      }
+      .compare-price-options {
+        width: 150px;
+        // height: 140px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 9px;
+        .compare-price-clear {
+          height: 24px;
+          margin-bottom: 5px;
+          margin-left: 0;
+        }
+        .compare-price-clear-disable {
+          color: #999;
+          cursor: not-allowed;
+        }
+        .compare-price-checks {
+          color: @primary-color;
+          margin: 8px 0;
+        }
+        .compare-price-checks-disable {
+          color: #999;
+          cursor: not-allowed;
+        }
+        .compare-price-create {
+          width: 100px;
+          height: 24px;
+          display: flex;
+          line-height: 24px;
+          align-items: center;
+          justify-content: center;
+          span {
+            vertical-align: middle;
+          }
+          .icon-help {
+            font-size: 14px;
+            margin-left: 5px;
+            color: @color-fill-2;
+          }
+        }
+        .compare-price-option-compare {
+          max-width: 120px;
+          height: 24px;
+          margin-bottom: 5px;
+        }
+        // .compare-price-create {
+        //   color: #666;
+        // }
+      }
+    }
+  }
+}

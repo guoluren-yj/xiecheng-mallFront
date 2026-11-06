@@ -1,0 +1,98 @@
+@height: 67px;
+:global {
+  .img-list-wrapper {
+    width: 100%;
+    .img-item {
+      display: inline-block;
+      vertical-align: top;
+      width: 65px;
+      height: 65px;
+      margin: 6px;
+      .img-card {
+        display: inline-block;
+        vertical-align: top;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        border: 1px solid #eee;
+        text-align: center;
+        .img-hover-mask {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          left: 0;
+          top: 0;
+          align-items: center;
+          justify-content: center;
+          background: @color-fill-1;
+          opacity: 0.5;
+          display: none;
+          z-index: 2;
+        }
+        &:hover {
+          .img-hover-mask {
+            display: flex;
+          }
+        }
+        .img-style {
+          width: 100%;
+          height: 100%;
+        }
+        .file-style {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .img-view-btn {
+          width: 22px;
+          height: 18px;
+          background: url(../../assets/images/preview-img-icon.png);
+          background-size: 100% 100%;
+          background-position: center center;
+          left: 20px;
+          user-select: none;
+        }
+        .img-del-btn {
+          width: 14px;
+          height: 14px;
+          border-radius: 50%;
+          color: #fff;
+          background-image: url('../../assets/images/delete-uploaded-icon.png');
+          background-position: center center;
+          background-size: 100% 100%;
+          text-align: center;
+          line-height: 14px;
+          position: absolute;
+          top: -4px;
+          right: -4px;
+          cursor: pointer;
+          z-index: 3;
+        }
+      }
+      .upload-btn {
+        display: block;
+        user-select: none;
+        width: @height;
+        height: @height;
+        border: 1px solid #eee;
+        border-radius: 2px;
+        background: url(../../assets/images/upload-img-icon.png) no-repeat center;
+        background-size: 50%;
+        cursor: pointer;
+      }
+    }
+    .img-list-upload {
+      display: inline-block;
+      vertical-align: top;
+      height: 79px;
+    }
+    .img-num-info {
+      margin-left: 6px;
+      span {
+        color: #e85050;
+      }
+    }
+  }
+}

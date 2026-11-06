@@ -1,0 +1,80 @@
+.content-box-title {
+  font-size: 14px;
+  color: rgba(0, 0, 0);
+  line-height: 22px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.check-invoice-detail,
+.open-invoice-detail {
+  .c7n-pro-vertical-form-display {
+    margin-bottom: 25px;
+  }
+  .c7n-pro-table-footer {
+    background: @color-fill-7;
+    border-bottom: 1px solid @table-border-color;
+  }
+  .c7n-alert-content {
+    .icon {
+      color: @danger-color;
+    }
+  }
+  .c7n-alert-content {
+    line-height: 16px;
+    color: @danger-color;
+  }
+}
+
+.req-total-amount {
+  display: flex;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 600;
+  .label {
+    flex: 1;
+  }
+  .amount {
+    margin-right: 33px;
+  }
+}
+
+.invoice-detail-logistics-info {
+  .time-line {
+    .logistics-time {
+      display: inline-block;
+      position: relative;
+      top: -5px;
+      margin-right: 10px;
+      text-align: right;
+      color: @color-text-2;
+      vertical-align: top;
+    }
+    .logistics-desc {
+      display: inline-block;
+    }
+    .c7n-timeline-item-head-blue {
+      color: #47b881 !important;
+      border-color: #47b881 !important;
+    }
+    .c7n-timeline-item-content {
+      width: 500px;
+    }
+    .c7n-timeline-item-last .c7n-timeline-item-content {
+      min-height: 24px;
+    }
+    .c7n-timeline-item-last {
+      padding: 0;
+    }
+  }
+  .no-data {
+    img {
+      margin-top: 43px;
+    }
+    p {
+      margin-top: 20px;
+      color: @color-text-2;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,83 @@
+.boards-container {
+  height: 100%;
+  :global {
+    .boards-list {
+      position: relative;
+      .content-left,
+      .content-right {
+        background-color: #fff;
+        display: inline-block;
+        vertical-align: text-top;
+        padding: 30px;
+      }
+      .content-left {
+        width: 790px;
+        min-height: 622px;
+        margin-right: 10px;
+        overflow: hidden;
+        .content-title {
+          font-size: 20px;
+          color: @color-text-1;
+          font-weight: 600;
+          margin-bottom: 10px;
+        }
+        .content-create {
+          font-size: 12px;
+          color: @color-text-3;
+          line-height: 18px;
+          font-weight: 400;
+          margin-bottom: 20px;
+        }
+        .content-info {
+          a {
+            color: @primary-color;
+          }
+        }
+      }
+      .content-right {
+        position: absolute;
+        right: 0;
+        width: 390px;
+        transition: all 0.4s;
+        .content-right-title {
+          font-size: 16px;
+          color: @color-text-1;
+          font-weight: 600;
+          padding-bottom: 20px;
+          border-bottom: 1px solid @color-fill-6;
+        }
+        .content-item {
+          padding: 20px 0;
+          border-bottom: 1px solid @color-fill-6;
+          .content-item-title {
+            font-size: 14px;
+            color: @color-text-1;
+            line-height: 24px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            cursor: pointer;
+          }
+          .unread-notice {
+            width: 35px;
+            height: 20px;
+            background-color: @primary-color;
+            color: #fff;
+            font-size: 12px;
+            transform: scale(0.8);
+            text-align: center;
+            line-height: 20px;
+            display: inline-block;
+            margin-right: 3px;
+            translate: -4px;
+          }
+          .content-item-create {
+            font-size: 12px;
+            color: @color-text-3;
+            line-height: 18px;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}
